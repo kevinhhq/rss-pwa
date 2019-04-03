@@ -1,6 +1,6 @@
 {
-  "short_name": "RSS-PWA",
-  "name": "RSS news by Progressive Web Application",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +8,8 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": "https://deepinsc.github.io/rss-pwa/",
+  "start_url": ".",
   "display": "standalone",
-  "theme_color": "#61dafb",
-  "background_color": "#282c34"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }

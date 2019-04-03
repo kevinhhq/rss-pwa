@@ -1,13 +1,13 @@
 {
   "main.css": "/rss-pwa/static/css/main.4fb1b803.chunk.css",
-  "main.js": "/rss-pwa/static/js/main.6e854369.chunk.js",
-  "main.js.map": "/rss-pwa/static/js/main.6e854369.chunk.js.map",
+  "main.js": "/rss-pwa/static/js/main.35ca3d2f.chunk.js",
+  "main.js.map": "/rss-pwa/static/js/main.35ca3d2f.chunk.js.map",
   "runtime~main.js": "/rss-pwa/static/js/runtime~main.d7ebab49.js",
   "runtime~main.js.map": "/rss-pwa/static/js/runtime~main.d7ebab49.js.map",
   "static/js/2.6efc73d3.chunk.js": "/rss-pwa/static/js/2.6efc73d3.chunk.js",
   "static/js/2.6efc73d3.chunk.js.map": "/rss-pwa/static/js/2.6efc73d3.chunk.js.map",
   "index.html": "/rss-pwa/index.html",
-  "precache-manifest.3d6ce91fe2cf88b519a737938135d2e7.js": "/rss-pwa/precache-manifest.3d6ce91fe2cf88b519a737938135d2e7.js",
+  "precache-manifest.db75582fff42357577be8cf9f5e4ed5b.js": "/rss-pwa/precache-manifest.db75582fff42357577be8cf9f5e4ed5b.js",
   "service-worker.js": "/rss-pwa/service-worker.js",
   "static/css/main.4fb1b803.chunk.css.map": "/rss-pwa/static/css/main.4fb1b803.chunk.css.map",
   "static/media/logo.svg": "/rss-pwa/static/media/logo.5d5d9eef.svg"
