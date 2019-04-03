@@ -2,16 +2,26 @@
   "name": "rss-pwa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://deepinsc.github.io/rss-pwa/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-router": "latest",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.8",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.85.0",
+    "sw-precache": "latest"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "gulp generate-service-worker && react-scripts start",
+    "build": "react-scripts build & gulp generate-service-worker",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +31,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "sw-precache": "^5.2.1"
+  }
 }
