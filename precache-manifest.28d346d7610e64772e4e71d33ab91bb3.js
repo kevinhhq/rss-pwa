@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/rss-pwa/static/js/runtime~main.d7ebab49.js"
   },
   {
-    "revision": "85323003d4a30196bd1a",
-    "url": "/rss-pwa/static/js/main.ca1684e6.chunk.js"
+    "revision": "e3748a00ed69d7b92231",
+    "url": "/rss-pwa/static/js/main.c794c7fe.chunk.js"
   },
   {
-    "revision": "3b457fd98a0c9cf38099",
-    "url": "/rss-pwa/static/js/2.2e148e52.chunk.js"
+    "revision": "b6dd738d507098332609",
+    "url": "/rss-pwa/static/js/2.a58e513a.chunk.js"
   },
   {
-    "revision": "85323003d4a30196bd1a",
+    "revision": "e3748a00ed69d7b92231",
     "url": "/rss-pwa/static/css/main.fed5b475.chunk.css"
   },
   {
-    "revision": "3b457fd98a0c9cf38099",
+    "revision": "b6dd738d507098332609",
     "url": "/rss-pwa/static/css/2.af2beb27.chunk.css"
   },
   {
-    "revision": "6d444af7c5954b5521beb30a91dcdb6f",
+    "revision": "2757cb67eb4926875e5a441d43f8e8a1",
     "url": "/rss-pwa/index.html"
   }
 ];
