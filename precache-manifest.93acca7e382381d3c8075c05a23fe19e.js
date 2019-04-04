@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/rss-pwa/static/css/2.af2beb27.chunk.css"
   },
   {
-    "revision": "8ca11a722dc8fcea5abcf6100919d0de",
+    "revision": "6d444af7c5954b5521beb30a91dcdb6f",
     "url": "/rss-pwa/index.html"
   }
 ];
