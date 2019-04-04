@@ -14,11 +14,16 @@
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.85.0",
     "sw-precache": "latest",
-    "antd": "^3.16.1"
+    "antd": "^3.16.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^5.4.18",
+    "nodemon": "^1.11.0"
   },
   "scripts": {
-    "start": "gulp generate-service-worker && react-scripts start",
-    "build": "react-scripts build & gulp generate-service-worker",
+    "dev": "gulp generate-service-worker && react-scripts start",
+    "start": "nodemon --exec node server.js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
