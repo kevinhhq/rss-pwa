@@ -1,15 +1,7 @@
 {
-  "news_list": [{
-    "title": "May meeting Macron for Brexit delay talks",
-    "url": "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/D5E4/production/_106365745_mediaitem106365744.jpg",
-  },
-    {
-      "title": "Trump rails against court defeat on asylum",
-      "url": "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/52AE/production/_106366112_gettyimages-1135934892.jpg"
-    },
-    {
-      "title": "The blossom worth billions for Japan",
-      "url": "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/16F4B/production/_106372049_p075zksv.jpg"
-    }
+  "news_list": [
+    { "title": "May meeting Macron for Brexit delay talks", "url": "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/D5E4/production/_106365745_mediaitem106365744.jpg" },
+    { "title": "Trump rails against court defeat on asylum", "url": "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/52AE/production/_106366112_gettyimages-1135934892.jpg" },
+    { "title": "The blossom worth billions for Japan", "url": "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/16F4B/production/_106372049_p075zksv.jpg" }
   ]
 }
