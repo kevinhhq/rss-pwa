@@ -15,7 +15,7 @@ class NewsList extends Component {
     };
 
     componentDidMount() {
-        axios.get("www.my-json-server.typicode.com/DeepinSC/rss-pwa/src/mock/news_list.json").then(
+        axios.get("http://my-json-server.typicode.com/DeepinSC/rss-pwa/blob/master/db.json").then(
             lst => {
                 this.setState({mockImages: lst})
             }
