@@ -31,7 +31,6 @@ export function register(config) {
       return;
     }
     // Rick: use Workbox to manage static files of Webpack
-    console.log(process.env);
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
       if (isLocalhost) {

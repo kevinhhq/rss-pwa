@@ -1,0 +1,7 @@
+.news-card-list {
+  display: flex;
+  justify-content: space-between;
+  .ant-card {
+    min-width: 32%;
+  }
+}

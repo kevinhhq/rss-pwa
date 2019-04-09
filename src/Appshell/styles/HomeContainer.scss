@@ -1,10 +1,15 @@
 .home-container {
-  padding-top: 10vw;
   text-align: left;
-  max-width: 720px;
+  max-width: 960px;
+  padding: 48px 24px 0;
   margin: 0 auto;
+
+  section {
+    padding-top: 5vw;
+  }
+
   .home-container-title{
-    padding-bottom: 5vw;
+    padding-bottom: 7vw;
     line-height: calc(0.7vw + 15px);
     font-weight: 600;
     .main-title{
@@ -22,7 +27,8 @@
       background-color: white;
     }
     .ant-input {
-      height: 50px;
+      height: 60px;
+      font-size: 18px;
       &:focus {
         border-color: #d9d9d9;
       }
