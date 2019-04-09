@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const link = document.createElement('link');
+link.rel = "manifest";
+if (process.env.NODE_ENV === 'development') {
+    link.href = "manifest-dev.json";
+} else {
+    link.href = "manifest.json";
+}
+document.head.appendChild(link);
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

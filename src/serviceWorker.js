@@ -31,10 +31,9 @@ export function register(config) {
       return;
     }
     // Rick: use Workbox to manage static files of Webpack
-
+    console.log(process.env);
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
-
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
         checkValidServiceWorker(swUrl, config);
@@ -61,9 +60,11 @@ function registerValidSW(swUrl, config) {
     .then(registration => {
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
+        console.log(installingWorker);
         if (installingWorker == null) {
           return;
         }
+        console.log(installingWorker);
         installingWorker.onstatechange = () => {
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {
