@@ -15,9 +15,9 @@ class NewsList extends Component {
     };
 
     componentDidMount() {
-        axios.get("http://my-json-server.typicode.com/DeepinSC/rss-pwa/blob/master/db.json").then(
-            lst => {
-                this.setState({mockImages: lst})
+        axios.get("http://my-json-server.typicode.com/DeepinSC/rss-pwa/news_list").then(
+            res => {
+                this.setState({mockImages: res.data})
             }
         )
     }
@@ -30,6 +30,7 @@ class NewsList extends Component {
     renderCard = (key=1) =>
         <div className="news-card-list">
             {this.state.mockImages.map(news => <Card
+                key={news.title}
                 hoverable
                 bordered={false}
                 style={{ width: 240 }}
