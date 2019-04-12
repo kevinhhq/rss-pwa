@@ -3,6 +3,7 @@ import '../styles/NewsList.scss';
 import { Card, Tabs, Skeleton } from 'antd';
 import axios from 'axios';
 import Icon from "antd/es/icon";
+import { Link } from 'react-router-dom'
 
 const TabPane = Tabs.TabPane;
 const { Meta } = Card;
@@ -30,21 +31,24 @@ class NewsList extends Component {
         <div className="news-card-list">
             {this.state.mockImages.length === 0 ?
                 <Skeleton/>
-                : this.state.mockImages.map(news => <Card
-                key={news.title}
-                hoverable
-                bordered={false}
-                style={{ width: 240 }}
-                cover={<img alt="example" src={news.url} />}
-            >
-                <Meta
-                    title={news.title}
-                    description="example description"
-                />
-                <div>
-                    <Icon type="message" />100
-                </div>
-            </Card>)}
+                : this.state.mockImages.map(news =>
+                <Link to={{pathname:'/detail', state: {news: news}}}>
+                    <Card
+                    key={news.title}
+                    hoverable
+                    bordered={false}
+                    style={{ width: 240 }}
+                    cover={<img alt="example" src={news.url} />}
+                    >
+                        <Meta
+                        title={news.title}
+                        description="example description"
+                        />
+                        <div>
+                            <Icon type="message" />100
+                        </div>
+                    </Card>
+                </Link>        )}
         </div>;
 
     render() {

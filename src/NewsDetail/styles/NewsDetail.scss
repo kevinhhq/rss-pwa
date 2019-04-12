@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+}
+
+.content-container {
+  max-width: 960px;
+  padding: 48px 24px 0;
+  margin: 0 auto;
+  h1 {
+    font-size: 3vw;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    Button {
+      align-self: flex-end;
+    }
+  }
+}
