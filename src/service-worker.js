@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/App.css","c524c8c092ac1cfff92a71fb12a38329"],["/App.js","778aa4ee55dca2a4dee3906fc8e2d224"],["/App.test.js","076aa265faa2c720d7c3339398e14e1d"],["/Appshell/styles/Home.scss","ed9133aed81afdaedcea33649abb12d4"],["/index.css","ace008ee9838a3ddf709bd6e13b33290"],["/index.js","c75e2982f02bd8df0b0654fc1fd0bf01"],["/serviceWorker.js","19dbde1404682766a1737f118ca7ce47"]];
+var precacheConfig = [["/App.css","c524c8c092ac1cfff92a71fb12a38329"],["/App.js","5a1f373e1d0fc496f4da6e0582eb86b9"],["/App.test.js","076aa265faa2c720d7c3339398e14e1d"],["/index.css","ace008ee9838a3ddf709bd6e13b33290"],["/index.js","c75e2982f02bd8df0b0654fc1fd0bf01"],["/serviceWorker.js","19dbde1404682766a1737f118ca7ce47"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
