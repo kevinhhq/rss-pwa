@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/MediaList.scss';
-import { Card, Tabs, Skeleton } from 'antd';
-import axios from 'axios';
+import { Card, Skeleton } from 'antd';
 import media_list from '../../mock/media_list.json';
-import Icon from "antd/es/icon";
 
-const TabPane = Tabs.TabPane;
 const { Meta } = Card;
-
 
 class MediaList extends Component {
     state = {

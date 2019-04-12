@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/Header.scss";
 import logo from '../../logo.svg';
-import {Link} from "react-router-dom";
 import UserDropDown from "./UserDropdown.jsx";
 
 class Header extends Component {
@@ -21,9 +20,9 @@ class Header extends Component {
         return (
             <nav className="header-container">
                 <div className="header-container-title">
-                    <Link to="/">
+                    <a href="/">
                         <img src={logo} alt="logo"/>
-                    </Link>
+                    </a>
                 </div>
                 <div className="header-container-extra">
                     <span className="header-container-btn">News</span>
