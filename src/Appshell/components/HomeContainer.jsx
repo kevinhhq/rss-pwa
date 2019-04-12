@@ -5,6 +5,8 @@ import { Input, Select } from 'antd';
 import NewsList from '../../Home/components/NewsList.jsx'
 import MediaList from '../../Home/components/MediaList.jsx'
 import '../styles/Home.scss';
+import {Link} from "react-router-dom";
+
 
 const Option = Select.Option;
 const Search = Input.Search;
@@ -34,6 +36,9 @@ class HomeContainer extends Component {
                         <div className="search-bar">
                             <Search addonBefore={this.selectBefore()} placeholder="input search text"/>
                         </div>
+                    </section>
+                    <section className="home-sections">
+                        <Link to="/list"><h1> List View </h1></Link>
                     </section>
                     <section className="home-sections">
                         <h1> Trend News </h1>
