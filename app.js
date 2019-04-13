@@ -8,17 +8,6 @@ let compression = require('compression');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
-let firebase = require("firebase");
-
-const config = {
-    apiKey: "AIzaSyDcPG3URrK1keiRvgvvKBCqQkBatgpCnes",
-    authDomain: "rss-pwa-ba0d0.firebaseapp.com",
-    databaseURL: "https://rss-pwa-ba0d0.firebaseio.com",
-    projectId: "rss-pwa-ba0d0",
-    storageBucket: "rss-pwa-ba0d0.appspot.com",
-    messagingSenderId: "764595055848"
-};
-firebase.initializeApp(config);
 
 let app = express();
 let port = process.env.PORT || 8000;

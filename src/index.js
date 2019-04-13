@@ -3,6 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import firebase from "firebase";
+
+const config = {
+    apiKey: "AIzaSyDcPG3URrK1keiRvgvvKBCqQkBatgpCnes",
+    authDomain: "rss-pwa-ba0d0.firebaseapp.com",
+    databaseURL: "https://rss-pwa-ba0d0.firebaseio.com",
+    projectId: "rss-pwa-ba0d0",
+    storageBucket: "rss-pwa-ba0d0.appspot.com",
+    messagingSenderId: "764595055848"
+};
+firebase.initializeApp(config);
+firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION).catch(err => console.log(err));
 
 const link = document.createElement('link');
 link.rel = "manifest";

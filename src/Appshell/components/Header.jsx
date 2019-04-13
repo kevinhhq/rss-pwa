@@ -26,7 +26,6 @@ class Header extends Component {
                 </div>
                 <div className="header-container-extra">
                     <span className="header-container-btn">News</span>
-                    <span className="header-container-btn">Profile</span>
                     <span className="header-container-btn">About</span>
                     <span className="header-container-btn">
                         <div>
