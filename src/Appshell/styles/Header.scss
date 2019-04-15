@@ -19,6 +19,9 @@
   .header-container-extra {
     margin: 0 1vw;
     display: flex;
+    a {
+      color: inherit;
+    }
     .header-container-btn {
       cursor: pointer;
       margin: 0 2vw;

@@ -3,8 +3,8 @@ import './App.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import HomeContainer from "./Appshell/components/HomeContainer";
 import Header from './Appshell/components/Header.jsx';
-import NewsDetail from './NewsDetail/components/NewsDetail';
-import ListView from './ListView/components/ListView';
+import NewsDetail from './News/components/NewsDetail';
+import ListView from './News/components/ListView';
 import ProfileContainer from './User/components/ProfileContainer';
 import 'antd/dist/antd.css';
 
@@ -17,8 +17,8 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={HomeContainer}/>
-            <Route exact path="/detail" component={NewsDetail}/>
-            <Route exact path="/list" component={ListView}/>
+            <Route exact path="/news/:id" component={NewsDetail}/>
+            <Route exact path="/news" component={ListView}/>
             <Route path="/profile/" component={ProfileContainer}/>
           </Switch>
         </Router>

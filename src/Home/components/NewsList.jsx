@@ -31,7 +31,7 @@ class NewsList extends Component {
             {this.state.mockImages.length === 0 ?
                 <Skeleton/>
                 : this.state.mockImages.map(news =>
-                <Link key={news.title} to={{pathname:'/detail', state: {news: news}}}>
+                <Link key={news.title} to={{pathname:`/news/${news.id}`, state: {news: news}}}>
                     <Card
                     key={news.title}
                     hoverable
