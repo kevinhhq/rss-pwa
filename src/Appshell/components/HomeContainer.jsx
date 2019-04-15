@@ -38,7 +38,7 @@ class HomeContainer extends Component {
                         </div>
                     </section>
                     <section className="home-sections">
-                        <h1> Trend News </h1>
+                        <Link to="/news"><h1> Trend News </h1></Link>
                         <NewsList/>
                     </section>
                     <section className="home-sections">
