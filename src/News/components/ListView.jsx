@@ -32,7 +32,7 @@ class ListView extends Component {
           actions={[<IconText type="star-o" text="156" />, <IconText type="like-o" text="156" />, <IconText type="message" text="2" />]}
           extra={<img width={272} alt="logo" src={item.url} />}
         >
-          <Link to={{pathname:'/detail', state: {news: item}}}>
+          <Link to={{pathname:`/news/${item.id}`, state: {news: item}}}>
             <div className="item-title">{item.title}</div>
           </Link>
 
