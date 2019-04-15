@@ -1,12 +1,14 @@
 .media-card-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   .ant-card {
     min-width: 32%;
+    @media screen and (max-width: 600px){
+      min-width: 100%;
+    }
     .ant-card-cover {
       height: 164px;
-      img {
-      }
     }
   }
 }

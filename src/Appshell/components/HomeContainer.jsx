@@ -27,7 +27,7 @@ class HomeContainer extends Component {
                     <section>
                         <div className="home-container-title">
                             <h1 className="main-title">
-                                RSS Progressive Web Application
+                                GOATNews - Progressive Web Application
                             </h1>
                             <h1 className="sub-title">
                                 Read news without network

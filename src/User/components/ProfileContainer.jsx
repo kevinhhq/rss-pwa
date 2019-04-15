@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Avatar, Card, Skeleton, Icon} from "antd";
+import {Avatar, Card} from "antd";
 import "../styles/ProfileContainer.scss";
 import {decorate} from "mobx";
 import {observer} from "mobx-react";

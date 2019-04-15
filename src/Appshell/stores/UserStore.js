@@ -9,7 +9,6 @@ class UserStore {
     fetchUserState() {
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
-                console.log(user);
                 this.user = user;
             } else {
                 console.log("Not login");

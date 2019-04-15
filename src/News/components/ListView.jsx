@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import news_list from '../../mock/news_list';
 import IconText from './IconText'
-import { List, Icon } from 'antd';
+import { List } from 'antd';
 import '../styles/ListView.scss';
 import {Link} from "react-router-dom";
 import axios from "axios";
@@ -28,12 +27,6 @@ class ListView extends Component {
     <List
       itemLayout="vertical"
       size="large"
-      // pagination={{
-      //   onChange: (page) => {
-      //     console.log(page);
-      //   },
-      //   pageSize: 3,
-      // }}
       dataSource={this.state.mockData}
       renderItem={item => (
         <List.Item
