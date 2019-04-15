@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/Home.scss';
 import "../styles/HomeContainer.scss"
-import { Input, Select } from 'antd';
+import { Input, Select, Divider } from 'antd';
 import NewsList from '../../Home/components/NewsList.jsx'
-import MediaList from '../../Home/components/MediaList.jsx'
+import SiteList from '../../Home/components/SiteList.jsx'
 import '../styles/Home.scss';
 import {Link} from "react-router-dom";
 
@@ -15,8 +15,8 @@ class HomeContainer extends Component {
 
     selectBefore = () =>
         <Select defaultValue="Media" style={{width: 90}}>
-            <Option value="Media">Media</Option>
             <Option value="News">News</Option>
+            <Option value="Media">Site</Option>
         </Select>;
 
 
@@ -41,10 +41,12 @@ class HomeContainer extends Component {
                         <Link to="/news"><h1> Trend News </h1></Link>
                         <NewsList/>
                     </section>
+                    <Divider/>
                     <section className="home-sections">
-                        <h1> Hot Media </h1>
-                        <MediaList/>
+                        <h1> Hot Sites </h1>
+                        <SiteList/>
                     </section>
+                    <Divider/>
                 </article>
             </div>
         );

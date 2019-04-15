@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Avatar, Menu, Dropdown, message } from 'antd';
+import { Avatar, Menu, Dropdown, message, Icon } from 'antd';
 import "../styles/Header.scss";
 import {decorate} from "mobx";
 import {observer} from "mobx-react";
@@ -53,17 +53,17 @@ class UserDropdown extends Component {
         return !UserStore.user.email ?
             <Menu>
                 <Menu.Item>
-                    <div onClick={this.handleModalOpen}>Sign in/up</div>
+                    <div onClick={this.handleModalOpen}><Icon type="import" /> Sign in/up</div>
                 </Menu.Item>
             </Menu>
             :
             <Menu>
                 <Menu.Item>
-                    <a href="/profile/">Profile</a>
+                    <a href="/profile/"><Icon type="user" /> Profile</a>
                 </Menu.Item>
                 <Menu.Divider/>
                 <Menu.Item>
-                    <div onClick={this.signOut}>Sign out</div>
+                    <div onClick={this.signOut}><Icon type="export" /> Sign out</div>
                 </Menu.Item>
             </Menu>
 

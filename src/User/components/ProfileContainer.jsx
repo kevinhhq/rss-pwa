@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import {Avatar, Card} from "antd";
+import {Avatar, Card, Divider} from "antd";
 import "../styles/ProfileContainer.scss";
 import {decorate} from "mobx";
 import {observer} from "mobx-react";
 import UserStore from "../../Appshell/stores/UserStore";
-import MediaList from "../../Home/components/MediaList";
+import SiteList from "../../Home/components/SiteList";
 
 class ProfileContainer extends Component {
 
@@ -27,14 +27,16 @@ class ProfileContainer extends Component {
                     <h1>Welcome, {UserStore.user.displayName || UserStore.user.email}</h1>
                     <br/>
                 </div>
-                <div className="profile-section">
+                <section className="profile-section">
                     <h1>My Subscription</h1>
-                    <MediaList/>
-                </div>
-                <div className="profile-section">
+                    <SiteList/>
+                </section>
+                <Divider/>
+                <section className="profile-section">
                     <h1>History News</h1>
                     <Card>PlaceHolder</Card>
-                </div>
+                </section>
+                <Divider/>
             </div>
         );
     }

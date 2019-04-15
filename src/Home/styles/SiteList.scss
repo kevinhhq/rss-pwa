@@ -2,13 +2,29 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   .ant-card {
     min-width: 32%;
+    transition: all 1s ease;
+
     @media screen and (max-width: 600px){
       min-width: 100%;
     }
     .ant-card-cover {
       height: 164px;
     }
+    .ant-btn{
+      border: none;
+    }
+    .site-list-menu {
+        visibility: hidden;
+    }
+    &:hover {
+      .site-list-menu {
+        visibility: initial;
+      }
+    }
   }
+
 }
+

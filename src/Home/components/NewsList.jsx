@@ -41,7 +41,6 @@ class NewsList extends Component {
                     >
                         <Meta
                         title={news.title}
-                        description="example description"
                         />
                         <div>
                             <Icon type="message" />100
