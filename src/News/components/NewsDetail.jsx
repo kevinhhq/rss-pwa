@@ -43,8 +43,13 @@ class NewsDetail extends Component {
           <div className="title">
             <h1>{currentNews.title}</h1>
             <div><img alt="example" src={currentNews.url} /></div>
-            <Button type="primary">Subscribe</Button>
+            <br/>
+            <div className="content">
+              <p>{currentNews.description}</p>
+              <Button type="primary">Subscribe</Button>
+            </div>
           </div>
+
           {/*<div>*/}
           {/*<p>{currentNews.content}</p>*/}
           {/*</div>*/}
