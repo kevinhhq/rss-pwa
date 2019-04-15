@@ -50,7 +50,7 @@ class UserDropdown extends Component {
     }
 
     menu = () => {
-        return !UserStore.user ?
+        return !UserStore.user.email ?
             <Menu>
                 <Menu.Item>
                     <div onClick={this.handleModalOpen}>Sign in/up</div>

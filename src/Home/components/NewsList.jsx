@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/NewsList.scss';
-import { Card, Tabs, Skeleton } from 'antd';
+import { Card, Tabs, Skeleton, Icon } from 'antd';
 import axios from 'axios';
-import Icon from "antd/es/icon";
 import { Link } from 'react-router-dom'
 
 const TabPane = Tabs.TabPane;
@@ -37,7 +36,7 @@ class NewsList extends Component {
                     key={news.title}
                     hoverable
                     bordered={false}
-                    style={{ width: 240 }}
+                    style={{ width: 300 }}
                     cover={<img alt="example" src={news.url} />}
                     >
                         <Meta
