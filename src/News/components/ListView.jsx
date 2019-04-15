@@ -4,6 +4,7 @@ import IconText from './IconText'
 import { List, Icon } from 'antd';
 import '../styles/ListView.scss';
 import {Link} from "react-router-dom";
+import axios from "axios";
 
 
 
@@ -11,10 +12,18 @@ class ListView extends Component {
   constructor(){
     super();
     this.state = {
-      mockData: news_list,
+      mockData: [],
     }
   }
 
+  componentDidMount() {
+    axios.get("http://my-json-server.typicode.com/DeepinSC/rss-pwa/news_list").then(
+      res => {
+        this.setState({mockData: res.data})
+      }
+    )
+  }
+  
   renderList = () =>
     <List
       itemLayout="vertical"
