@@ -3,8 +3,6 @@ import '../styles/SiteList.scss';
 import {Button, Card, Skeleton, Menu, Dropdown, message, Icon} from 'antd';
 import media_list from '../../mock/media_list.json';
 
-const { Meta } = Card;
-
 class SiteList extends Component {
     state = {
         mockData: media_list,

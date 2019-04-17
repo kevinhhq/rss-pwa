@@ -2,11 +2,12 @@ import {observable, action, decorate} from 'mobx';
 import firebase from 'firebase';
 
 class UserStore {
-    user = {};
-    state = {};
+    user = {isAnonymous: true};
+    state = {loading: false};
 
 
     fetchUserState() {
+        this.state.loading = true;
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
                 this.user = user;
@@ -14,6 +15,7 @@ class UserStore {
                 console.log("Not login");
                 // No user is signed in.
             }
+            this.state.loading = false;
         });
     }
 

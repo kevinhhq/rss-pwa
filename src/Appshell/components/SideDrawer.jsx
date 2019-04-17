@@ -3,7 +3,6 @@ import {Drawer, Button, Menu, Icon} from 'antd';
 import "../styles/SideDrawer.scss";
 
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 
 class SideDrawer extends Component {
     state = { visible: false, placement: 'left' };
@@ -19,14 +18,7 @@ class SideDrawer extends Component {
         });
     };
 
-    onChange = (e) => {
-        this.setState({
-            placement: e.target.value,
-        });
-    };
-
     handleClick = (e) => {
-        console.log('click ', e);
     };
 
     renderMenu = () => <Menu
@@ -52,11 +44,7 @@ class SideDrawer extends Component {
                 <Menu.Item key="10"><Icon type="heart" />Health</Menu.Item>
             </SubMenu>
         </SubMenu>
-        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>Others</span></span>}>
-            <Menu.Item key="11"><Icon type="team" />About us</Menu.Item>
-            <Menu.Item key="12"><Icon type="link" />Course link</Menu.Item>
-        </SubMenu>
-    </Menu>
+    </Menu>;
 
     render() {
         return(

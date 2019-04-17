@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 import HomeContainer from "./Appshell/components/HomeContainer";
 import Header from './Appshell/components/Header.jsx';
 import NewsDetail from './News/components/NewsDetail';
-import ListView from './News/components/ListView';
+import NewsList from './News/components/NewsList';
 import ProfileContainer from './User/components/ProfileContainer';
 import 'antd/dist/antd.css';
 
@@ -18,8 +18,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomeContainer}/>
             <Route exact path="/news/:id" component={NewsDetail}/>
-            <Route exact path="/news" component={ListView}/>
+            <Route exact path="/news/" component={NewsList}/>
             <Route path="/profile/" component={ProfileContainer}/>
+            <Redirect from="/rss-pwa/" to="/"/>
           </Switch>
         </Router>
       </div>

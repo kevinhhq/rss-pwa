@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Avatar, Card, Divider} from "antd";
+import {Avatar, Card, Divider, Spin} from "antd";
 import "../styles/ProfileContainer.scss";
 import {decorate} from "mobx";
 import {observer} from "mobx-react";
@@ -11,6 +11,16 @@ class ProfileContainer extends Component {
     //todo: replace them to the real news list
 
     render() {
+        if (UserStore.state.loading) {
+            return (
+                <div className="profile-container">
+                    <div className="profile-avatar">
+                       <Spin/>
+                    </div>
+                </div>
+            );
+        }
+
         if (!UserStore.user.email) {
             return (
                 <div className="profile-container">
@@ -33,7 +43,7 @@ class ProfileContainer extends Component {
                 </section>
                 <Divider/>
                 <section className="profile-section">
-                    <h1>History News</h1>
+                    <h1>Browsed News</h1>
                     <Card>PlaceHolder</Card>
                 </section>
                 <Divider/>

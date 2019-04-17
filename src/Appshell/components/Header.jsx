@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "../styles/Header.scss";
-import logo from '../../logo.svg';
 import UserDropDown from "./UserDropdown.jsx";
 import SideDrawer from "./SideDrawer.jsx";
 
@@ -27,8 +26,8 @@ class Header extends Component {
                     </a>
                 </div>
                 <div className="header-container-extra">
-                    <span className="header-container-btn"><a href="http://localhost:3000/news">News</a></span>
-                    <span className="header-container-btn">About</span>
+                    <span className="header-container-btn"><a href="/news"><div>News</div></a></span>
+                    <span className="header-container-btn"><div>About</div></span>
                     <span className="header-container-btn">
                         <div>
                             <UserDropDown/>

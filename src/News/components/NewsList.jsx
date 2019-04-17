@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import IconText from './IconText'
 import { List } from 'antd';
-import '../styles/ListView.scss';
+import '../styles/NewsList.scss';
 import {Link} from "react-router-dom";
+import news_list from "../../mock/news_list"
 import axios from "axios";
 
 
-
-class ListView extends Component {
+class NewsList extends Component {
   constructor(){
     super();
     this.state = {
@@ -16,11 +16,15 @@ class ListView extends Component {
   }
 
   componentDidMount() {
+      this.setState({mockData: news_list});
+      // TODO: here for PWA usage, the request must be in https, so it should be replaced to safe url.
+      /*
     axios.get("http://my-json-server.typicode.com/DeepinSC/rss-pwa/news_list").then(
       res => {
         this.setState({mockData: res.data})
       }
     )
+    */
   }
   
   renderList = () =>
@@ -65,4 +69,4 @@ class ListView extends Component {
 
 }
 
-export default ListView
+export default NewsList

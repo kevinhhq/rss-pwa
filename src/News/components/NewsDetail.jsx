@@ -1,10 +1,29 @@
 import React, { Component } from 'react';
 import '../styles/NewsDetail.scss';
-import { Button } from 'antd';
+import { Button, Empty } from 'antd';
+import news_list from "../../mock/news_list"
 
 class NewsDetail extends Component {
+  constructor(){
+    super();
+    this.state = {
+      currentNews: {},
+    }
+  }
+
+  componentDidMount() {
+    this.setState({currentNews: news_list[this.props.match.params.id - 1]});
+  }
+
   render() {
-    const currentNews = this.props.location.state.news;
+    const {currentNews} = this.state;
+    if (!currentNews) {
+      return <div className="container">
+        <article className="content-container">
+          <Empty/>
+        </article>
+      </div>
+    }
     return (
       <div className="container">
         <article className="content-container">
