@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import IconText from './IconText'
-import { List } from 'antd';
 import '../styles/NewsList.scss';
-import {Link} from "react-router-dom";
 import news_list from "../../mock/news_list"
 import axios from "axios";
+import NewsItem from './NewsItem'
+
 
 
 class NewsList extends Component {
@@ -26,39 +25,21 @@ class NewsList extends Component {
     )
     */
   }
-  
-  renderList = () =>
-    <List
-      itemLayout="vertical"
-      size="large"
-      dataSource={this.state.mockData}
-      renderItem={item => (
-        <List.Item
-          // key={item.title}
-          actions={[<IconText type="star-o" text="156" />, <IconText type="like-o" text="156" />, <IconText type="message" text="2" />]}
-          extra={<img width={272} alt="logo" src={item.url} />}
-        >
-          <Link to={{pathname:`/news/${item.id}`, state: {news: item}}}>
-            <div className="item-title">{item.title}</div>
-          </Link>
-
-          <List.Item.Meta
-            description={item.description}
-          />
-        </List.Item>
-      )}
-    />
-    ;
 
   render() {
     let allNews;
     if (this.state.mockData.length !== 0) {
-      allNews = this.renderList();
+      allNews = this.state.mockData.map(item =>
+        <div>
+          <NewsItem item={item}/>
+          <br/>
+        </div>
+      );
     }
     return (
       <div className="container">
         <br/>
-        <h1>Top News</h1>
+        <h1>Trend News</h1>
         <div className="list-container">
           {allNews}
         </div>

@@ -1,0 +1,49 @@
+$border-radius: 10px;
+$border-color: #505660;
+$border-width: 1px;
+$border-style: solid;
+$item-width: 600px;
+$item-height: auto;
+$img-width: 100px;
+$img-height: 100px;
+$title-color: #282c34;
+
+
+.round-container {
+  border-radius: $border-radius;
+  border-color: $border-color;
+  border-style: $border-style;
+  padding: 20px;
+  width: $item-width;
+  height: $item-height;
+  display: flex;
+  justify-content: space-between;
+  .content {
+    .title {
+      font-size: large;
+      font-weight: bold;
+      color: $title-color;
+    }
+    .title:hover {
+      text-decoration: underline;
+    }
+  }
+  .image {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      object-fit: cover;
+      border-radius: $border-radius;
+      width: $img-width;
+      height: $img-height;
+    }
+    img:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+
