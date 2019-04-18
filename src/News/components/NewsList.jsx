@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/NewsList.scss';
 import news_list from "../../mock/news_list"
+import { Button, Divider } from 'antd';
 import axios from "axios";
 import NewsItem from './NewsItem'
 
@@ -11,6 +12,7 @@ class NewsList extends Component {
     super();
     this.state = {
       mockData: [],
+      following: false,
     }
   }
 
@@ -26,11 +28,15 @@ class NewsList extends Component {
     */
   }
 
+  handleFollow = () => {
+    this.setState({following: !this.state.following});
+  };
+
   render() {
     let allNews;
     if (this.state.mockData.length !== 0) {
       allNews = this.state.mockData.map(item =>
-        <div>
+        <div key={item.title}>
           <NewsItem item={item}/>
           <br/>
         </div>
@@ -39,10 +45,16 @@ class NewsList extends Component {
     return (
       <div className="container">
         <br/>
-        <h1>Trend News</h1>
+        <div className="list-headline">
+            <h1 className="list-title">Trend News</h1>
+            <Button shape="round" icon="star" onClick={this.handleFollow}>
+              {this.state.following ? "Unfollow" : "Follow"}
+            </Button>
+        </div>
         <div className="list-container">
           {allNews}
         </div>
+        <Divider/>
       </div>
 
     );

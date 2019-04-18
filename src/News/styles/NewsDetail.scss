@@ -7,7 +7,9 @@
   padding: 48px 24px 0;
   margin: 0 auto;
   h1 {
-    font-size: 3vw;
+    font-size: calc(0.8vw + 20px);
+    line-height: calc(0.8vw + 20px);
+    color: #61dafb;
   }
   .title .content {
     display: flex;

@@ -20,7 +20,7 @@ class UserDropdown extends Component {
         return () => {
             if (signIn) {
                 UserStore.signIn(email, password).then(res => {
-                    message.success(res);
+                    message.success("Sign in successfully");
                     this.setState({ modalVisible: false });
                 }).catch(err => {
                     message.error(err.message);
@@ -28,7 +28,7 @@ class UserDropdown extends Component {
                 });
             } else {
                 UserStore.signUp(email, password).then(res => {
-                    message.success(res);
+                    message.success("Sign up successfully");
                     this.setState({ modalVisible: false });
                 }).catch(err => {
                     message.error(err.message);
@@ -41,7 +41,7 @@ class UserDropdown extends Component {
 
     signOut = () => {
         return UserStore.signOut().then(res => {
-            message.success(res);
+            message.success("Sign out successfully");
         })
     };
 

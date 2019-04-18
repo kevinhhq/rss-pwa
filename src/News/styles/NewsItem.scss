@@ -13,12 +13,25 @@ $title-color: #282c34;
   justify-content: space-between;
   .content {
     .title {
+      display: inline-block;
       font-size: large;
       font-weight: bold;
       color: $title-color;
     }
     .title:hover {
       text-decoration: underline;
+    }
+    .post-time {
+      font-size: small;
+      color: darkgray;
+    }
+    .description {
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+    }
+    .tags {
+      font-size: small;
+      color: darkgray;
     }
   }
   .image {

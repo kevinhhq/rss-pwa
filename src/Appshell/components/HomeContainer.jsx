@@ -14,9 +14,9 @@ const Search = Input.Search;
 class HomeContainer extends Component {
 
     selectBefore = () =>
-        <Select defaultValue="Media" style={{width: 90}}>
+        <Select defaultValue="News" style={{width: 90}}>
             <Option value="News">News</Option>
-            <Option value="Media">Site</Option>
+            <Option value="Site">Site</Option>
         </Select>;
 
 
@@ -30,7 +30,7 @@ class HomeContainer extends Component {
                                 GOATNews - Progressive Web Application
                             </h1>
                             <h1 className="sub-title">
-                                Read news without network
+                                Read news anywhere
                             </h1>
                         </div>
                         <div className="search-bar">

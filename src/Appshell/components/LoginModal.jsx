@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Modal, Input, Icon, Radio, Alert } from 'antd';
-import "../styles/Header.scss";
+import { Modal, Input, Icon, Radio, Alert, Divider } from 'antd';
+import "../styles/LoginModal.scss";
 
 const RadioButton = Radio.Button;
 const RadioGroup = Radio.Group;
@@ -31,7 +31,7 @@ class LoginModal extends Component {
 
     renderSignIn = () => {
         return(
-            <div>
+            <div className="user-input">
                 <p>Email Address</p>
                 <Input
                     placeholder="Email Address"
@@ -51,33 +51,33 @@ class LoginModal extends Component {
 
     renderSignUp = () => {
         return(
-            <div>
-                <p>Email Address</p>
-                <Input
-                    placeholder="Email Address"
-                    suffix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }}/>}
-                    onChange={this.onEmailInputChange}
-                    value={this.state.email}
-                />
-                <p>Password</p>
-                <Input.Password
-                    placeholder="Password"
-                    onChange={this.onPasswordInputChange}
-                    value={this.state.password}
-                />
-                <p>Confirm Password</p>
-                <Input.Password
-                    placeholder="Confirm Password"
-                    onChange={this.onConfirmPasswordInputChange}
-                    value={this.state.passwordConfirm}
-                />
-                {this.state.password !== this.state.passwordConfirm &&
-                    <Alert
-                        description="Two passwords must be same."
-                        type="error"
-                        showIcon
-                    />
-                }
+            <div className="user-input">
+              <p>Email Address</p>
+              <Input
+                  placeholder="Email Address"
+                  suffix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }}/>}
+                  onChange={this.onEmailInputChange}
+                  value={this.state.email}
+              />
+              <p>Password</p>
+              <Input.Password
+                  placeholder="Password"
+                  onChange={this.onPasswordInputChange}
+                  value={this.state.password}
+              />
+              <p>Confirm Password</p>
+              <Input.Password
+                  placeholder="Confirm Password"
+                  onChange={this.onConfirmPasswordInputChange}
+                  value={this.state.passwordConfirm}
+              />
+              {this.state.password !== this.state.passwordConfirm &&
+                  <Alert
+                      description="Two passwords must be same."
+                      type="error"
+                      showIcon
+                  />
+              }
             </div>
         )
     };
@@ -108,6 +108,7 @@ class LoginModal extends Component {
                             <RadioButton value="in">Sign In</RadioButton>
                             <RadioButton value="up">Sign Up</RadioButton>
                         </RadioGroup>
+                      <Divider dashed/>
                         {radioValue === 'in' ? this.renderSignIn() : this.renderSignUp()}
                     </div>
                 </Modal>

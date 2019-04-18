@@ -7,7 +7,7 @@ let bodyParser = require('body-parser');
 let compression = require('compression');
 
 let indexRouter = require('./routes/index');
-let usersRouter = require('./routes/users');
+let newsRouter = require('./routes/news');
 
 let app = express();
 let port = process.env.PORT || 8000;
@@ -26,7 +26,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use('/static', express.static(path.join(__dirname, 'build/static')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/news', newsRouter);
+app.use(/\/news\/.*/, newsRouter); // regex, /news/ + any character
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

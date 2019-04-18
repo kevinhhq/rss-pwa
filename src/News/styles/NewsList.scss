@@ -5,7 +5,19 @@ $max-width: 960px;
   max-width: 960px;
   padding: 48px 24px 0;
   margin: 0 auto;
+  .list-headline {
+    display: flex;
+    justify-content: space-between;
+    .list-title {
+      display: inline-block;
+      font-size: calc(0.8vw + 20px);
+      line-height: calc(0.8vw + 20px);
+      color: #61dafb;
+    }
+  }
 }
+
+
 
 .list-container {
   max-width: $max-width;

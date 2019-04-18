@@ -48,7 +48,7 @@ class UserStore {
             message: "",
         };
         return firebase.auth().signOut().then(res => {
-            this.user = res.data;
+            this.user = {isAnonymous: true};
         }).catch(error => {
             this.state = error;
         });
