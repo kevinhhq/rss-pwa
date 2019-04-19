@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/NewsDetail.scss';
-import { Button, Empty } from 'antd';
+import { Button, Empty, Tag} from 'antd';
 import news_list from "../../mock/news_list"
 
 class NewsDetail extends Component {
@@ -16,6 +16,7 @@ class NewsDetail extends Component {
   }
 
   render() {
+    const tempDate = new Date();
     const {currentNews} = this.state;
     if (!currentNews) {
       return <div className="container">
@@ -26,17 +27,20 @@ class NewsDetail extends Component {
     }
     return (
       <div className="container">
-        <article className="content-container">
-          <div className="title">
-            <h1>{currentNews.title}</h1>
-            <div><img alt="example" src={currentNews.url} /></div>
-            <br/>
-            <div className="content">
-              <p>{currentNews.description}</p>
-              <Button type="primary">Subscribe</Button>
-            </div>
+        <div className="breadcrumb"></div>
+        <div className="title"><h1>{currentNews.title}</h1></div>
+        <div className="image">
+          <img alt="cover" src={currentNews.url}/>
+          <div className="tags">Category: <Tag color="cyan">cyan</Tag></div>
+          <div className="post-time">{tempDate.toString()}</div>
+          <div className="media">
+            <div className="source">Source: {currentNews.source}</div>
+            <div><Button type="primary" size="small">Subscribe</Button></div>
           </div>
-        </article>
+        </div>
+
+        <br/>
+        <div className="content">{currentNews.temp}</div>
       </div>
 
     )
