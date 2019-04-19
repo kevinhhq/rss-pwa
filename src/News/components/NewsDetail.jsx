@@ -19,14 +19,12 @@ class NewsDetail extends Component {
     const tempDate = new Date();
     const {currentNews} = this.state;
     if (!currentNews) {
-      return <div className="container">
-        <article className="content-container">
+      return <div className="detail-container">
           <Empty/>
-        </article>
       </div>
     }
     return (
-      <div className="container">
+      <div className="detail-container">
         <div className="breadcrumb"></div>
         <div className="title"><h1>{currentNews.title}</h1></div>
         <div className="image">
