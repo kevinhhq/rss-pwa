@@ -33,7 +33,7 @@ class NewsDetail extends Component {
   };
 
   handleOk = () => {
-    this.setState({subscribed: false})
+    this.setState({subscribed: false});
     this.setState({ visible: false });
   };
 

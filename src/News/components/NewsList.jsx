@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/NewsList.scss';
 import news_list from "../../mock/news_list"
-import { Button, Divider } from 'antd';
+import {Button, Divider, Icon, Modal} from 'antd';
 import axios from "axios";
 import NewsItem from './NewsItem'
 
@@ -13,6 +13,7 @@ class NewsList extends Component {
     this.state = {
       mockData: [],
       following: false,
+      visible: false,
     }
   }
 
@@ -29,10 +30,30 @@ class NewsList extends Component {
   }
 
   handleFollow = () => {
-    this.setState({following: !this.state.following});
+    const currState = this.state.following;
+    if (currState) {this.showModal()}
+    else {this.setState({following: true})}
+  };
+
+  showModal = () => {
+    this.setState({
+      visible: true
+    })
+  };
+
+  handleOk = () => {
+    this.setState({following: false});
+    this.setState({ visible: false });
+  };
+
+  handleCancel = () => {
+    this.setState({ visible: false });
   };
 
   render() {
+    const value = this.state.following ? "Following" : "Follow";
+    const theme = this.state.following ? "filled" : "";
+
     let allNews;
     if (this.state.mockData.length !== 0) {
       allNews = this.state.mockData.map(item =>
@@ -47,13 +68,27 @@ class NewsList extends Component {
         <br/>
         <div className="list-headline">
             <h1 className="list-title">Trend News</h1>
-            <Button shape="round" icon="star" onClick={this.handleFollow}>
-              {this.state.following ? "Unfollow" : "Follow"}
+            <Button shape="round" onClick={this.handleFollow}>
+              <Icon type="star" theme={theme}/>
+              {value}
             </Button>
         </div>
         <div className="list-container">
           {allNews}
         </div>
+        <Modal
+          visible={this.state.visible}
+          onOk={this.handleOk}
+          onCancel={this.handleCancel}
+          footer={[
+            <Button key="Cancel" onClick={this.handleCancel}>Cancel</Button>,
+            <Button key="Unfollow" type="primary" onClick={this.handleOk}>
+              Unfollow
+            </Button>,
+          ]}
+        >
+          <p>Are you sure to Unfollow Trend News</p>
+        </Modal>
         <Divider/>
       </div>
 
