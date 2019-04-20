@@ -7,6 +7,9 @@ $content-color: #282c34;
   max-width: 960px;
   padding: 48px 24px 0;
   margin: 0 auto;
+  .breadcrumb {
+    align-self: flex-start;
+  }
   .title {
     font-weight: bold;
     font-size: large;

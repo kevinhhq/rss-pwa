@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/NewsDetail.scss';
-import { Button, Empty, Tag, Modal} from 'antd';
+import { Button, Empty, Tag, Modal, Breadcrumb, Icon} from 'antd';
 import news_list from "../../mock/news_list"
+import { Link } from 'react-router-dom'
+
 
 class NewsDetail extends Component {
   constructor(){
@@ -51,7 +53,13 @@ class NewsDetail extends Component {
     }
     return (
       <div className="detail-container">
-        <div className="breadcrumb"></div>
+        <div className="breadcrumb">
+          <Breadcrumb>
+            <Breadcrumb.Item><Link to="/"><Icon type="home"/> Home</Link></Breadcrumb.Item>
+            <Breadcrumb.Item><Link to="/news"><Icon type="rise" /> Trend News</Link></Breadcrumb.Item>
+            <Breadcrumb.Item>Detail</Breadcrumb.Item>
+          </Breadcrumb>
+        </div>
         <div className="title"><h1>{currentNews.title}</h1></div>
         <div className="image">
           <img alt="cover" src={currentNews.url}/>
