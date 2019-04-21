@@ -4,6 +4,7 @@
 .idea/RSS-PWA.iml
 .idea/modules.xml
 
+
 # dependencies
 yarn.lock
 package-lock.json
@@ -31,3 +32,4 @@ yarn-error.log*
 
 config/secrets.js
 
+package-lock.json
