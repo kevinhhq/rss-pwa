@@ -1,9 +1,6 @@
 $content-color: #282c34;
 
 .detail-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 960px;
   padding: 48px 24px 0;
   margin: 0 auto;
@@ -13,49 +10,38 @@ $content-color: #282c34;
   .title {
     font-weight: bold;
     font-size: large;
+    margin: 20px 0;
   }
-  .image {
+  .article-info {
     display: flex;
-    flex-direction: column;
-    img {
-      border-radius: 10px;
-      width: 100%;
-      height: auto;
-    }
+    justify-content: left;
     .tags {
       margin-top: 5px;
     }
-    .media {
-      margin-top: 3px;
-      display: flex;
-      flex-direction: row;
+    .article-subtitle {
+      width: 75%;
+      margin: 0 10px;
+      line-height: 32px;
       .source {
         margin-right: 10px;
       }
     }
+    .article-follow {
+    }
   }
 
+  .article-img {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    img {
+      border-radius: 10px;
+    }
+  }
 
   .content {
     font-size: large;
     color: $content-color;
   }
 }
-//
-//.content-container {
-//  max-width: 960px;
-//  padding: 48px 24px 0;
-//  margin: 0 auto;
-//  h1 {
-//    font-size: calc(0.8vw + 20px);
-//    line-height: calc(0.8vw + 20px);
-//    color: #61dafb;
-//  }
-//  .title .content {
-//    display: flex;
-//    flex-direction: column;
-//    Button {
-//      align-self: flex-end;
-//    }
-//  }
-//}
+

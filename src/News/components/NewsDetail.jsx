@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/NewsDetail.scss';
-import { Button, Empty, Tag, Modal, Breadcrumb, Icon} from 'antd';
+import { Button, Empty, Tag, Breadcrumb, Icon, Divider, Avatar} from 'antd';
 import news_list from "../../mock/news_list"
 import { Link } from 'react-router-dom'
+import moment from 'moment';
 
 
 class NewsDetail extends Component {
@@ -10,7 +11,7 @@ class NewsDetail extends Component {
     super();
     this.state = {
       currentNews: {},
-      subscribed: false,
+      following: false,
       visible: false
     }
   }
@@ -20,72 +21,66 @@ class NewsDetail extends Component {
     // set subscribed
   }
 
-  handleClick = () => {
-    const currState = this.state.subscribed;
-    if (currState) {this.showModal()}
-    else {this.setState({subscribed: true})}
+  handleFollow = () => {
+    this.setState({following: !this.state.following});
   };
 
-  showModal = () => {
-    this.setState({
-      visible: true
-    })
-  };
-
-  handleOk = () => {
-    this.setState({subscribed: false});
-    this.setState({ visible: false });
-  };
-
-  handleCancel = () => {
-    this.setState({ visible: false });
+  renderBody = (body) => {
+    body = body.replace(new RegExp(/\r\n/g,'g'), '<br />');
+    return body.split('\n').map((item, index) =>
+        <span key={index}>
+          {item}
+          <br/>
+        </span>
+    )
   };
 
   render() {
-    const type = this.state.subscribed ? "default" : "primary";
-    const value = this.state.subscribed ? "Subscribed" : "Subscribe";
-    const tempDate = new Date();
     const {currentNews} = this.state;
-    if (!currentNews) {
+    const value = this.state.following ? "Unfollow" : "Follow";
+    const theme = this.state.following ? "filled" : "";
+
+
+    if (Object.keys(currentNews).length === 0) {
       return <div className="detail-container">
           <Empty/>
       </div>
     }
+
     return (
       <div className="detail-container">
         <div className="breadcrumb">
           <Breadcrumb>
             <Breadcrumb.Item><Link to="/"><Icon type="home"/> Home</Link></Breadcrumb.Item>
             <Breadcrumb.Item><Link to="/news"><Icon type="rise" /> Trend News</Link></Breadcrumb.Item>
-            <Breadcrumb.Item>Detail</Breadcrumb.Item>
+            <Breadcrumb.Item>{currentNews.title}</Breadcrumb.Item>
           </Breadcrumb>
         </div>
         <div className="title"><h1>{currentNews.title}</h1></div>
-        <div className="image">
-          <img alt="cover" src={currentNews.url}/>
-          <div className="tags">Category: <Tag color="cyan">cyan</Tag></div>
-          <div className="post-time">{tempDate.toString()}</div>
-          <div className="media">
-            <div className="source">Source: {currentNews.source}</div>
-            <div><Button type={type} size="small" onClick={this.handleClick}>{value}</Button></div>
+        <div className="article-info">
+          <Avatar size={64} src="https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png" />
+          <div className="article-subtitle">
+            <div className="source">{currentNews.source}</div>
+            <div className="post-time">Post Time: {moment().fromNow()}</div>
           </div>
-          <Modal
-            visible={this.state.visible}
-            onOk={this.handleOk}
-            onCancel={this.handleCancel}
-            footer={[
-              <Button key="Cancel" onClick={this.handleCancel}>Cancel</Button>,
-              <Button key="Unsubscribe" type="primary" onClick={this.handleOk}>
-                Unsubscribe
-              </Button>,
-            ]}
-          >
-            <p>Are you sure to Unsubscribe from {currentNews.source}</p>
-          </Modal>
+          <div className="article-follow">
+            <Button shape="round" onClick={this.handleFollow}>
+              <Icon type="star" theme={theme}/>
+              {value}
+            </Button>
+          </div>
         </div>
 
-        <br/>
-        <div className="content">{currentNews.temp}</div>
+
+        <div className="article-img">
+          <img alt="cover" src={currentNews.url}/>
+        </div>
+        <div className="tags">Category: <Tag color="cyan">cyan</Tag></div>
+        <div className="description">Description: {currentNews.description}</div>
+
+        <Divider/>
+        <div className="content">{this.renderBody(currentNews.body)}</div>
+        <Divider/>
       </div>
 
     )
