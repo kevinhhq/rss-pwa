@@ -12,12 +12,13 @@ class NewsList extends Component {
     this.state = {
       mockData: [],
       following: false,
-      visible: false,
+      category: "HEADLINE",
     }
   }
 
   componentDidMount() {
-      this.setState({mockData: news_list});
+    this.parseSearch(this.props);
+    this.setState({mockData: news_list});
       // TODO: here for PWA usage, the request must be in https, so it should be replaced to safe url.
       /*
     axios.get("http://my-json-server.typicode.com/DeepinSC/rss-pwa/news_list").then(
@@ -27,6 +28,15 @@ class NewsList extends Component {
     )
     */
   }
+
+  parseSearch = (props) => {
+    if (!props.location.search) return;
+    const search = props.location.search;
+    const params = new URLSearchParams(search);
+    if (params.get('category')) {
+      this.setState({category: params.get('category').toUpperCase()})
+    }
+  };
 
   handleFollow = () => {
     this.setState({following: !this.state.following});
@@ -49,7 +59,7 @@ class NewsList extends Component {
       <div className="container">
         <br/>
         <div className="list-headline">
-            <h1 className="list-title">Trend News</h1>
+            <h1 className="list-title">{this.state.category}</h1>
             <Button shape="round" onClick={this.handleFollow}>
               <Icon type="star" theme={theme}/>
               {value}

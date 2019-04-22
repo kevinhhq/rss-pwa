@@ -3,6 +3,12 @@ import {Drawer, Button, Menu, Icon} from 'antd';
 import "../styles/SideDrawer.scss";
 
 const SubMenu = Menu.SubMenu;
+const categories = [{key:"business", name:"Business", type:"dollar"},
+    {key:"technology", name:"Technology", type:"laptop"},
+    {key:"entertainment", name:"Entertainment", type:"coffee"},
+    {key:"sports", name:"Sports", type:"trophy"},
+    {key:"science", name:"Science", type:"experiment"},
+    {key:"health", name:"Health", type:"heart"},];
 
 class SideDrawer extends Component {
     state = { visible: false, placement: 'left' };
@@ -32,17 +38,12 @@ class SideDrawer extends Component {
             <Menu.Item key="1"><Icon type="eye" />My News</Menu.Item>
             <Menu.Item key="2"><Icon type="pushpin" />My Sites</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub2" title={<span><Icon type="solution" /><span>News</span></span>}>
-            <Menu.Item key="3"><Icon type="environment" />U.S.</Menu.Item>
-            <Menu.Item key="4"><Icon type="global" />World</Menu.Item>
-            <SubMenu key="sub3" title={<span><Icon type="appstore" />Categories</span>}>
-                <Menu.Item key="5"><Icon type="dollar" />Business</Menu.Item>
-                <Menu.Item key="6"><Icon type="laptop" />Technology</Menu.Item>
-                <Menu.Item key="7"><Icon type="coffee" />Entertainment</Menu.Item>
-                <Menu.Item key="8"><Icon type="trophy" />Sports</Menu.Item>
-                <Menu.Item key="9"><Icon type="experiment" />Science</Menu.Item>
-                <Menu.Item key="10"><Icon type="heart" />Health</Menu.Item>
-            </SubMenu>
+        <SubMenu key="sub2" title={<span><Icon type="solution" /><span>Categories</span></span>}>
+            {categories.map(item =>
+                <Menu.Item key={item.key}>
+                    <Icon type={item.type} />
+                    <a style={{display: "initial"}} href={`/news/?category=${item.key}`}>{item.name}</a>
+                </Menu.Item>)}
         </SubMenu>
     </Menu>;
 
