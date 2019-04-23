@@ -27,7 +27,7 @@ class NewsItem extends Component {
             </div>
             <div className="image">
               <Link to={{pathname: `/news/${this.props.item.id}`}}>
-                <Image address={this.props.item.img}/>
+                <Image address={this.props.item.img} source={this.props.item.source}/>
               </Link>
             </div>
           </div>
