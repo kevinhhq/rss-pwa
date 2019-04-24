@@ -24,10 +24,12 @@ app.use(express.urlencoded());
 var loaddata = require("./loaddata");
 var offline = require("./offline");
 var search = require("./search");
+var user = require("./user");
 
 app.use("/loaddata", loaddata);
 app.use("/offline", offline);
 app.use("/search", search);
+app.use("/user", user);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
