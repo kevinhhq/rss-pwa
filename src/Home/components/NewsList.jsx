@@ -66,9 +66,12 @@ class NewsList extends Component {
             <div>
                 <div>
                     <Tabs defaultActiveKey="1" onChange={this.callback}>
-                        <TabPane tab="Tab 1" key="1">{this.renderCard()}</TabPane>
-                        <TabPane tab="Tab 2" key="2">{this.renderCard()}</TabPane>
-                        <TabPane tab="Tab 3" key="3">{this.renderCard()}</TabPane>
+                        <TabPane tab="Business" key="1">{this.renderCard()}</TabPane>
+                        <TabPane tab="Technology" key="2">{this.renderCard()}</TabPane>
+                        <TabPane tab="Entertainment" key="3">{this.renderCard()}</TabPane>
+                        <TabPane tab="Sport" key="4">{this.renderCard()}</TabPane>
+                        <TabPane tab="Science" key="5">{this.renderCard()}</TabPane>
+                        <TabPane tab="Health" key="6">{this.renderCard()}</TabPane>
                     </Tabs>
                 </div>
             </div>

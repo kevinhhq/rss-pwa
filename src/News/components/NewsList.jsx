@@ -12,21 +12,37 @@ class NewsList extends Component {
     this.state = {
       mockData: [],
       following: false,
-      visible: false,
+      category: "HEADLINE",
     }
   }
 
   componentDidMount() {
-      this.setState({mockData: news_list});
-      // TODO: here for PWA usage, the request must be in https, so it should be replaced to safe url.
-      /*
-    axios.get("http://my-json-server.typicode.com/DeepinSC/rss-pwa/news_list").then(
-      res => {
-        this.setState({mockData: res.data})
-      }
-    )
-    */
+    this.parseSearch(this.props);
   }
+
+  parseSearch = (props) => {
+    if (!props.location.search) {
+      axios.get("http://localhost:5000/offline/").then(
+        res => {
+          this.setState({mockData: res.data})
+        }
+      );
+    }
+    else {
+      const search = props.location.search;
+      const params = new URLSearchParams(search);
+      if (params.get('category')) {
+        axios.get(`http://localhost:5000/offline/category/${params.get('category')}`).then(
+          res => {
+            this.setState({
+              mockData: res.data,
+              category: params.get('category').toUpperCase()
+            })
+          }
+        );
+      }
+    }
+  };
 
   handleFollow = () => {
     this.setState({following: !this.state.following});
@@ -35,9 +51,9 @@ class NewsList extends Component {
   render() {
     const value = this.state.following ? "Unfollow" : "Follow";
     const theme = this.state.following ? "filled" : "";
-
     let allNews;
     if (this.state.mockData.length !== 0) {
+      // change key to item.id once added
       allNews = this.state.mockData.map(item =>
         <div key={item.title}>
           <NewsItem item={item}/>
@@ -45,11 +61,12 @@ class NewsList extends Component {
         </div>
       );
     }
+    // let title = params.get('category') ? "HEADLINE" : params.get('category').toUpperCase();
     return (
       <div className="container">
         <br/>
         <div className="list-headline">
-            <h1 className="list-title">Trend News</h1>
+            <h1 className="list-title">{this.state.category}</h1>
             <Button shape="round" onClick={this.handleFollow}>
               <Icon type="star" theme={theme}/>
               {value}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
+import {BackTop} from 'antd';
 import HomeContainer from "./Appshell/components/HomeContainer";
 import Header from './Appshell/components/Header.jsx';
 import NewsDetail from './News/components/NewsDetail';
@@ -23,6 +24,7 @@ class App extends Component {
             <Redirect from="/rss-pwa/" to="/"/>
           </Switch>
         </Router>
+        <BackTop />
       </div>
     );
   }
