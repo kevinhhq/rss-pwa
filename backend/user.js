@@ -17,6 +17,22 @@ router.get("/", function(req, res) {
     );
 });
 
+router.get("/:id", function(req, res) {
+    var id = req.params.id;
+    var userReference = db.ref("/user"+id);
+    userReference.on(
+        "value",
+        function(snapshot) {
+            res.json(snapshot.val());
+            userReference.off("value");
+        },
+        function(errorObject) {
+            console.log("The read failed: " + errorObject.code);
+            res.send("The read failed: " + errorObject.code);
+        }
+    );
+});
+
 router.get("/:id/channel", function(req, res) {
     var id = req.params.id;
     var userReference = db.ref("/user/"+id + "/channel");
