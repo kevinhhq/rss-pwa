@@ -72,7 +72,7 @@ class NewsList extends Component {
             </Button>
         </div>
         <div className="list-container">
-          {allNews.length || <Empty/>}
+          {allNews || <Empty/>}
         </div>
         <Divider/>
       </div>
