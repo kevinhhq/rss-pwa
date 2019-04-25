@@ -17,7 +17,9 @@ class NewsDetail extends Component {
   }
 
   componentDidMount() {
-    this.setState({currentNews: news_list[this.props.match.params.id - 1]});
+    // need to get news by id
+
+    this.setState({currentNews: news_list[1]});
     // set subscribed
   }
 
