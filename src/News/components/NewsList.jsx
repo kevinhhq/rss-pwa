@@ -40,6 +40,28 @@ class NewsList extends Component {
           }
         );
       }
+
+      else if (params.get('news')) {
+        axios.get(`http://localhost:5000/offline/${params.get('news')}`).then(
+            res => {
+              this.setState({
+                mockData: res.data,
+                category: "SEARCH RESULT"
+              })
+            }
+        );
+      }
+
+      else if (params.get('site')) {
+        axios.get(`http://localhost:5000/offline/${params.get('site')}`).then(
+            res => {
+              this.setState({
+                mockData: res.data,
+                category: params.get('site').toUpperCase()
+              })
+            }
+        );
+      }
     }
   };
 
