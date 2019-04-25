@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/NewsList.scss';
-import news_list from "../../mock/news_list"
-import {Button, Divider, Icon} from 'antd';
+import {Button, Divider, Icon, Empty} from 'antd';
 import axios from "axios";
 import NewsItem from './NewsItem'
 
@@ -51,7 +50,7 @@ class NewsList extends Component {
   render() {
     const value = this.state.following ? "Unfollow" : "Follow";
     const theme = this.state.following ? "filled" : "";
-    let allNews;
+    let allNews = [];
     if (this.state.mockData.length !== 0) {
       // change key to item.id once added
       allNews = this.state.mockData.map(item =>
@@ -73,7 +72,7 @@ class NewsList extends Component {
             </Button>
         </div>
         <div className="list-container">
-          {allNews}
+          {allNews.length || <Empty/>}
         </div>
         <Divider/>
       </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Tag, Empty} from 'antd';
+import {Tag} from 'antd';
 import '../styles/NewsItem.scss'
 import { Link } from 'react-router-dom'
 import Image from './Image'

@@ -5,4 +5,14 @@
   .ant-card{
     min-width: 32%;
   }
+  .ant-card-meta-title {
+    overflow: visible;
+    text-overflow: initial;
+    white-space: normal;
+  }
+  .ant-card-cover {
+    img {
+      height: 200px;
+    }
+  }
 }

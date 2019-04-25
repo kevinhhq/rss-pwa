@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Home.scss';
 import "../styles/HomeContainer.scss"
-import { Input, Select, Divider } from 'antd';
+import { Input, Select, Divider, message } from 'antd';
 import NewsList from '../../Home/components/NewsList.jsx'
 import SiteList from '../../Home/components/SiteList.jsx'
 import '../styles/Home.scss';
@@ -13,12 +13,32 @@ const Search = Input.Search;
 
 class HomeContainer extends Component {
 
+    state = {
+        input: "",
+        select: "news",
+    };
+
     selectBefore = () =>
-        <Select defaultValue="News" style={{width: 90}}>
-            <Option value="News">News</Option>
-            <Option value="Site">Site</Option>
+        <Select defaultValue={this.state.select} style={{width: 90}} onChange={this.onSelectChange}>
+            <Option value="news">News</Option>
+            <Option value="site">Site</Option>
         </Select>;
 
+    onSelectChange = (val) => {
+        this.setState({select: val});
+    };
+
+    onInputChange = (e) => {
+        this.setState({input: e.target.value});
+    };
+
+    onInputSubmit = () => {
+        if (!this.state.input) {
+            message.error("Input cannot be empty!");
+            return
+        }
+        window.location.href =`/news/?${this.state.select}=${this.state.input}`;
+    };
 
     render() {
         return(
@@ -34,7 +54,11 @@ class HomeContainer extends Component {
                             </h1>
                         </div>
                         <div className="search-bar">
-                            <Search addonBefore={this.selectBefore()} placeholder="input search text"/>
+                            <Search addonBefore={this.selectBefore()}
+                                    placeholder="input search text"
+                                    onChange={this.onInputChange}
+                                    onSearch={this.onInputSubmit}
+                            />
                         </div>
                     </section>
                     <section className="home-sections">
