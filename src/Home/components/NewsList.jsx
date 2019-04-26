@@ -48,7 +48,7 @@ class NewsList extends Component {
 
        return <div className="news-card-list">
            {this.state.news.map((news,index) =>
-                <Link key={index} to={{pathname: `/news/${news.id}`, state: {news: news}}}>
+                <Link key={index} to={{pathname: `/news/${news.newsId}`, state: {news: news}}}>
                     <Card
                         key={index}
                         hoverable
@@ -76,7 +76,7 @@ class NewsList extends Component {
                         <TabPane tab="Business" key="business">{this.renderCard()}</TabPane>
                         <TabPane tab="Technology" key="technology">{this.renderCard()}</TabPane>
                         <TabPane tab="Entertainment" key="entertainment">{this.renderCard()}</TabPane>
-                        <TabPane tab="Sport" key="sport">{this.renderCard()}</TabPane>
+                        <TabPane tab="Sports" key="sports">{this.renderCard()}</TabPane>
                         <TabPane tab="Science" key="science">{this.renderCard()}</TabPane>
                         <TabPane tab="Health" key="health">{this.renderCard()}</TabPane>
                     </Tabs>

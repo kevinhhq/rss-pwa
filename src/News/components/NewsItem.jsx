@@ -18,7 +18,7 @@ class NewsItem extends Component {
       return (
           <div className="round-container">
             <div className="content">
-              <Link to={{pathname: `/news/${this.props.item.id}`}}>
+              <Link to={{pathname: `/news/${this.props.item.newsId}`}}>
                 <div className="title">{this.props.item.title}</div>
               </Link>
               <div className="post-time">Posted at: {this.props.item.time}</div>
@@ -26,7 +26,7 @@ class NewsItem extends Component {
               <div className="tags">Hashtags: {tags}</div>
             </div>
             <div className="image">
-              <Link to={{pathname: `/news/${this.props.item.id}`}}>
+              <Link to={{pathname: `/news/${this.props.item.newsId}`}}>
                 <Image address={this.props.item.img} source={this.props.item.source}/>
               </Link>
             </div>

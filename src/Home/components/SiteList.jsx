@@ -15,8 +15,7 @@ class SiteList extends Component {
     menu = () => (
         <Menu onClick={this.onClick}>
             <Menu.Item key="1"><Icon type="plus" />Follow</Menu.Item>
-            <Menu.Item key="2"><Icon type="close" />Not interested</Menu.Item>
-            <Menu.Item key="3"><Icon type="link" />View the site</Menu.Item>
+            <Menu.Item key="2"><Icon type="link" />View the site</Menu.Item>
         </Menu>
     );
 
