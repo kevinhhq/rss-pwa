@@ -10,6 +10,8 @@ class NewsList extends Component {
     super();
     this.state = {
       mockData: [],
+      display: [],
+      count: 1,
       following: false,
       category: "HEADLINE",
     }
@@ -23,7 +25,10 @@ class NewsList extends Component {
     if (!props.location.search) {
       axios.get("http://localhost:5000/offline/").then(
         res => {
-          this.setState({mockData: res.data})
+          this.setState({
+            mockData: res.data,
+            display: res.data.slice(0, 10)
+          })
         }
       );
     }
@@ -35,6 +40,7 @@ class NewsList extends Component {
           res => {
             this.setState({
               mockData: res.data,
+              display: res.data.slice(0, 10),
               category: params.get('category').toUpperCase()
             })
           }
@@ -69,13 +75,22 @@ class NewsList extends Component {
     this.setState({following: !this.state.following});
   };
 
+  handleMore = () => {
+    const currCount = this.state.count + 1;
+    const currNews = this.state.mockData.slice(0, 10*currCount);
+    this.setState({
+      count: currCount,
+      display: currNews
+    })
+  };
+
   render() {
     const value = this.state.following ? "Unfollow" : "Follow";
     const theme = this.state.following ? "filled" : "";
-    let allNews = [];
-    if (this.state.mockData.length !== 0) {
+    let displayNews = [];
+    if (this.state.display.length !== 0) {
       // change key to item.id once added
-      allNews = this.state.mockData.map(item =>
+      displayNews = this.state.display.map(item =>
         <div key={item.title}>
           <NewsItem item={item}/>
           <br/>
@@ -94,9 +109,15 @@ class NewsList extends Component {
             </Button>
         </div>
         <div className="list-container">
-          {allNews || <Empty/>}
+          {displayNews || <Empty/>}
         </div>
-        <Divider/>
+        <div className="read-more">
+          <Button onClick={this.handleMore}>
+            Read More
+            <Icon type="down"/>
+          </Button>
+        </div>
+        <br/>
       </div>
 
     );
