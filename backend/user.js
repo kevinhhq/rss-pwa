@@ -55,30 +55,33 @@ router.get("/:id", function(req, res) {
 
 
 router.put("/:id", function(req, res) {
+  console.log("req!!!!!!",req);
     var name=JSON.stringify(req.body.name).replace(/\"/g, "");
     var type=JSON.stringify(req.body.type).replace(/\"/g, "");
-    console.log(name,type)
+    console.log(name,type);
     var uid=req.params.id;
     var userReference = db.ref("/user");
     userReference.orderByChild("uid").equalTo(uid).on(
         "child_added",
         function(snapshot) {
-            var key_id=snapshot.key
+            var key_id=snapshot.key;
             var currentdata=snapshot.val().channel;
-            var flag=0;
-            console.log(currentdata)
-            for(let i in currentdata){
-                console.log(currentdata)
-                if(currentdata[i].name===name&&currentdata[i].type===type){
-                    delete (currentdata[i])
-                    flag=1;
-                    break;
+            if (!snapshot.hasChild("channel")) {
+              currentdata = {};
+              currentdata[name]= {"type": type};
+            } else {
+              var flag = 0;
+              for (const i in currentdata) {
+                if (i === name && currentdata[i].type === type) {
+                  delete (currentdata[i]);
+                  flag = 1;
+                  break;
                 }
+              }
+              if (flag === 0) {
+                currentdata[name] = {"type": type};
+              }
             }
-            if(flag===0){
-                currentdata[name]=({"name":name,"type":type});
-            }
-
             db.ref("/user/"+key_id).update({
                 channel: currentdata,
             })

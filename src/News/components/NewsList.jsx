@@ -22,6 +22,7 @@ class NewsList extends Component {
   }
 
   componentDidMount() {
+    this.isFollow(this.props);
     this.parseSearch(this.props);
   }
 
@@ -66,12 +67,12 @@ class NewsList extends Component {
         );
       }
 
-      else if (params.get('site')) {
-        axios.get(`http://localhost:5000/offline/${params.get('site')}`).then(
+      else if (params.get('source')) {
+        axios.get(`http://localhost:5000/offline/${params.get('source')}`).then(
             res => {
               this.setState({
                 news: res.data || [],
-                category: params.get('site').toUpperCase(),
+                category: params.get('source').toUpperCase(),
                 loading: false
               })
             }
@@ -80,10 +81,22 @@ class NewsList extends Component {
     }
   };
 
+  getType = (props) => {
+    if (!props.location) {
+      return "other";
+    }
+    const search = props.location.search;
+    const params = new URLSearchParams(search);
+    if (params.get('news')) return "news";
+    if (params.get('category')) return "category";
+    if (params.get('source')) return "source";
+    return "other";
+  };
+
 
   handleFollow = () => {
     axios.put(`http://localhost:3000/api/user/${UserStore.user.uid}`,
-        {channel: this.state.category.toLowerCase()}).then(res => {
+        {name: this.state.category.toLowerCase(), type: this.getType(this.props)}).then(res => {
       this.setState({following: !this.state.following});
     }).catch(err =>
         message.error(err)
@@ -99,14 +112,25 @@ class NewsList extends Component {
     })
   };
 
+  isFollow = () => {
+    if (!UserStore.user.channels) return false;
+    let key = 'headline';
+    if (this.props.location) {
+      const search = this.props.location.search;
+      const params = new URLSearchParams(search);
+      key = params.get('news') || params.get('category') || params.get('source') || 'headline';
+    }
+
+    return (key in UserStore.user.channels) || this.state.following;
+  };
+
   render() {
-    const value = this.state.following ? "Unfollow" : "Follow";
-    const theme = this.state.following ? "filled" : "";
+
     let displayNews = [];
     if (this.state.display.length !== 0) {
       // change key to item.id once added
-      displayNews = this.state.display.map(item =>
-        <div key={item.title}>
+      displayNews = this.state.display.map((item, index) =>
+        <div key={index}>
           <NewsItem item={item}/>
           <br/>
         </div>
@@ -118,12 +142,12 @@ class NewsList extends Component {
         <div className="list-headline">
             <h1 className="list-title">{this.state.category}</h1>
             <Button shape="round" onClick={this.handleFollow} disabled={UserStore.user.isAnonymous}>
-              <Icon type="star" theme={theme}/>
-              {value}
+              <Icon type="star" theme={this.isFollow() ? "filled" : ""}/>
+              {this.isFollow() ? "Unfollow" : "Follow"}
             </Button>
         </div>
         <div className="list-container">
-          {this.state.loading ?
+          {(this.state.loading || UserStore.state.loading) ?
               <div>
                 <Skeleton/>
                 <Skeleton/>

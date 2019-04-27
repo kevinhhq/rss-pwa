@@ -11,8 +11,8 @@ class NewsItem extends Component {
   render() {
       let tags;
       if (this.props.item.hashtags) {
-        tags = this.props.item.hashtags.map(item =>
-          <Tag color="cyan">{item}</Tag>
+        tags = this.props.item.hashtags.map((item, index) =>
+          <Tag color="cyan" key={index}>{item}</Tag>
         )
       }
       return (
