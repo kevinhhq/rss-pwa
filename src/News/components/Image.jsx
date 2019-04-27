@@ -30,7 +30,7 @@ class Image extends Component {
           </Avatar>
       }
       else {
-        item = <div></div>;
+        item = null;
       }
     }
     else {
