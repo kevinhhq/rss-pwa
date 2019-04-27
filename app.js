@@ -12,6 +12,23 @@ let newsRouter = require('./routes/news');
 let app = express();
 let port = process.env.PORT || 8000;
 
+app.use(bodyParser.json());
+app.use(
+    bodyParser.urlencoded({
+      extended: true
+    })
+);
+
+const loaddata = require("./backend/loaddata.js");
+const offline = require("./backend//offline.js");
+const search = require("./backend//search.js");
+const user = require("./backend//user.js");
+
+app.use("/api/loaddata", loaddata);
+app.use("/api/offline", offline);
+app.use("/api/search", search);
+app.use("/api/user", user);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

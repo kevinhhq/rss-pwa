@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const db = require("./firebase");
-var admin = require('firebase-admin');
+const admin = require('firebase-admin');
 
 router.post("/register", function(req, res) {
     admin.auth().createUser({
@@ -34,7 +34,7 @@ router.post("/register", function(req, res) {
         .catch(function (error) {
             console.log("Error creating new user:", error);
         });
-})
+});
 router.get("/:id", function(req, res) {
     var uid=req.params.id;
     var userReference = db.ref("/user");
@@ -61,8 +61,8 @@ router.put("/:id", function(req, res) {
     userReference.orderByChild("uid").equalTo(uid).on(
         "child_added",
         function(snapshot) {
-            var key_id=snapshot.key
-            var currentdata=snapshot.val().channel
+            var key_id=snapshot.key;
+            var currentdata=snapshot.val().channel;
             var list=currentdata.split(',');
             var flag=0;
             if(list===null||list[0]===currentdata){
@@ -73,7 +73,7 @@ router.put("/:id", function(req, res) {
                     list.splice(0,0,channel);
             }
             else {
-                n=list.length
+                const n=list.length;
                 for (var i = 0; i < n; i++)
                     if (list[i] === channel) {
                         list.splice(i, 1);
@@ -86,7 +86,7 @@ router.put("/:id", function(req, res) {
             }
             db.ref("/user/"+key_id).update({
                 channel: list.toString(),
-            })
+            });
             res.send("Update Done");
             userReference.off("child_added");
         },
