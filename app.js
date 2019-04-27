@@ -54,7 +54,8 @@ app.use('/static', express.static(path.join(__dirname, 'build/static')));
 app.use('/', indexRouter);
 app.use('/news/', newsRouter);
 app.use(/\/news\/.*/, newsRouter);
-app.use(/\/profile\/.*/, newsRouter);// regex, /news/ + any character
+app.use(/\/profile\/.*/, newsRouter);
+app.use(/\/about\/.*/, newsRouter);// regex, /news/ + any character
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
