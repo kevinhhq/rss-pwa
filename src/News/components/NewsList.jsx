@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/NewsList.scss';
-import news_list from "../../mock/news_list"
-import {Button, Divider, Icon} from 'antd';
+import {Button, Divider, Icon, Empty} from 'antd';
 import axios from "axios";
 import NewsItem from './NewsItem'
 
@@ -10,7 +9,9 @@ class NewsList extends Component {
   constructor(){
     super();
     this.state = {
-      mockData: [],
+      news: [],
+      display: [],
+      count: 1,
       following: false,
       category: "HEADLINE",
     }
@@ -24,7 +25,10 @@ class NewsList extends Component {
     if (!props.location.search) {
       axios.get("http://localhost:5000/offline/").then(
         res => {
-          this.setState({mockData: res.data})
+          this.setState({
+            news: res.data,
+            display: res.data.slice(0, 10)
+          })
         }
       );
     }
@@ -35,10 +39,33 @@ class NewsList extends Component {
         axios.get(`http://localhost:5000/offline/category/${params.get('category')}`).then(
           res => {
             this.setState({
-              mockData: res.data,
+              news: res.data,
+              display: res.data.slice(0, 10),
               category: params.get('category').toUpperCase()
             })
           }
+        );
+      }
+
+      else if (params.get('news')) {
+        axios.get(`http://localhost:5000/offline/${params.get('news')}`).then(
+            res => {
+              this.setState({
+                news: res.data,
+                category: "SEARCH RESULT"
+              })
+            }
+        );
+      }
+
+      else if (params.get('site')) {
+        axios.get(`http://localhost:5000/offline/${params.get('site')}`).then(
+            res => {
+              this.setState({
+                news: res.data,
+                category: params.get('site').toUpperCase()
+              })
+            }
         );
       }
     }
@@ -48,13 +75,22 @@ class NewsList extends Component {
     this.setState({following: !this.state.following});
   };
 
+  handleMore = () => {
+    const currCount = this.state.count + 1;
+    const currNews = this.state.news.slice(0, 10*currCount);
+    this.setState({
+      count: currCount,
+      display: currNews
+    })
+  };
+
   render() {
     const value = this.state.following ? "Unfollow" : "Follow";
     const theme = this.state.following ? "filled" : "";
-    let allNews;
-    if (this.state.mockData.length !== 0) {
+    let displayNews = [];
+    if (this.state.display.length !== 0) {
       // change key to item.id once added
-      allNews = this.state.mockData.map(item =>
+      displayNews = this.state.display.map(item =>
         <div key={item.title}>
           <NewsItem item={item}/>
           <br/>
@@ -73,9 +109,19 @@ class NewsList extends Component {
             </Button>
         </div>
         <div className="list-container">
-          {allNews}
+          {displayNews || <Empty/>}
         </div>
-        <Divider/>
+        <Divider>
+          {this.state.news.length === this.state.display.length ?
+              "No more content" :
+            <div className="read-more">
+              <Button onClick={this.handleMore} style={{border: "none"}}>
+                Read More
+                <Icon type="down"/>
+              </Button>
+            </div>
+          }
+        </Divider>
       </div>
 
     );

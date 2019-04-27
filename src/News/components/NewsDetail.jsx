@@ -54,7 +54,7 @@ class NewsDetail extends Component {
         <div className="breadcrumb">
           <Breadcrumb>
             <Breadcrumb.Item><Link to="/"><Icon type="home"/> Home</Link></Breadcrumb.Item>
-            <Breadcrumb.Item><Link to="/news"><Icon type="rise" /> Trend News</Link></Breadcrumb.Item>
+            <Breadcrumb.Item><Link to="/news"><Icon type="rise" /> News</Link></Breadcrumb.Item>
             <Breadcrumb.Item>{currentNews.title}</Breadcrumb.Item>
           </Breadcrumb>
         </div>

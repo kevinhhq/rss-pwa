@@ -27,7 +27,7 @@ class Image extends Component {
         </Avatar>
       : <img alt="logo" src={this.props.address} onError={this.handleError}/>;
     return (
-      <div>{item}</div>
+      item
     )
   }
 }
