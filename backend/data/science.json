@@ -1,0 +1,709 @@
+{
+  "status": "ok",
+  "totalResults": 70,
+  "science": [
+    {
+      "source": { "id": null, "name": "Theguardian.com" },
+      "author": "Robin McKie",
+      "title": "Battle to save frogs from global killer disease - The Guardian",
+      "description": "Amphibians are under attack from multiple pathogens, say experts",
+      "url": "https://www.theguardian.com/environment/2019/apr/20/battle-to-save-frogs-from-global-killer-disease-amphibians-pathogens",
+      "urlToImage": "https://i.guim.co.uk/img/media/30a30dd4c42b873e7189738d61350737e3af7d2b/303_1003_4189_2513/master/4189.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdG8tZGVmYXVsdC5wbmc&s=f05d8172f985a811a1f2f05da643a079",
+      "publishedAt": "2019-04-20T12:59:00Z",
+      "content": "Frogs, salamanders, and toads across the world are now under attack from a widening range of interacting pathogens that threaten to devastate global amphibian populations.\r\nThat is the stark warning of leading zoological experts who will gather this week in L… [+3304 chars]"
+    },
+    {
+      "source": { "id": "business-insider", "name": "Business Insider" },
+      "author": "Aylin Woodward",
+      "title": "We're altering the climate so severely that we'll soon face apocalyptic consequences. Here are 9 last-ditch ways we could hack the planet to reverse that trend. - Business Insider",
+      "description": "Geoengineering technology — ways to capture carbon or reflect sunlight from the atmosphere — might become the key to keeping the planet cool.",
+      "url": "https://www.businessinsider.com/geoengineering-how-to-reverse-climate-change-2019-4",
+      "urlToImage": "https://amp.businessinsider.com/images/5cb6256f8622460870534695-1920-960.jpg",
+      "publishedAt": "2019-04-20T12:46:36Z",
+      "content": "Oceans are hotter than they've ever been in recorded history. Ice Sheets are melting at unprecedented rates. Sea-level rise threatens countless species, coastal cities, and local economies. \r\n As researchers' warnings about the consequences of climate change … [+1466 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Indianexpress.com" },
+      "author": "PTI",
+      "title": "Artificial intelligence may help develop clean, limitless fusion energy - The Indian Express",
+      "description": "Artificial intelligence (AI) may help develop safe, clean and virtually limitless fusion energy for generating electricity, scientists say.",
+      "url": "https://indianexpress.com/article/technology/science/artificial-intelligence-may-help-develop-clean-limitless-fusion-energy-5685825/",
+      "urlToImage": "https://images.indianexpress.com/2019/04/fusion-energy-759.jpg?w=759",
+      "publishedAt": "2019-04-20T10:55:04Z",
+      "content": "A team, including researchers from Princeton University and Harvard University, are applying deep learning to forecast sudden disruptions that can halt fusion reactions and damage the doughnut-shaped tokamaks or apparatus that house the reactions. (Image sour… [+2240 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Interestingengineering.com" },
+      "author": "",
+      "title": "Watch the Lyrid Meteor Shower Light up the Night Sky This Weekend - Interesting Engineering",
+      "description": "The meteor shower happens every year around the same time and will peak this weekend, streaking across the night sky.",
+      "url": "https://interestingengineering.com/watch-the-lyrid-meteor-shower-light-up-the-night-sky-this-weekend",
+      "urlToImage": "https://static.interestingengineering.com/images/APRIL/sizes/lyrids-meteorshower_md.jpg",
+      "publishedAt": "2019-04-20T10:31:07Z",
+      "content": "Do April showers bring May flowers? Perhaps these might not be the showers you imagine, but you get the idea. If you are looking for something to do on the this long Easter weekend besides watching another episode of Game of Thrones, why not check out The Lyr… [+2397 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Wtop.com" },
+      "author": "CNN",
+      "title": "Neil Armstrong’s spacesuit to display at Smithsonian, 50 years after moon launch - WTOP",
+      "description": "After years of painstaking conservation, Neil Armstrong’s Apollo 11 spacesuit will be shown this summer at the Smithsonian’s National Air and Space Museum to celebrate the 50th anniversary of the historic moon mission.",
+      "url": "https://wtop.com/dc/2019/04/neil-armstrongs-spacesuit-to-display-at-smithsonian-50-years-after-moon-launch/",
+      "urlToImage": "https://wtop.com/wp-content/uploads/2019/04/S108128113-300.jpg",
+      "publishedAt": "2019-04-20T10:28:28Z",
+      "content": "After years of painstaking conservation, Neil Armstrong’s Apollo 11 spacesuit will be shown this summer at the Smithsonian’s National Air and Space Museum to celebrate the 50th anniversary of the historic moon mission.\r\nIt will go on display July 16, exactly … [+845 chars]"
+    },
+    {
+      "source": { "id": "the-new-york-times", "name": "The New York Times" },
+      "author": null,
+      "title": "Watch a Flower That Seems to Remember When Pollinators Will Come Calling - The New York Times",
+      "description": "A colorful Peruvian plant dispenses its pollen according to a savvy, memory-based system, new research suggests.",
+      "url": "https://www.nytimes.com/2019/04/20/science/plants-moving-memory.html",
+      "urlToImage": "https://static01.nyt.com/images/2019/04/19/science/19tb-plants-video-still/19tb-plants-video-still-facebookJumbo.png",
+      "publishedAt": "2019-04-20T09:00:09Z",
+      "content": "Can you remember what you did yesterday? If not, you might want to take a lesson from Nasa poissoniana, a star-shaped flowering plant from the Peruvian Andes with an unusual skill set.\r\nThese plants can gymnastically wave around their stamens the organs they … [+963 chars]"
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "Sam Walker",
+      "title": "Behind the Black-Hole Image: One Giant Leap for Teamwork - The Wall Street Journal",
+      "description": "In pursuit of an astronomical breakthrough, a global team of scientists used conflict, dissent and relentless bias-testing to produce the first-ever image of a black hole.",
+      "url": "https://www.wsj.com/articles/behind-the-black-hole-image-one-giant-leap-for-teamwork-11555732805",
+      "urlToImage": "https://si.wsj.net/public/resources/images/B3-DT689_CAPTAI_SOC_20190419132141.jpg",
+      "publishedAt": "2019-04-20T04:00:00Z",
+      "content": "In the mid-1990s, Sheperd Doeleman, a doctoral student in astrophysics at MIT, became fixated on a radical idea. He thought it might be possible to take a picture of a black hole. \r\nIn a literal sense, the answer was no, its notdont be ridiculous. Black holes… [+268 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Interestingengineering.com" },
+      "author": "",
+      "title": "Hubble Space Telescope Turns 29 With Jaw-dropping Image - Interesting Engineering",
+      "description": "The Hubble Space Telescope is celebrating its 29th birthday with the release of a stunning image of the Southern Crab Nebula. The nebula is made of two different aged stars.",
+      "url": "https://interestingengineering.com/hubble-space-telescope-turns-29-with-jaw-dropping-image",
+      "urlToImage": "https://static.interestingengineering.com/images/APRIL/sizes/southern_crab_nebula_lead_md.jpg",
+      "publishedAt": "2019-04-20T03:32:51Z",
+      "content": "The Hubble Space Telescope is celebrating its 29th birthday, and to mark the occasion it took this breathtaking shot of the crab nebula. The NASA/ESA Hubble space telescope was launched on 24 April 1990.  It has captured images of the universe that have not o… [+2774 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Express.co.uk" },
+      "author": "Abbie Llewelyn",
+      "title": "Pink Moon 2019: Is the moon pink today? What does it mean? - Express.co.uk",
+      "description": "STARGAZERS are greeted tonight with the annual Pink Moon, which is the April Full Moon - but will the Moon turn pink?",
+      "url": "https://www.express.co.uk/news/science/1116591/Pink-Moon-2019-why-is-the-moon-pink-today-tonight-what-does-it-mean",
+      "urlToImage": "https://cdn.images.express.co.uk/img/dynamic/151/750x445/1116591.jpg",
+      "publishedAt": "2019-04-19T23:36:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": null, "name": "Sciencealert.com" },
+      "author": "Evan Gough, Universe Today",
+      "title": "NASA's New Planet-Hunting Telescope Just Found Its First Earth-Sized World - ScienceAlert",
+      "description": "NASA's new planet-hunting telescope, TESS (Transiting Exoplanet Survey Satellite), just found its first Earth-sized world.",
+      "url": "https://www.sciencealert.com/nasa-s-new-planet-hunting-telescope-just-found-its-first-earth-sized-alien-world",
+      "urlToImage": "https://www.sciencealert.com/images/2019-04/processed/TESSfirstEarthworld_web_1024.jpg",
+      "publishedAt": "2019-04-19T22:53:56Z",
+      "content": "NASA's new planet-hunting telescope, TESS (Transiting Exoplanet Survey Satellite), just found its first Earth-sized world.\r\nThough the Earth-sized planet, and its hot sub-Neptune companion, were first observed by TESS in January 2019, it's taken until now to … [+5999 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Nasa.gov" },
+      "author": null,
+      "title": "How Scientists Captured the First Image of a Black Hole - Teachable Moments - NASA/JPL Edu News",
+      "description": "In the NewsAccomplishing what was previously thought to be impossible, a team of international astronomers has captured an image of a black hole’s silhouette. Evidence of the existence of black holes – mysterious places in space where nothing, not even light,…",
+      "url": "https://www.jpl.nasa.gov/edu/news/2019/4/19/how-scientists-captured-the-first-image-of-a-black-hole/",
+      "urlToImage": "https://www.jpl.nasa.gov/images/universe/20190410/blackhole20190410.jpg",
+      "publishedAt": "2019-04-19T22:35:05Z",
+      "content": "In the News\r\nAccomplishing what was previously thought to be impossible, a team of international astronomers has captured an image of a black holes silhouette. Evidence of the existence of black holes mysterious places in space where nothing, not even light, … [+11697 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Atlasobscura.com" },
+      "author": "ugc",
+      "title": "Potash Evaporation Ponds – Moab, Utah - Atlas Obscura",
+      "description": "Few things look more out of place than the electric blue ponds in the reddish-brown desert of Utah.",
+      "url": "https://www.atlasobscura.com/places/potash-evaporation-ponds",
+      "urlToImage": "https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzFiZmQzNTI5LTQ4YTItNDc4OS04ZTE2LTc3YWEwZDAyZjJhYTZhNWUxNmZhMzIyY2ZhMWQwYl9Qb3Rhc2hfRXZhcG9yYXRpb25fUG9uZHNfTW9hYl8zLmpwZyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCI2MDB4PiJdXQ/Potash_Evaporation_Ponds_Moab_3.jpg",
+      "publishedAt": "2019-04-19T22:01:06Z",
+      "content": "In order to extract potassium chloride, also known as potash, from the desert landscapes of Utah, Intrepid Potash, Inc. uses a series of evaporation pools whose dazzlingly blue waters lie in stark contrast to the red desert surrounding them.\r\nIntrepid Potash,… [+1453 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Space.com" },
+      "author": "https://www.facebook.com/spacecom",
+      "title": "Here's How to Share Your 'Earth Day' Photos with NASA - Space.com",
+      "description": "NASA wants your photos of Earth's natural beauty.",
+      "url": "https://www.space.com/earth-day-2019-nasa-photo-campaign.html",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/fDNnnREvD5v7rFwrgtwuDM-1200-80.jpg",
+      "publishedAt": "2019-04-19T22:00:00Z",
+      "content": "NASA has a new social media campaign to gear up its audience for Earth Day\r\n, an annual event to celebrate our planet – and the importance of protecting the environment – on Monday (April 22).\r\nSocial media users on Instagram, Twitter and the NASA Earth Faceb… [+1867 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Thrillist.com" },
+      "author": "Caitlyn Hitt",
+      "title": "A Lunar Lander Sent a Spectacular Last Photo Before Crashing Into the Moon - Thrillist",
+      "description": "",
+      "url": "https://www.thrillist.com/news/nation/israels-beresheet-moon-lander-last-photo-before-crash",
+      "urlToImage": "https://assets3.thrillist.com/v1/image/2819887/size/tmg-facebook_social.jpg",
+      "publishedAt": "2019-04-19T21:40:50Z",
+      "content": "Beresheet launched to Earth orbit after hitching a ride on a SpaceX Falcon 9 rocket on February 21. It spent the next six weeks performing maneuvers called engine burns to get closer to the moon. On April 4, it finally entered the moons orbit, making Israel o… [+997 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Sciencedaily.com" },
+      "author": null,
+      "title": "Thermodynamic magic enables cooling without energy consumption - Science Daily",
+      "description": "Physicists have developed an amazingly simple device that allows heat to flow temporarily from a cold to a warm object without an external power supply. Intriguingly, the process initially appears to contradict the fundamental laws of physics.",
+      "url": "https://www.sciencedaily.com/releases/2019/04/190419165531.htm",
+      "urlToImage": "/images/2019/04/190419165531_1_540x360.jpg",
+      "publishedAt": "2019-04-19T21:23:26Z",
+      "content": "Physicists at the University of Zurich have developed an amazingly simple device that allows heat to flow temporarily from a cold to a warm object without an external power supply. Intriguingly, the process initially appears to contradict the fundamental laws… [+3983 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Discovermagazine.com" },
+      "author": null,
+      "title": "NASA Announces Upcoming ISS Crews, Which Won't Fly Commercial - D-brief - Discover Magazine",
+      "description": "NASA extends astronaut stays and pays Russia for more Soyuz flights while it waits for Boeing and SpaceX to provide long-awaited commercial crew options.",
+      "url": "http://blogs.discovermagazine.com/d-brief/2019/04/19/nasa-announces-upcoming-iss-crews-which-wont-fly-commercial/",
+      "urlToImage": "http://blogs.discovermagazine.com/d-brief/files/2019/04/19-030_koch_0-1024x683.jpg",
+      "publishedAt": "2019-04-19T20:11:41Z",
+      "content": "NASA astronaut Christina Koch will break the record for the longest-duration spaceflight for a woman. (Credit: NASA)\r\nEver since the space shuttle retired in 2011, NASA has been paying Russia for rides to the International Space Station. They’d hoped that dep… [+3610 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Serena Stern",
+      "title": "A universal framework combining genome annotation and undergraduate education - Phys.org",
+      "description": "As genome sequencing becomes cheaper and faster, resulting in an exponential increase in data, the need for efficiency in predicting gene function is growing, as is the need to train the next generation of scientists in bioinformatics. Researchers in the lab …",
+      "url": "https://phys.org/news/2019-04-universal-framework-combining-genome-annotation.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/auniversalfr.jpg",
+      "publishedAt": "2019-04-19T19:51:08Z",
+      "content": "As genome sequencing becomes cheaper and faster, resulting in an exponential increase in data, the need for efficiency in predicting gene function is growing, as is the need to train the next generation of scientists in bioinformatics. Researchers in the lab … [+4205 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Mymodernmet.com" },
+      "author": null,
+      "title": "Researchers Come Up With Ingenious Way of Moving Heavy Stones - My Modern Met",
+      "description": "Ever wonder how ancient civilizations built giant monuments without machines? These researchers may have cracked the code.",
+      "url": "https://mymodernmet.com/matter-design-moving-heavy-stones/",
+      "urlToImage": "https://mymodernmet.com/wp/wp-content/uploads/2019/04/design-matters-moving-rocks-thumbnail.jpg",
+      "publishedAt": "2019-04-19T19:15:38Z",
+      "content": null
+    },
+    {
+      "source": { "id": "ars-technica", "name": "Ars Technica" },
+      "author": "Scott K. Johnson",
+      "title": "Surprise! Satellites show that thermometers don’t lie - Ars Technica",
+      "description": "If anything, Aqua satellite data actually shows slightly more warming.",
+      "url": "https://arstechnica.com/science/2019/04/surprise-satellites-show-that-thermometers-dont-lie/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2019/04/weather_station_raymond_shobe-760x380.jpg",
+      "publishedAt": "2019-04-19T19:15:00Z",
+      "content": "Enlarge/ Official weather stations are more standardized than this consumer one, which helps them track global temperature trends.\r\n60 with 27 posters participating\r\nTaking a humans temperature is easy. Taking a pets temperature is similarly straightforward, … [+4111 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Sciencemag.org" },
+      "author": null,
+      "title": "Sodium batteries are one step closer to saving you from a mobile phone fire - Science Magazine",
+      "description": "New flexible electrodes help solid-state batteries last longer",
+      "url": "https://www.sciencemag.org/news/2019/04/sodium-batteries-are-one-step-closer-saving-you-mobile-phone-fire",
+      "urlToImage": "https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/sodium_16x9.jpg?itok=7GWMEE9D",
+      "publishedAt": "2019-04-19T19:05:07Z",
+      "content": "By Robert F. ServiceApr. 19, 2019 , 3:05 PM\r\nSolid-state batteries, which use solids instead of liquids to ferry ions through their core, are attracting billions in investment, thanks to their potential for reducing battery fires. Now, researchers have create… [+4127 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Space.com" },
+      "author": "https://www.facebook.com/spacecom",
+      "title": "SpaceX's Next Space Station Cargo Launch Delayed to April 30 - Space.com",
+      "description": "NASA officials attributed the delay to constraints imposed by the ISS and orbital mechanics.",
+      "url": "https://www.space.com/spacex-dragon-cargo-launch-delayed.html",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/ukj8Q6yq3e7GPZLVsXowq5-1200-80.jpg",
+      "publishedAt": "2019-04-19T19:02:00Z",
+      "content": "SpaceX has pushed back the launch of its next robotic resupply mission to the International Space Station (ISS) by four days, to April 30.\r\nThe California-based company's Dragon cargo capsule\r\n is now scheduled to lift off atop a Falcon 9 rocket at 4:22 a.m. … [+2000 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Npr.org" },
+      "author": "Adam Frank",
+      "title": "'Einstein's Unfinished Revolution' Looks At The Quantum-Physics-And-Reality Problem - NPR",
+      "description": "A century after the birth of quantum mechanics, no one is sure what it is telling us about the nature of reality — and Lee Smolin's book adds to a stream of excellent works on the topic.",
+      "url": "https://www.npr.org/2019/04/19/714600205/einsteins-unfinished-revolution-looks-at-the-quantum-physics-and-reality-problem",
+      "urlToImage": "https://media.npr.org/assets/img/2019/04/19/gettyimages-517220950_wide-50207b7b9b26daeac3468acff8394e659be9590c.jpg?s=1400",
+      "publishedAt": "2019-04-19T19:01:00Z",
+      "content": "Does reality need realism?\r\nIf that seems like a weird question to you, consider the fact that it's the one most pressing for physicists and for their most successful theory about the physical world. That theory is called quantum mechanics and every digital e… [+7421 chars]"
+    },
+    {
+      "source": { "id": "the-washington-post", "name": "The Washington Post" },
+      "author": null,
+      "title": "You can buy a baby T. rex skeleton on eBay for $3 million. Scientists would rather you didn’t. - The Washington Post",
+      "description": "Allowing the rare artifact to end up in private ownership robs researchers and the public of the chance to learn from it, scientists say.",
+      "url": "https://www.washingtonpost.com/business/2019/04/19/you-can-buy-baby-t-rex-skeleton-ebay-million-scientists-would-rather-you-didnt/",
+      "urlToImage": "https://www.washingtonpost.com/resizer/x6pDs_kOf1ghNx96rBNDpRFI_Gs=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CGUBL2TCAMI6TPZE3NFZ7NRKUI.jpg",
+      "publishedAt": "2019-04-19T18:06:48Z",
+      "content": "The 68 million-year-old remains of a young Tyrannosaurus rex are now up for grabs on eBay, appearing alongside 50-piece dinosaur play sets and fiery-eyed T. rex action figures. The 15-foot skeleton, possibly the only in existence, can be had for the buy it no… [+5508 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Cleantechnica.com" },
+      "author": "Steve Hanley",
+      "title": "Eco-Friendly Solid Could Replace Conventional Refrigerants - CleanTechnica",
+      "description": "Researchers in the UK and in Spain have devised a way to create more efficient air conditioning using solid crystals known as NPGs. They are eco-friendly, non-toxic, non-flammable, and inexpensive.",
+      "url": "https://cleantechnica.com/2019/04/19/eco-friendly-solid-could-replace-conventional-refrigerants/",
+      "urlToImage": "https://cleantechnica.com/files/2012/04/energy-savings.jpg",
+      "publishedAt": "2019-04-19T18:06:02Z",
+      "content": "April 19th, 2019 by Steve Hanley \r\nOne-fifth of the energy consumed in the world today is use to cool people and things. As average temperatures rise, more energy will be devoted to air conditioning for overheated humans. Conventional air conditioning operate… [+3645 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Courthousenews.com" },
+      "author": "JESSICA COHN",
+      "title": "Study of River Dolphin Reveals Extensive 'Language' - Courthouse News Service",
+      "description": "A new study released Friday of the Araguaian river dolphin, also called the Araguaian boto, suggests that further research of river dolphins could show how communication evolved in underwater mammals.",
+      "url": "https://www.courthousenews.com/study-of-river-dolphin-reveals-extensive-language/",
+      "urlToImage": "http://www.courthousenews.com/wp-content/uploads/2019/04/AraguaianRiverDolphin.jpg",
+      "publishedAt": "2019-04-19T17:14:00Z",
+      "content": "(CN) A new study released Friday of the Araguaian river\r\ndolphin, also called the Araguaian boto, suggests that further research of\r\nriver dolphins could show how communication evolved in underwater mammals.\r\nStationed in the Araguaian River basin of central … [+2098 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Guacamoley.com" },
+      "author": "B. Miller",
+      "title": "RIP Jerrie Cobb—America's First Female Astronaut Candidate - Guacamoley",
+      "description": "America's first female astronaut, Jerrie Cobb, has passed away at the age of 88.",
+      "url": "https://guacamoley.com/the-scoop/2019/04/19/rip-jerrie-cobb-female-astronaut/",
+      "urlToImage": "https://guacamoley.com/wp-content/uploads/2019/04/Untitled-design-3-1.jpg",
+      "publishedAt": "2019-04-19T16:12:00Z",
+      "content": "An American hero and pioneer, Jerrie Cobb, passed away last month at the age of 88.\r\nGeraldyn “Jerrie” Cobb was America’s first ever female astronaut candidate.\r\nNearly 60 years ago, in 1961, Jerrie Cobb was the first woman to pass astronaut testing. However,… [+3054 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Aps.org" },
+      "author": null,
+      "title": "Focus: <i>Video</i>—Tunable Origami - Physics",
+      "description": "A folding pattern produces a metamaterial with properties that can be tuned over a wide range.",
+      "url": "https://physics.aps.org/articles/v12/44",
+      "urlToImage": "https://physics.aps.org/assets/0778b78e-c20e-42be-9d6e-7e93d36ab117/e44_1_thumb.png",
+      "publishedAt": "2019-04-19T16:01:10Z",
+      "content": "Art becomes science. Some of the creases in this origami pattern can fold in two different ways, providing an easy way to vary the material’s mechanical properties (see video below).\r\nOrigami is not just for making paper sculptures; engineers are developing o… [+2387 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Thetakeout.com" },
+      "author": "Dominick Suzanne-Mayer",
+      "title": "Easter ham denied to International Space Station - The Takeout",
+      "description": "Despite humanity’s compulsion to probe ever-deeper into outer space, progress remains slow. After all, to even send an individual into orbit requires millions of dollars, years of training, and countless experiments to ensure their safety. That’s all willing …",
+      "url": "https://thetakeout.com/easter-ham-denied-to-international-space-station-1834168520",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/s--_LrZuGXA--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/jhxzmmrigfwly80l0peq.jpg",
+      "publishedAt": "2019-04-19T16:01:00Z",
+      "content": "Despite humanitys compulsion to probe ever-deeper into outer space, progress remains slow. After all, to even send an individual into orbit requires millions of dollars, years of training, and countless experiments to ensure their safety. Thats all willing th… [+1596 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Bgr.com" },
+      "author": "Mike Wehner",
+      "title": "This is the last photo Israel’s Beresheet lunar lander captured before it was smashed into oblivion - BGR",
+      "description": "Last week’s attempted lunar lander by SpaceIL’s Beresheet spacecraft didn’t quite go as planned. Actually, that’s putting it mildly; it totally crashed. Nevertheless, the pr…",
+      "url": "https://bgr.com/2019/04/19/beresheet-last-photo-lunar-landing-moon/",
+      "urlToImage": "https://boygeniusreport.files.wordpress.com/2019/04/d4v23cexoaaweg5.jpg?quality=98&strip=all",
+      "publishedAt": "2019-04-19T15:31:00Z",
+      "content": "Last week’s attempted lunar lander by SpaceIL’s Beresheet spacecraft didn’t quite go as planned. Actually, that’s putting it mildly; it totally crashed. Nevertheless, the privately funded mission accomplished a number of firsts, and returned some lovely image… [+1532 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Weather.com" },
+      "author": "",
+      "title": "Earthquakes Happen Every 3 Minutes in Southern California, Study Shows - The Weather Channel",
+      "description": "Scientists always knew numerous earthquakes happened in California everyday. But now they have just how common even the tiniest of temblors are.",
+      "url": "https://weather.com/science/news/2019-04-19-new-earthquake-catalog-california",
+      "urlToImage": "https://s.w-x.co/NorthridgeQuake.jpg",
+      "publishedAt": "2019-04-19T15:26:55Z",
+      "content": "Aerial view of wrecked cars litter the connector ramp from Interstate 5 to Highway 14 following the Northridge earthquake, on January 17, 1994, in Northridge, California. \r\n(CARLOS SCHIEBECK/AFP/Getty Images)\r\nAt a Glance\r\nTemblors total 495 per day, most of … [+3057 chars]"
+    },
+    {
+      "source": { "id": "fox-news", "name": "Fox News" },
+      "author": "Chris Ciaccia",
+      "title": "NASA wants to send astronauts to the Moon’s mysterious South Pole - Fox News",
+      "description": "As President Trump continues to push America's space exploration program forward and have astronauts return to the Moon by 2024, NASA is attempting to do its part – it wants to send astronauts to the Moon's South Pole, a mysterious region that has never been …",
+      "url": "https://www.foxnews.com/science/nasa-astronauts-moons-south-pole",
+      "urlToImage": "https://media2.foxnews.com/BrightCove/694940094001/2019/04/19/694940094001_6028017886001_6028022116001-vs.jpg",
+      "publishedAt": "2019-04-19T15:08:23Z",
+      "content": "As President Trump continues to push America's space exploration program forward with a plan to have astronauts return to the Moon by 2024, NASA is attempting to do its part. The space agency wants to send astronauts to the Moon's South Pole — a mysterious re… [+3152 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Julie Langelier",
+      "title": "New method to detect off-target effects of CRISPR - Phys.org",
+      "description": "Since the CRISPR genome editing technology was invented in 2012, it has shown great promise to treat a number of intractable diseases. However, scientists have struggled to identify potential off-target effects in therapeutically relevant cell types, which re…",
+      "url": "https://phys.org/news/2019-04-method-off-target-effects-crispr.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/crispr.jpg",
+      "publishedAt": "2019-04-19T15:07:04Z",
+      "content": "Since the CRISPR genome editing technology was invented in 2012, it has shown great promise to treat a number of intractable diseases. However, scientists have struggled to identify potential off-target effects in therapeutically relevant cell types, which re… [+4403 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Science X staff",
+      "title": "Scientists uncover a link between RNA editing and chloroplast-to-nucleus communication - Phys.org",
+      "description": "What will a three-degree-warmer world look like? How will plants fare in more extreme weather conditions? When experiencing stress or damage from various sources, plants use chloroplast-to-nucleus communication to regulate gene expression and help them cope.",
+      "url": "https://phys.org/news/2019-04-scientists-uncover-link-rna-chloroplast-to-nucleus.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/plantsareals.jpg",
+      "publishedAt": "2019-04-19T15:05:33Z",
+      "content": "What will a three-degree-warmer world look like? How will plants fare in more extreme weather conditions? When experiencing stress or damage from various sources, plants use chloroplast-to-nucleus communication to regulate gene expression and help them cope.\r… [+4507 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Interestingengineering.com" },
+      "author": "",
+      "title": "A Massive Asteroid Just Came Awfully Close to Earth - Interesting Engineering",
+      "description": "A house-sized asteroid has flown by Earth. Despite being classified as a 'near earth object' the space rock posed no threat.",
+      "url": "https://interestingengineering.com/a-massive-asteroid-just-came-awfully-close-to-earth",
+      "urlToImage": "https://static.interestingengineering.com/images/APRIL/sizes/asteroidhouse_md.jpg",
+      "publishedAt": "2019-04-19T14:56:33Z",
+      "content": "An asteroid the size of a house whizzed past earth yesterday. It wasn't close enough to do any damage, and thankfully it is the closest space rock we'll see this year. The asteroid was only discovered last Tuesday by NASA's Catalina Sky Survey near Tucson, Ar… [+2531 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Syfy.com" },
+      "author": "Elizabeth Rayne",
+      "title": "Another prehistoric Lovecraftian sea creature has (appropriately) been named after Cthulhu - SYFY WIRE",
+      "description": "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Even though it wasn’t in a massive submerged palace at R’lyeh, dead Cthulhu was waiting—waiting to be discovered.",
+      "url": "https://www.syfy.com/syfywire/another-prehistoric-lovecraftian-sea-creature-has-appropriately-been-named-after-cthulhu",
+      "urlToImage": "https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2019/04/scthulhu.jpg",
+      "publishedAt": "2019-04-19T14:29:02Z",
+      "content": "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Even though it wasnt in a massive submerged palace at Rlyeh, dead Cthulhu was waitingwaiting to be discovered.\r\nMaybe someone called him, or he telepathically communicated with the scientists from Yale Unive… [+2518 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Slashgear.com" },
+      "author": "Shane McGlaun",
+      "title": "Data shows white sharks leave hunting grounds when orcas show up - SlashGear",
+      "description": "White sharks and orcas favorite prey is the same, both like to eat the elephant seal. Researchers from the Monterey Bay Aquarium and partner institutions have found that great white sharks may not …",
+      "url": "https://www.slashgear.com/data-shows-white-sharks-leave-hunting-grounds-when-orcas-show-up-19574166/",
+      "urlToImage": "https://edge.slashgear.com/wp-content/uploads/2019/04/orca.jpg",
+      "publishedAt": "2019-04-19T13:40:00Z",
+      "content": "White sharks and orcas favorite prey is the same, both like to eat the elephant seal. Researchers from the Monterey Bay Aquarium and partner institutions have found that great white sharks may not be the most formidable predators in the ocean. The scientists … [+1639 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Bob Yirka",
+      "title": "Researchers find adding rare-earth element to piezoelectric crystals dramatically improves performance - Phys.Org",
+      "description": "A team of researchers from China, the U.S. and Australia has found that adding the rare-earth element samarium to piezoelectric crystals can dramatically improve their performance. In their paper published in the journal Science, the group describes their wor…",
+      "url": "https://phys.org/news/2019-04-adding-rare-earth-element-piezoelectric-crystals.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/2019/5cb9a01549c09.jpg",
+      "publishedAt": "2019-04-19T12:30:01Z",
+      "content": "A team of researchers from China, the U.S. and Australia has found that adding the rare-earth element samarium to piezoelectric crystals can dramatically improve their performance. In their paper published in the journal Science, the group describes their wor… [+2842 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Interestingengineering.com" },
+      "author": "",
+      "title": "Scientists Explore Mercury's Inner Core Through Its Gravity and Spin - Interesting Engineering",
+      "description": "MESSENGER data has been used to extrapolate Mercury's inner composition.",
+      "url": "https://interestingengineering.com/scientists-explore-mercurys-inner-core-through-its-gravity-and-spin",
+      "urlToImage": "https://static.interestingengineering.com/images/APRIL/sizes/mercuy_inner_core_md.jpg",
+      "publishedAt": "2019-04-19T11:52:42Z",
+      "content": "Watching the way Mercury spins, NASA planetary scientists have succeeded in deducing its inner composition. The researchers from NASA's Goddard Space Flight Center in Greenbelt, Maryland have found evidence that Mercury's inner core is solid and nearly the sa… [+2241 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Science X staff",
+      "title": "BRB-seq: The quick and cheaper future of RNA sequencing - Phys.org",
+      "description": "RNA sequencing is a technique used to analyze entire genomes by looking at the expression of their genes. Today, such genome-wide expression analyses are a standard tool for genomic studies because they rely on high-throughput technologies, which themselves h…",
+      "url": "https://phys.org/news/2019-04-brb-seq-quick-cheaper-future-rna.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/brbseqthequi.jpg",
+      "publishedAt": "2019-04-19T11:31:26Z",
+      "content": "RNA sequencing is a technique used to analyze entire genomes by looking at the expression of their genes. Today, such genome-wide expression analyses are a standard tool for genomic studies because they rely on high-throughput technologies, which themselves h… [+3745 chars]"
+    },
+    {
+      "source": { "id": "ars-technica", "name": "Ars Technica" },
+      "author": "Eric Berger",
+      "title": "Rocket Report: A new Delta 2, Blue Origin inks with NASA, a fiery Falcon Heavy - Ars Technica",
+      "description": "\"Do everything in your power to keep the acquisition on schedule.”",
+      "url": "https://arstechnica.com/science/2019/04/rocket-report-a-new-delta-2-blue-origin-inks-with-nasa-a-fiery-falcon-heavy/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2018/07/Rocket-Report-Intro-3-760x380.jpg",
+      "publishedAt": "2019-04-19T11:00:00Z",
+      "content": "Enlarge/ The Rocket Report is published weekly.\r\n135 with 48 posters participating\r\nWelcome to Edition 1.45 of the Rocket Report! This week, half of our stories concern the biggest rockets on the planet, from Blue Origin engine tests at Marshall Space Flight … [+11927 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Sharon Gaudin",
+      "title": "An exotic microbe and an unusual extraction process may add up to an economical way to make a promising biofuel - Phys.org",
+      "description": "Taking a step closer to a \"green\" replacement for fossil fuels, a research team that includes a chemical engineer at Worcester Polytechnic Institute (WPI) has developed a novel process using an unusual solvent and an exotic microorganism that may make it poss…",
+      "url": "https://phys.org/news/2019-04-exotic-microbe-unusual-economical-biofuel.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/2019/anexoticmicr.jpg",
+      "publishedAt": "2019-04-19T10:55:35Z",
+      "content": "Taking a step closer to a \"green\" replacement for fossil fuels, a research team that includes a chemical engineer at Worcester Polytechnic Institute (WPI) has developed a novel process using an unusual solvent and an exotic microorganism that may make it poss… [+3061 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Sci-news.com" },
+      "author": null,
+      "title": "Helium Hydride Ion Spotted in Space for First Time | Astronomy - Sci-News.com",
+      "description": "A team of researchers from the United States, Germany and France discovered the signature of the helium hydride ion (HeH+) in NGC 7027, a planetary nebula located approximately 3,000 light-years away in the constellation Cygnus, using NASA’s Stratospheric Obs…",
+      "url": "http://www.sci-news.com/astronomy/helium-hydride-ion-07107.html",
+      "urlToImage": "http://cdn.sci-news.com/images/2019/04/image_7107f-NGC-7027-Helium-Hydride.jpg",
+      "publishedAt": "2019-04-19T10:47:53Z",
+      "content": "When the Universe was still very young, only a few kinds of atoms existed. Astrophysicists believe that around 100,000 years after the Big Bang, ionized hydrogen and neutral helium atoms combined to make the helium hydride ion (HeH+) for the first time. This … [+3122 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Jim Shelton",
+      "title": "Chemists take a closer look at the spot where water meets air - Phys.org",
+      "description": "Water, despite its central place in so many processes vital to life on Earth, remains a chemical mystery in many respects. One of those mysteries is the nature of water at the exact point where it comes into contact with air.",
+      "url": "https://phys.org/news/2019-04-chemists-closer-air.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/5cb9908438f30.jpg",
+      "publishedAt": "2019-04-19T09:11:00Z",
+      "content": "Water, despite its central place in so many processes vital to life on Earth, remains a chemical mystery in many respects. One of those mysteries is the nature of water at the exact point where it comes into contact with air.\r\nA study from the laboratories of… [+2068 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Counterpunch.org" },
+      "author": null,
+      "title": "The Blue Ocean Event and Collapsing Ecosystems - CounterPunch",
+      "description": "Sometime in the near future it is highly probable that the Arctic will no longer have sea ice, meaning zero ice for the first time in eons, aka: the Blue Oc",
+      "url": "https://www.counterpunch.org/2019/04/19/the-blue-ocean-event-and-collapsing-ecosystems/",
+      "urlToImage": "https://www.counterpunch.org/wp-content/dropzone/2018/06/cp-og-logo.png",
+      "publishedAt": "2019-04-19T08:58:32Z",
+      "content": "Sometime in the near future it is highly probable that the Arctic will no longer have sea ice, meaning zero ice for the first time in eons, aka: the Blue Ocean Event.\r\nSurely, the world is not prepared for the consequences of such an historic event, which lik… [+8713 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Science X staff",
+      "title": "Things are stacking up for NASA's Mars 2020 spacecraft - Phys.org",
+      "description": "For the past few months, the clean room floor in High Bay 1 at NASA's Jet Propulsion Laboratory in Pasadena, California, has been covered in parts, components and test equipment for the Mars 2020 spacecraft, scheduled for launch toward the Red Planet in July …",
+      "url": "https://phys.org/news/2019-04-stacking-nasa-mars-spacecraft.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/thingsaresta.jpg",
+      "publishedAt": "2019-04-19T06:50:35Z",
+      "content": "For the past few months, the clean room floor in High Bay 1 at NASA's Jet Propulsion Laboratory in Pasadena, California, has been covered in parts, components and test equipment for the Mars 2020 spacecraft, scheduled for launch toward the Red Planet in July … [+4254 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Ksl.com" },
+      "author": "https://www.facebook.com/kslcom/",
+      "title": "University of Utah math professor elected to Royal Society of London - KSL.com",
+      "description": "Christopher Hacon, University of Utah distinguished professor of mathematics, has been elected to the Royal Society of London.",
+      "url": "https://www.ksl.com/article/46534631/university-of-utah-math-professor-elected-to-royal-society-of-london",
+      "urlToImage": "https://img.ksl.com/slc/2723/272346/27234669.jpg?filter=ksl/responsive_story_lg",
+      "publishedAt": "2019-04-19T01:34:02Z",
+      "content": "SALT LAKE CITY Christopher Hacon, University of Utah distinguished professor of mathematics, has been elected to the Royal Society of London.\r\nBorn in London, Hacon is one of 50 eminent scientists elected as a Fellow of the Royal Society, along with 10 foreig… [+3173 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Sciencealert.com" },
+      "author": "Michelle Starr",
+      "title": "Astronomers Just Found a New Way to Detect Elusive Colliding Neutron Stars - ScienceAlert",
+      "description": "On 22 March 2015, NASA's Chandra X-ray observatory recorded a blip in its data. Not far from the southern constellation of Fornax, something brightened, then slowly faded away.",
+      "url": "https://www.sciencealert.com/astronomers-have-found-a-new-way-to-detect-colliding-neutron-stars",
+      "urlToImage": "https://www.sciencealert.com/images/2019-04/processed/colliding-neutron-XT2_1024.jpg",
+      "publishedAt": "2019-04-18T23:40:47Z",
+      "content": "On 22 March 2015, NASA's Chandra X-ray observatory recorded a blip in its data. Not far from the southern constellation of Fornax, something brightened, then slowly faded away.\r\nThanks to a new technique, now we know that blip was two neutron stars colliding,… [+3565 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Sciencealert.com" },
+      "author": "Peter Dockrill",
+      "title": "A Genius First-of-Its-Kind Device Has Created Electricity From Snowfall - ScienceAlert",
+      "description": "Scientists have developed a first-of-its-kind device that generates electricity from nothing other than the natural phenomenon of snowfall.",
+      "url": "https://www.sciencealert.com/new-first-of-its-kind-device-creates-electricity-from-snowfall",
+      "urlToImage": "https://www.sciencealert.com/images/2019-04/processed/015-snowfall-electricity-nanogenerator_1024.jpg",
+      "publishedAt": "2019-04-18T23:40:47Z",
+      "content": "Scientists have developed a first-of-its-kind device that generates electricity from nothing other than the natural phenomenon of snowfall.\r\nBased upon the principles of the triboelectric effect, in which electrical charge is generated after two materials com… [+3429 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Pennlive.com" },
+      "author": "Marcus Schneck | mschneck@pennlive.com",
+      "title": "Fireball lights up the sky over Pennsylvania and other eastern states - PennLive.com",
+      "description": "Hundreds of observers in Pennsylvania and 8 other states spotted a fireball in the nightsky on Tuesday night.",
+      "url": "https://www.pennlive.com/life/2019/04/fireball-lights-up-the-sky-over-pennsylvania-and-other-eastern-states.html",
+      "urlToImage": "https://www.pennlive.com/resizer/6fUBFOltns6znGvbprh8P3JdU4E=/1200x0/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/53ONURZNXVFMNPGCPEGQ7GXIBM.jpg",
+      "publishedAt": "2019-04-18T22:42:00Z",
+      "content": "A bright green fireball was spotted in the nighttime sky on Tuesday by hundreds of people in southern Pennsylvania and 8 other states.\r\nAccording to the American Meteor Society, the fireball raced north to south at 10:57 p.m. and ended its flight in the Atlan… [+1713 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Indianexpress.com" },
+      "author": "Express News Service",
+      "title": "Fact Check: Before ‘Oumuamua visit, did an interstellar object hit Earth? - The Indian Express",
+      "description": "Oumuamua was the first known object from outside the Solar System to do a fly-by of Earth.",
+      "url": "https://indianexpress.com/article/explained/fact-check-before-oumuamua-visit-did-an-interstellar-object-hit-earth-5683276/",
+      "urlToImage": "https://images.indianexpress.com/2019/04/oumua.jpg?w=759",
+      "publishedAt": "2019-04-18T21:35:51Z",
+      "content": "Artists impression of Oumuamua. It was so far the only known interstellar object to make a fly-by of Earth; now scientists have found evidence that an earlier object may have entered Earths atmosphere. (European Space Observatory)\r\nLAST YEAR, the interstellar… [+2681 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Futurism.com" },
+      "author": "Dan Robitzski",
+      "title": "India Blew up a Satellite. Now A \"Space Fence\" Is Tracking Its Debris - Futurism",
+      "description": "Lockheed Martin's experimental tech is monitoring the satellite fragments.",
+      "url": "https://futurism.com/the-byte/india-blew-up-satellite-space-fence-tracks-debris",
+      "urlToImage": "https://wp-assets.futurism.com/2019/04/india-blew-up-satellite-space-fence-tracks-debris-1200x630.png",
+      "publishedAt": "2019-04-18T21:17:50Z",
+      "content": "Explosive Demonstration\r\nLast month, India demonstrated its capabilities as a spacefaring nation and drew international criticism when it used a missile to blew up one of its own satellites.\r\nThe launch happened to coincide with Lockheed Martins test run of a… [+1112 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Mnn.com" },
+      "author": "Bryan Nelson",
+      "title": "Where has all the plastic pollution gone in the Indian Ocean? - Mother Nature Network",
+      "description": "The Indian Ocean is the world's biggest plastic dumping ground, but some of it is leaking elsewhere.",
+      "url": "https://www.mnn.com/earth-matters/wilderness-resources/stories/where-has-all-plastic-pollution-indian-ocean-gone",
+      "urlToImage": "https://media.mnn.com/assets/images/2019/04/indianocean.jpg.1080x0_q100_crop-scale.jpg",
+      "publishedAt": "2019-04-18T21:10:00Z",
+      "content": "You've probably heard of the Great Pacific Garbage Patch, a circulating gyre of stewing plastic waste in the Pacific Ocean. You might even be familiar with the existence of other smaller, though equally concerning, garbage patches in the North and South Atlan… [+2919 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Harvard.edu" },
+      "author": "Peter Reuell",
+      "title": "Harvard study proposes new way to probe universe before the Big Bang - Harvard Gazette",
+      "description": "Harvard researchers are proposing using a “primordial standard clock” as a probe of the primordial universe. The team laid out a method that may be used to falsify the inflationary theory experimentally.",
+      "url": "https://news.harvard.edu/gazette/story/2019/04/harvard-study-proposes-new-way-to-probe-universe-before-the-big-bang/",
+      "urlToImage": "https://news.harvard.edu/wp-content/uploads/2019/02/CMB_Timeline3001.jpg?w=945",
+      "publishedAt": "2019-04-18T20:40:11Z",
+      "content": "Most everybody is familiar with the Big Bang the notion that an impossibly hot, dense universe exploded into the one we know today. But what do we know about what came before?\r\nIn the quest to resolve several puzzles discovered in the initial condition of the… [+5928 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Upi.com" },
+      "author": "Brooks Hays",
+      "title": "When zapped with a laser, magnets behave like fluids - UPI News",
+      "description": "Scientists have managed to figure out how a magnet manages to recover after being demagnetized by a brief laser blast.",
+      "url": "https://www.upi.com/Science_News/2019/04/18/When-zapped-with-a-laser-magnets-behave-like-fluids/1561555602278/",
+      "urlToImage": "https://cdnph.upi.com/sv/ph/og/i/1561555602278/2019/1/15556074104162/v1.5/When-zapped-with-a-laser-magnets-behave-like-fluids.jpg",
+      "publishedAt": "2019-04-18T20:31:03Z",
+      "content": "April 18 (UPI) -- Scientists have managed to figure out how a magnet manages to recover after being demagnetized by a brief laser blast. The discovery suggests lasers make magnets behave like fluids.\r\nWhen an ultra thin magnet is hit with a laser, it suddenly… [+2705 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Wcvb.com" },
+      "author": "Bobby Cherry",
+      "title": "Massive meteor explodes over East Coast, lighting up night sky - WCVB Boston",
+      "description": "Hundreds of people from around the world reported seeing a meteor in the sky late Tuesday night — from the East Coast to as far away as Brazil and Germany.",
+      "url": "https://www.wcvb.com/article/massive-meteor-explodes-lighting-up-night-sky/27185225",
+      "urlToImage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/screenshot-183-1555534068.png?crop=0.323xw:0.640xh;0.0910xw,0.0676xh&resize=1200:*",
+      "publishedAt": "2019-04-18T19:51:00Z",
+      "content": "Hundreds of people from around the world reported seeing a meteor in the sky late Tuesday night from the East Coast to as far away as Brazil and Germany.\r\nThe American Meteor Society received more than 350 reports of people seeing the meteor over the Mid-Atla… [+1427 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Gizmodo.com" },
+      "author": "Ryan F. Mandelbaum",
+      "title": "Planet Mercury Has Solid Inner Core About the Same Size as Earth's - Gizmodo",
+      "description": "A new analysis has found that Mercury has a solid inner core, just like Earth does. And Mercury’s core is just about the same size as our own planet’s.",
+      "url": "https://gizmodo.com/planet-mercury-has-solid-inner-core-about-the-same-size-1834145079",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/s--babTiSTO--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/hibxmvo14w41fkrpd3as.png",
+      "publishedAt": "2019-04-18T19:40:00Z",
+      "content": "A new analysis has found that Mercury has a solid inner core, just like Earth does. And Mercurys core is just about the same size as our own planets. \r\nIm biased here, but Mercury is an incredible, mysterious planet that continues to offer exciting results to… [+2829 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Medicalxpress.com" },
+      "author": "Science X staff",
+      "title": "The brain's imperfect execution of mathematically optimal perception - Medical Xpress",
+      "description": "Human perception is based on mathematically optimal principles, but the brain implements those principles imperfectly, suggests new research by Elina Stengård and Ronald van den Berg of the University of Uppsala, Sweden. They present their findings in PLOS Co…",
+      "url": "https://medicalxpress.com/news/2019-04-brain-imperfect-mathematically-optimal-perception.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/2019/thebrainsimp.jpg",
+      "publishedAt": "2019-04-18T19:35:55Z",
+      "content": "Human perception is based on mathematically optimal principles, but the brain implements those principles imperfectly, suggests new research by Elina Stengård and Ronald van den Berg of the University of Uppsala, Sweden. They present their findings in PLOS Co… [+2523 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Sciencedaily.com" },
+      "author": null,
+      "title": "Infamous 'death roll' almost universal among crocodile species - Science Daily",
+      "description": "The iconic 'death roll' of alligators and crocodiles may be more common among species than previously believed, according to a new study.",
+      "url": "https://www.sciencedaily.com/releases/2019/04/190418131248.htm",
+      "urlToImage": "/images/2019/04/190418131248_1_540x360.jpg",
+      "publishedAt": "2019-04-18T19:25:12Z",
+      "content": "The iconic \"death roll\" of alligators and crocodiles may be more common among species than previously believed, according to a new study published in Ethology, Ecology &amp; Evolution and coauthored by a researcher at the University of Tennessee, Knoxville.Co… [+2085 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Upi.com" },
+      "author": null,
+      "title": "Elon Musk: Engines from core Falcon Heavy booster 'seem OK' - UPI.com",
+      "description": "SpaceX has possession of the Falcon Heavy core booster that landed in the Atlantic Ocean, founder Elon Musk indicated in a tweet.",
+      "url": "https://www.upi.com/Top_News/US/2019/04/18/Elon-Musk-Engines-from-core-Falcon-Heavy-booster-seem-OK/1781555611238/",
+      "urlToImage": "https://cdnph.upi.com/sv/ph/og/i/1781555611238/2019/1/15556117086381/v1.5/Elon-Musk-Engines-from-core-Falcon-Heavy-booster-seem-OK.jpg",
+      "publishedAt": "2019-04-18T19:22:50Z",
+      "content": "CAPE CANAVERAL, Fla., April 18 (UPI) --SpaceX has possession of the Falcon Heavy core booster that landed in the Atlantic Ocean after the April 11 launch, founder Elon Musk indicated in a tweet.\r\nLanding the rocket's three boosters, which have on-board naviga… [+2427 chars]"
+    },
+    {
+      "source": { "id": "the-jerusalem-post", "name": "The Jerusalem Post" },
+      "author": "Eytan Halon",
+      "title": "SpaceIL reveals preliminary reasons behind Beresheet crash - The Jerusalem Post",
+      "description": "\"I am proud of SpaceIL's team of engineers for their wonderful work and dedication,\" said SpaceIL President Morris Kahn.",
+      "url": "https://www.jpost.com/Israel-News/SpaceIL-reveals-preliminary-reasons-behind-Beresheet-crash-587117",
+      "urlToImage": "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Article2016_ControlFaceDetect/438726",
+      "publishedAt": "2019-04-18T18:53:03Z",
+      "content": "X\r\n Dear Reader,\r\n As you can imagine, more people are reading The Jerusalem Post than ever before.\r\n Nevertheless, traditional business models are no longer sustainable and high-quality publications,\r\n like ours, are being forced to look for new ways to keep… [+4227 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Nasaspaceflight.com" },
+      "author": null,
+      "title": "Blue Origin sign up historic test stand for engine testing - NASASpaceflight.com",
+      "description": null,
+      "url": "https://www.nasaspaceflight.com/2019/04/blue-historic-test-stand-engine-testing/",
+      "urlToImage": null,
+      "publishedAt": "2019-04-18T18:45:50Z",
+      "content": "Blue Origin has signed a Commercial Space Launch Act agreement with NASA for the use of the historic 4670 test stand at the Marshall Space Flight Center (MSFC). Despite setting up its own in-house test stands, including one that is being constructed at their … [+4720 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Science X staff",
+      "title": "Bioengineers add cooperative molecules to their toolkit for programming signal processing - Phys.Org",
+      "description": "Elaborate molecular networks inside living cells enable them to sense and process many signals from the environment to perform desired cellular functions. Synthetic biologists have been able to reconstruct and mimic simpler forms of this cellular signal proce…",
+      "url": "https://phys.org/news/2019-04-bioengineers-cooperative-molecules-toolkit.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/1-bioengineers.jpg",
+      "publishedAt": "2019-04-18T18:00:07Z",
+      "content": "Elaborate molecular networks inside living cells enable them to sense and process many signals from the environment to perform desired cellular functions. Synthetic biologists have been able to reconstruct and mimic simpler forms of this cellular signal proce… [+6201 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Science X staff",
+      "title": "New method enables quantum simulations on larger systems - Phys.org",
+      "description": "Through randomly selected measurements, Austrian physicists can now determine the quantum entanglement of many-particle systems. With the newly developed method, quantum simulations can be extended to a larger number of quantum particles. In Science, physicis…",
+      "url": "https://phys.org/news/2019-04-method-enables-quantum-simulations-larger.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/coincidenceh.jpg",
+      "publishedAt": "2019-04-18T18:00:04Z",
+      "content": "Through randomly selected measurements, Austrian physicists can now determine the quantum entanglement of many-particle systems. With the newly developed method, quantum simulations can be extended to a larger number of quantum particles. In Science, physicis… [+3874 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Space.com" },
+      "author": "https://www.facebook.com/spacecom",
+      "title": "A House-Size Asteroid Zipped by Earth Today - Space.com",
+      "description": "It was less than half the distance to the moon.",
+      "url": "https://www.space.com/near-earth-asteroid-2019-gc6-flyby.html",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/GEHzcUKYQ6RbsnNyJegJkH-1200-80.jpg",
+      "publishedAt": "2019-04-18T17:43:00Z",
+      "content": "An asteroid the size of a house gave Earth a close shave today (April 18), passing nearer to our planet than any other space rock will for the rest of this year — that is, as far as we know. \r\nNamed 2019 GC6, the asteroid was discovered by NASA's Catalina Sky… [+2014 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Weather.com" },
+      "author": "",
+      "title": "Scientists Have Always Known Lightning Does Strike Twice in the Same Place, But Now They Think They Know Why - The Weather Channel",
+      "description": "Scientists and storm watchers have long known that lightning can indeed strike twice in the same place. But now they think they know how it happens.",
+      "url": "https://weather.com/science/news/2019-04-18-why-lightning-strikes-twice",
+      "urlToImage": "https://s.w-x.co/en-in-lightning-ap_0.jpg",
+      "publishedAt": "2019-04-18T17:12:18Z",
+      "content": "A lightning bolt strikes near the Palacio Salvo landmark building in Montevideo, Uruguay, on December 14, 2018. \r\n(Mariana Suarez SUAREZ /AFP/Getty Images)\r\nAt a Glance\r\nResearchers for the first time observed lightning \"needles.\"\r\nThey think the needles carr… [+3137 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phys.org" },
+      "author": "Science X staff",
+      "title": "How superstitions spread - Phys.org",
+      "description": "Ancient Roman leaders once made decisions about important events, such as when to hold elections or where to build new cities, based on the presence or flight patterns of birds. Builders often omit the thirteenth floor from their floor plans, and many pedestr…",
+      "url": "https://phys.org/news/2019-04-superstitions.html",
+      "urlToImage": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/blackcat.jpg",
+      "publishedAt": "2019-04-18T17:03:00Z",
+      "content": "Ancient Roman leaders once made decisions about important events, such as when to hold elections or where to build new cities, based on the presence or flight patterns of birds. Builders often omit the thirteenth floor from their floor plans, and many pedestr… [+4985 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Futurism.com" },
+      "author": "Dan Robitzski",
+      "title": "A City-Sized Star Is Blocking the View of Our Galaxy's Black Hole - Futurism",
+      "description": "Hey, down in front!",
+      "url": "https://futurism.com/the-byte/magnetar-blocked-view-galaxys-black-hole",
+      "urlToImage": "https://wp-assets.futurism.com/2019/04/magnetar-blocked-view-galaxys-black-hole-1200x630.png",
+      "publishedAt": "2019-04-18T16:48:10Z",
+      "content": "Down In Front\r\nWhen scientists released the first-ever image of a black hole last week, people immediately began asking why astronomers chose to focus on M87*, a black hole in a distant galaxy, instead of the one in the center of our home Milky Way.\r\nFor that… [+1392 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Oilprice.com" },
+      "author": "Irina Slav",
+      "title": "Artificial Intelligence Could Solve Nuclear Fusion's Biggest Problem - OilPrice.com",
+      "description": "The deep learning techniques that scientists use in nuclear fusion research could help to solve nuclear fusion’ biggest problem",
+      "url": "https://oilprice.com/Energy/Energy-General/Artificial-Intelligence-Could-Solve-Nuclear-Fusions-Biggest-Problem.html",
+      "urlToImage": "https://d32r1sh890xpii.cloudfront.net/article/718x300/ee5a54b91abd733ac47550e3cc00717f.jpg",
+      "publishedAt": "2019-04-18T16:00:00Z",
+      "content": "The predictive powers of artificial intelligence could help scientists bring nuclear fusion closer to actually working, researchers from Princeton and Harvard working with the Department of Energy hope.\r\nThe team, working at the DoE’s Princeton Plasma Physics… [+1842 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Upi.com" },
+      "author": "Brooks Hays",
+      "title": "Physicists aim to catch slow-decaying dark particle inside LHC - UPI News",
+      "description": "Scientists at the Large Hadron Collider have developed a new strategy for tracking down dark matter.",
+      "url": "https://www.upi.com/Science_News/2019/04/18/Physicists-aim-to-catch-slow-decaying-dark-particle-inside-LHC/8601555598763/",
+      "urlToImage": "https://cdnph.upi.com/sv/ph/og/i/8601555598763/2019/1/15556007346464/v1.5/Physicists-aim-to-catch-slow-decaying-dark-particle-inside-LHC.jpg",
+      "publishedAt": "2019-04-18T15:59:55Z",
+      "content": "April 18 (UPI) -- Dark matter is apparently everywhere, binding galaxies together. But astronomers can only intimate dark matter's presence by measuring its gravitational effect on regular matter. As such, dark matter and dark energy remains poorly understood… [+2256 chars]"
+    },
+    {
+      "source": { "id": "the-times-of-india", "name": "The Times of India" },
+      "author": null,
+      "title": "Back on Earth, China's Mars simulation base greets first visitors - Chinese-built Mars simulation base - Economic Times",
+      "description": "About 100 excited Chinese teenagers completed a five-hour tour of a space colony against a desolate backdrop not unlike the desert planet of Tatooine, the home world of Luke Skywalker.They were not on the set of Star Wars, but at a Chinese-built Mars simulati…",
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/back-on-earth-chinas-mars-simulation-base-greets-first-visitors/chinese-built-mars-simulation-base/slideshow/68933846.cms",
+      "urlToImage": "https://img.etimg.com/thumb/msid-68933846,width-1070,height-580,overlay-economictimes/photo.jpg",
+      "publishedAt": "2019-04-18T05:33:00Z",
+      "content": "The facility - comprising several interconnected modules including a greenhouse and a mock decompression chamber - opened its doors to the public.Mars Base 1 Camp, covering an area about one-fifth of an American football field, is the brainchild of a media co… [+219 chars]"
+    }
+  ]
+}

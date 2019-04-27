@@ -34,4 +34,20 @@ router.get("/category/:category", function(req, res) {
   );
 });
 
+router.get("/:newsId", function(req, res) {
+  var newsId = req.params.newsId;
+  var userReference = db.ref("/article/alldata/" + newsId);
+  userReference.on(
+    "value",
+    function(snapshot) {
+      res.json(snapshot.val());
+      userReference.off("value");
+    },
+    function(errorObject) {
+      console.log("The read failed: " + errorObject.code);
+      res.send("The read failed: " + errorObject.code);
+    }
+  );
+});
+
 module.exports = router;

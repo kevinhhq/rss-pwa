@@ -27,16 +27,19 @@ router.post("/headlines", function(req, res) {
     } else {
       for (var i = 0; i < data.stories.length; i++) {
         var story = {
+          newsId: "",
           title: "",
           category: "",
           author: "",
           time: "",
           img: "",
           source: "",
+          sourceUrl: "",
           summary: "",
           hashtags: [],
           body: ""
         };
+        story.newsId = data.stories[i].id;
         story.title = data.stories[i].title;
         if (data.stories[i].categories.length < 1) story.category = "";
         else {
@@ -58,6 +61,7 @@ router.post("/headlines", function(req, res) {
         story.img =
           data.stories[i].media.length < 1 ? "" : data.stories[i].media[0].url;
         story.source = data.stories[i].source.name;
+        story.sourceUrl = data.stories[i].source.homePageUrl;
         story.summary =
           data.stories[i].summary.sentences < 1
             ? story.title
@@ -103,16 +107,19 @@ router.post("/category/:category", function(req, res) {
       console.log("API called successfully.");
       for (var i = 0; i < data.stories.length; i++) {
         var story = {
+          newsId: "",
           title: "",
           category: category,
           author: "",
           time: "",
           img: "",
           source: "",
+          sourceUrl: "",
           summary: "",
           hashtags: [],
           body: ""
         };
+        story.newsId = data.stories[i].id;
         story.title = data.stories[i].title;
         story.author = data.stories[i].author.name;
         story.time = data.stories[i].publishedAt;
@@ -120,6 +127,7 @@ router.post("/category/:category", function(req, res) {
         story.img =
           data.stories[i].media.length < 1 ? "" : data.stories[i].media[0].url;
         story.source = data.stories[i].source.name;
+        story.sourceUrl = data.stories[i].source.homePageUrl;
         story.summary =
           data.stories[i].summary.sentences < 1
             ? story.title
@@ -127,6 +135,8 @@ router.post("/category/:category", function(req, res) {
         story.hashtags = data.stories[i].hashtags.splice(0, 3);
         story.body = data.stories[i].body;
         resultList.push(story);
+        var alldataReference = db.ref("/article/alldata/" + story.newsId);
+        alldataReference.set(story);
       }
       var userReference = db.ref("/article/categories/" + category);
       userReference.set({

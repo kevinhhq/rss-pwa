@@ -1,0 +1,386 @@
+{
+  "status": "ok",
+  "totalResults": 38,
+  "articles": [
+    {
+      "source": { "id": null, "name": "Npr.org" },
+      "author": "Samantha Raphelson",
+      "title": "Paris Police Fire Tear Gas As Yellow Vest Protests Escalate - NPR",
+      "description": "Protesters set fires in eastern Paris as they marched for the 23rd Saturday in a row. They say the efforts to restore the damaged Notre Dame cathedral are eclipsing their demands.",
+      "url": "https://www.npr.org/2019/04/20/715470174/yellow-vest-protesters-fueled-by-anger-over-notre-dame-funds-march-in-paris",
+      "urlToImage": "https://media.npr.org/assets/img/2019/04/20/ap_19110474207251_wide-cc799136dea6a024081c6bb27e0653e31d5433f4.jpg?s=1400",
+      "publishedAt": "2019-04-20T17:12:00Z",
+      "content": "A set of motorbikes are set on fire during a yellow vest demonstration in Paris on Saturday. Protesters are marching to remind the government that rebuilding the fire-ravaged Notre Dame Cathedral isn't the only problem the nation needs to solve. (AP Photo/Fra… [+2048 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Nintendolife.com" },
+      "author": "Nintendo Life",
+      "title": "Feature: Our Favourite Memories Of The Original Game Boy - Nintendo Life",
+      "description": "Nostalgia for Nintendo’s most humble of handhelds",
+      "url": "http://www.nintendolife.com/news/2019/04/feature_our_favourite_memories_of_the_original_game_boy",
+      "urlToImage": "http://images.nintendolife.com/news/2019/04/feature_our_favourite_memories_of_the_original_game_boy/large.jpg",
+      "publishedAt": "2019-04-20T17:00:00Z",
+      "content": "The Nintendo Game Boy turns 30 this Sunday, and to celebrate this amazing occasion we'll be running a series of related features this week, right up to the big day.\r\nAs the 30th anniversary of the Game Boys Japanese debut approached, we here at Nintendo Life … [+12084 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Mmaweekly.com" },
+      "author": "",
+      "title": "Conor McGregor competes in exhibition boxing match in Ireland - MMAWeekly",
+      "description": "Former UFC two-division champion Conor McGregor got back into the ring on Friday at his old digs in the Crumlin Boxing Club in Ireland.",
+      "url": "https://www.mmaweekly.com/conor-mcgregor-competes-in-exhibition-boxing-match-in-ireland",
+      "urlToImage": "https://cdn.mmaweekly.com/wp-content/uploads/2017/08/Conor-McGregor-Media-Day-Aug-2017-7512-750.jpg",
+      "publishedAt": "2019-04-20T16:57:35Z",
+      "content": "Conor McGregor got back into the ring on Friday but not for his return to mixed martial arts.\r\nInstead the Irish superstar participated in an exhibition boxing match at his old stomping ground in the Crumlin Boxing Club near Dublin in his native Ireland.\r\nCon… [+1840 chars]"
+    },
+    {
+      "source": { "id": "fox-news", "name": "Fox News" },
+      "author": "New York Post",
+      "title": "Jussie Smollett 'doing well' and 'focusing on work' after alleged fake hate crime exoneration - Fox News",
+      "description": "The actor hopes to be publicly exonerated “once all the information comes out,” according to a Saturday report.",
+      "url": "https://www.foxnews.com/entertainment/jussie-smollett-doing-well-and-focusing-on-work-after-alleged-fake-hate-crime-exoneration",
+      "urlToImage": "https://media2.foxnews.com/BrightCove/694940094001/2019/04/12/694940094001_6025594479001_6025595664001-vs.jpg",
+      "publishedAt": "2019-04-20T16:33:50Z",
+      "content": "Jussie Smollett is doing “pretty well” after his alleged Chicago hoax, and hopes to be publicly exonerated “once all the information comes out,” according to a Saturday report.\r\n“He is focusing on his work here in L.A.,” an unnamed Smollett spokesman told the… [+1040 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Foxbusiness.com" },
+      "author": "Megan Henney",
+      "title": "Tesla’s Elon Musk could earn up to $2.2 billion from stock options - Fox Business",
+      "description": "The median worker’s compensation last year was $56,163.",
+      "url": "https://www.foxbusiness.com/business-leaders/tesla-elon-musk-compensation-2018",
+      "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2018/06/0/0/Elon-Musk.jpg?ve=1&tl=1",
+      "publishedAt": "2019-04-20T16:27:05Z",
+      "content": "FBNs Charlie Gasparino reports that Tesla executives are telling bankers that the company doesnt need financing in the near term. \r\nTesla Chief Executive Elon Musk received more than $2.2 billion in stock option awards in 2018, according to a regulatory filin… [+971 chars]"
+    },
+    {
+      "source": { "id": "daily-mail", "name": "Daily Mail" },
+      "author": "https://www.facebook.com/DailyMailCeleb",
+      "title": "Reese Witherspoon arrives for optimistic and joyful friend Kate Hudson's star-studded 40th birthday - Daily Mail",
+      "description": "Reese, 43, looked stunning as ever as she flashed her legs in a cute floral dress alongside husband Jim Toth.",
+      "url": "https://www.dailymail.co.uk/tvshowbiz/article-6942765/Reese-Witherspoon-arrives-optimistic-joyful-friend-Kate-Hudsons-star-studded-40th-birthday.html",
+      "urlToImage": "https://i.dailymail.co.uk/1s/2019/04/20/17/12514860-0-image-a-22_1555776838736.jpg",
+      "publishedAt": "2019-04-20T15:53:40Z",
+      "content": "She attended Jennifer Aniston's star-studded 50th birthday celebrations earlier this year. \r\nAnd Kate Hudson was not to be outdone as a who's who of Hollywood A-Listers turned out for her own 40th celebration on Friday night. \r\nReese Witherspoon and Leonardo … [+2794 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Tmz.com" },
+      "author": "TMZ Staff",
+      "title": "John Singleton Hospitalized After Suffering Stroke - TMZ",
+      "description": "John Singleton suffers a stroke and his condition is unknown.",
+      "url": "https://www.tmz.com/2019/04/20/john-singleton-suffers-stroke-condition/",
+      "urlToImage": "https://images.tmz.com/2019/04/20/0420-john-singleton-tmz-01-1200x630.jpg",
+      "publishedAt": "2019-04-20T15:48:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": "the-washington-post", "name": "The Washington Post" },
+      "author": null,
+      "title": "For three years her skin ulcers and pain would flare, then vanish, stumping doctors. Her daughter, a nurse, finally figured it out. - The Washington Post",
+      "description": "After hearing a case study in class, Kimberly Ho was startled by the similar symptoms.",
+      "url": "https://www.washingtonpost.com/national/health-science/for-three-years-her-skin-ulcers-and-pain-would-flare-then-vanish-stumping-doctors-her-daughter-a-nurse-finally-figured-it-out/2019/04/19/b8b4da38-5481-11e9-9136-f8e636f1f6df_story.html",
+      "urlToImage": "https://www.washingtonpost.com/resizer/TLE2ipHkuaFTrRturlgZAiS2FsA=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XPLTCATBN4I6TH7SVPEYJXE65Q.jpg",
+      "publishedAt": "2019-04-20T15:02:37Z",
+      "content": "Kimberly Ho, a newly minted nurse at Childrens National Medical Center just off a 12-hour overnight shift, struggled to focus on a presentation about working with sexually traumatized children and adolescents.\r\nAs the picture of a skin infection flashed on th… [+9026 chars]"
+    },
+    {
+      "source": { "id": "engadget", "name": "Engadget" },
+      "author": "Andrew Tarantola",
+      "title": "Hitting the Books: How calculus is helping unravel DNA's secrets - Engadget",
+      "description": "Hitting the Books: How calculus is helping unravel DNA's secrets",
+      "url": "https://www.engadget.com/2019/04/20/hitting-the-books-infinite-powers/",
+      "urlToImage": "https://o.aolcdn.com/images/dims?thumbnail=1200%2C630&quality=80&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D6070%252C3414%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C900%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-images%252F2019-04%252Ffadf3760-5be2-11e9-85ff-fa8e6d2c2f18%26client%3Da1acac3e1b3290917d92%26signature%3D940a4b74bf5171a3b0302ea3a8dd037a07951a3b&client=amp-blogside-v2&signature=78cf8fa75cc0e40154b9b80eaf851c38184e3873",
+      "publishedAt": "2019-04-20T15:00:10Z",
+      "content": "Calculus has provided humanity a window into the inner workings of the world around us since the fateful day Isaac Newton got conked by a falling apple. But we've only ever really applied these mathematical tools to our \"hard\" sciences, like physics or chemis… [+8252 chars]"
+    },
+    {
+      "source": { "id": "nbc-news", "name": "NBC News" },
+      "author": "The Associated Press",
+      "title": "Storms in South kill girl in Florida, bring tornado threat - NBC News",
+      "description": "A strong storm system barreling through the South threatened to bring tornadoes to large parts of the Carolinas and southern Virginia.",
+      "url": "https://www.nbcnews.com/news/us-news/storms-south-kill-girl-florida-bring-tornado-threat-n996681",
+      "urlToImage": "https://media4.s-nbcnews.com/j/newscms/2019_16/2828766/190420-mississippi-tornado-ew-1026a_a9b9e9d015de05da59635c073c8f8669.nbcnews-fp-1200-630.jpg",
+      "publishedAt": "2019-04-20T14:44:00Z",
+      "content": "Breaking News Emails\r\nGet breaking news alerts and special reports. The news and stories that matter, delivered weekday mornings.\r\nSUBSCRIBE\r\nApril 20, 2019, 2:44 PM GMT\r\nATLANTA A strong storm system barreling through the South killed an 8-year-old girl in F… [+3419 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Npr.org" },
+      "author": "Samantha Raphelson",
+      "title": "Northern Ireland Police Arrest 2 Men In Shooting Death Of Journalist - NPR",
+      "description": "Authorities say they arrested an 18- and 19-year-old under the U.K.'s controversial Terrorism Act and took them to the Musgrave Serious Crime Suite, a police station in Belfast.",
+      "url": "https://www.npr.org/2019/04/20/715457050/northern-ireland-police-arrest-2-men-in-shooting-death-of-journalist",
+      "urlToImage": "https://media.npr.org/assets/img/2019/04/20/ap_19110415544119_wide-0bd2ca0655d90da5fbc8087ef90d8d294ca849bc.jpg?s=1400",
+      "publishedAt": "2019-04-20T14:26:00Z",
+      "content": "A woman stops to pay her respects at the scene on Saturday in Londonderry, Northern Ireland, where 29-year-old journalist Lyra McKee was fatally shot.\r\nBrian Lawless/AP\r\nPolice in Northern Ireland have arrested two men in connection with the shooting death of… [+2662 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Npr.org" },
+      "author": "",
+      "title": "The Mueller Report: A New Tell-All About Trump's White House - NPR",
+      "description": "Few authors get to pick who will provide the exclusive first review of their work, and Mueller didn't either. That choice was made by the principal character in the story, the president himself.",
+      "url": "https://www.npr.org/2019/04/20/715258810/the-tell-all-book-that-could-trump-them-all-the-mueller-report",
+      "urlToImage": "https://media.npr.org/assets/img/2019/04/19/gettyimages-168869559_wide-8a03abd6755c58f680943d505b360230842a610a.jpg?s=1400",
+      "publishedAt": "2019-04-20T14:13:00Z",
+      "content": "Robert Mueller testifies before Congress in 2013. A redacted version of Mueller's report as special counsel was released on Thursday.\r\nBrendan Smialowski/AFP/Getty Images\r\nThe latest book-length tell-all on life inside President Trump's White House has appear… [+5548 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Espn.com" },
+      "author": null,
+      "title": "Manchester City vs. Tottenham Hotspur - Football Match Report - April 20, 2019 - ESPN",
+      "description": "Get a report of the Manchester City vs. Tottenham Hotspur 2018/2019 English Premier League football match.",
+      "url": "http://www.espn.com/soccer/report?gameId=513498",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F0420%2Fr531762_1296x729_16%2D9.jpg",
+      "publishedAt": "2019-04-20T13:42:43Z",
+      "content": "Manchester City moved back to the top of the table with a 1-0 victory over Tottenham thanks to Phil Foden's first Premier League goal.\r\nThe 18-year-old headed Sergio Aguero's knock down in from close range after the Argentina international had got on the end … [+2984 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Radio.com" },
+      "author": "https://facebook.com/WEEI",
+      "title": "Former Patriots receiver Danny Amendola rants about ex Olivia Culpo - WEEI",
+      "description": "A relationship that was once only outdone by Tom Brady and Gisele Bundchen as the Patriots top power couple has deteriorated into every other relationship that didn’t work out.",
+      "url": "https://weei.radio.com/blogs/nick-friar/former-patriots-receiver-danny-amendola-rants-about-ex-olivia-culpo",
+      "urlToImage": "https://images.radio.com/weei/s3fs-public/USATSI_9964200_168382939_lowres.jpg?YvmDUUf2747Vm4GgHTZZ91Vt3dDcPl7r",
+      "publishedAt": "2019-04-20T13:39:39Z",
+      "content": "A relationship that was once only outdone by Tom Brady and Gisele Bundchen as the Patriots top power couple has deteriorated into every other relationship that didnt work out.\r\nAlthough, former Patriots receiver Danny Amendola seems to blame the failed relati… [+760 chars]"
+    },
+    {
+      "source": { "id": "cnn", "name": "CNN" },
+      "author": "Harmeet Kaur, CNN",
+      "title": "Climate protests this week caused major disruption. That was the point. - CNN",
+      "description": "They glued themselves to trains. They blocked major landmarks. They pretended to be dead outside city hall.",
+      "url": "https://www.cnn.com/2019/04/20/world/extinction-rebellion-climate-protests/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/190418111944-13-extinction-rebellion-protest-0417-super-tease.jpg",
+      "publishedAt": "2019-04-20T13:19:00Z",
+      "content": "(CNN)Environmental activists across the globe took drastic measures this week to demand that their governments act to curb climate change.\r\nThey glued themselves to trains. They blocked major landmarks. They poured fake blood onto the streets. \r\nMore than 680… [+2658 chars]"
+    },
+    {
+      "source": { "id": "business-insider", "name": "Business Insider" },
+      "author": "Aylin Woodward",
+      "title": "We're altering the climate so severely that we'll soon face apocalyptic consequences. Here are 9 last-ditch ways we could hack the planet to reverse that trend. - Business Insider",
+      "description": "Geoengineering technology — ways to capture carbon or reflect sunlight from the atmosphere — might become the key to keeping the planet cool.",
+      "url": "https://www.businessinsider.com/geoengineering-how-to-reverse-climate-change-2019-4",
+      "urlToImage": "https://amp.businessinsider.com/images/5cb6256f8622460870534695-1920-960.jpg",
+      "publishedAt": "2019-04-20T12:46:36Z",
+      "content": "Oceans are hotter than they've ever been in recorded history. Ice Sheets are melting at unprecedented rates. Sea-level rise threatens countless species, coastal cities, and local economies. \r\n As researchers' warnings about the consequences of climate change … [+1466 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Nbcsports.com" },
+      "author": "Kurt Helin",
+      "title": "Playoff Edition Three Things to Know: Westbrook vs. Lillard is best show in playoffs - NBC Sports",
+      "description": "Westbrook got the best of Lillard in Game 3.",
+      "url": "http://nba.nbcsports.com/2019/04/20/playoff-edition-three-things-to-know-westbrook-vs-lillard-is-best-show-in-playoffs/",
+      "urlToImage": "https://nbcprobasketballtalk.files.wordpress.com/2019/04/gettyimages-1138217201-e1555763212260.jpg",
+      "publishedAt": "2019-04-20T12:26:00Z",
+      "content": "The NBA playoffs are underway and there can be a lot to unpack in a series of intense games, to help out we will give you the three things you need to know from the last 24 hours in the NBA.\r\n1) Russell Westbrook vs. Damian Lillard is the best show in playoff… [+5411 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Seekingalpha.com" },
+      "author": "SA Stocks To Watch",
+      "title": "Stocks To Watch: Earnings Blitz And Autonomy Talk - Seeking Alpha",
+      "description": "Welcome to Seeking Alpha's Stocks to Watch - a preview of key events scheduled for the next week. Follow this account and turn the e-mail alert on to receive th",
+      "url": "https://seekingalpha.com/article/4255527-stocks-watch-earnings-blitz-autonomy-talk",
+      "urlToImage": "https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
+      "publishedAt": "2019-04-20T12:05:00Z",
+      "content": "Welcome to Seeking Alpha's Stocks to Watch - a preview of key events scheduled for the next week. Follow this account and turn the e-mail alert on to receive this article in your inbox every Saturday morning.\r\nAnother nice ramp-up of earnings arrives next wee… [+10648 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Thisisinsider.com" },
+      "author": "Joe Perticone, Business Insider",
+      "title": "Trump and the Republican-controlled Senate are increasingly at odds on everything from trade to Yemen to the border wall - INSIDER",
+      "description": "With massive trade negotiations on the table, more fighting between Trump and the Senate are likely.",
+      "url": "https://www.thisisinsider.com/trump-gop-republican-senate-increasingly-at-odds-2019-4",
+      "urlToImage": "https://amp.thisisinsider.com/images/5ca5135b2730ca1f4c6d7909-2732-1366.jpg",
+      "publishedAt": "2019-04-20T11:39:56Z",
+      "content": "WASHINGTON — President Donald Trump's administration has continued to be volatile and chaotic in 2019, which should come as no surprise taking the past several years into consideration. \r\n But one development which only began in 2019 is a constant stream of e… [+5896 chars]"
+    },
+    {
+      "source": { "id": "politico", "name": "Politico" },
+      "author": "NAHAL TOOSI",
+      "title": "Fears grow Trump will abandon Afghan women to the Taliban - Politico",
+      "description": "Sen. Jeanne Shaheen is waging a campaign to keep the once prominent issue in the spotlight.",
+      "url": "https://www.politico.com/story/2019/04/20/afghanistan-women-shaheen-1279707",
+      "urlToImage": "https://static.politico.com/c9/92/d7ebd4ce416f9570d85a41bf5f95/190419-jeanne-shaheen-ap-773.jpg",
+      "publishedAt": "2019-04-20T11:12:00Z",
+      "content": "As peace talks for Afghanistan move forward, Sen. Jeanne Shaheen is determined to keep pressing the issue of women. | Evan Vucci/AP Photo\r\nJeanne Shaheen was facing down Secretary of State Mike Pompeo and not too pleased about it.\r\nThe senator asked Pompeo to… [+10744 chars]"
+    },
+    {
+      "source": { "id": "engadget", "name": "Engadget" },
+      "author": "James Trew",
+      "title": "The next frontier for cannabis vapes: mood-specific formulas - Engadget",
+      "description": "Curated and customized cannabis highs are coming.",
+      "url": "https://www.engadget.com/2019/04/20/mood-specific-cannabis-vapes/",
+      "urlToImage": "https://o.aolcdn.com/images/dims?thumbnail=1200%2C630&quality=80&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D4284%252C2481%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C927%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-04%252F6b2418a0-62d3-11e9-b6ff-8e9580b9f238%26client%3Da1acac3e1b3290917d92%26signature%3D19e046c283780065e3bc07f83007d1db962c50d2&client=amp-blogside-v2&signature=28b8d146f7381cf7d9d7451c66ad2ab8a6b70440",
+      "publishedAt": "2019-04-20T11:10:32Z",
+      "content": "As with any form of prohibition, once the floodgates open, there's an inevitable wave of over-indulgence. For the last few years, we've seen the emergence of increasingly strong oils and concentrates. But as the party smoke clears, that's changing. People are… [+10470 chars]"
+    },
+    {
+      "source": { "id": "fox-news", "name": "Fox News" },
+      "author": "Louis Casiano",
+      "title": "Vermont bill to replace Columbus Day with Indigenous Peoples’ Day advances - Fox News",
+      "description": "Vermont appears poised to replace Columbus Day with Indigenous Peoples' Day, as more cities, states and universities opt to stop honoring the famed explorer and recognize Native Americans instead.",
+      "url": "https://www.foxnews.com/politics/vermont-poised-to-replace-columbus-day-with-indigenous-peoples-day",
+      "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2019/04/C1.jpg",
+      "publishedAt": "2019-04-20T10:40:32Z",
+      "content": "Vermont appears poised to replace Columbus Day with Indigenous Peoples' Day, as more cities, states and universities opt to stop honoring the famed explorer and recognize Native Americans instead.\r\nA bill to replace the federal holiday cleared the state Legis… [+1692 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Wtop.com" },
+      "author": "CNN",
+      "title": "Are you protected from measles? It may depend on when you were born - WTOP",
+      "description": "With a surge in measles cases — including adults who thought they were protected by the vaccine — some are questioning whether they are properly vaccinated and whether they are still at risk for getting measles.",
+      "url": "https://wtop.com/health-fitness/2019/04/are-you-protected-from-measles-it-may-depend-on-when-you-were-born/",
+      "urlToImage": "https://wtop.com/wp-content/uploads/2019/01/S104637576-300.jpg",
+      "publishedAt": "2019-04-20T10:33:52Z",
+      "content": "Nearly two decades after measles was declared eliminated in the United States, the country and the globe have seen an upsurge of cases — including adults who thought they were protected by the vaccine. Now, some are questioning whether they are properly vacci… [+9910 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Interestingengineering.com" },
+      "author": "",
+      "title": "Watch the Lyrid Meteor Shower Light up the Night Sky This Weekend - Interesting Engineering",
+      "description": "The meteor shower happens every year around the same time and will peak this weekend, streaking across the night sky.",
+      "url": "https://interestingengineering.com/watch-the-lyrid-meteor-shower-light-up-the-night-sky-this-weekend",
+      "urlToImage": "https://static.interestingengineering.com/images/APRIL/sizes/lyrids-meteorshower_md.jpg",
+      "publishedAt": "2019-04-20T10:31:07Z",
+      "content": "Do April showers bring May flowers? Perhaps these might not be the showers you imagine, but you get the idea. If you are looking for something to do on the this long Easter weekend besides watching another episode of Game of Thrones, why not check out The Lyr… [+2397 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Notebookcheck.net" },
+      "author": "Sanjiv Sathiah",
+      "title": "Opinion: Criticism of the Galaxy Fold unfairly undermines Samsung\\'s achievement - Notebookcheck.net",
+      "description": "Samsung has been copping a lot of flak for the highly publicized issues that some of the Galaxy Fold review units it has in circulation. However, some of these critics fail to adequately credit Samsung for pushing the boundaries of what is possible. Note: The…",
+      "url": "https://www.notebookcheck.net/Opinion-Criticism-of-the-Galaxy-Fold-unfairly-undermines-Samsung-s-achievement.418257.0.html",
+      "urlToImage": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Screenshot_2019_04_20_at_19.34.53.png",
+      "publishedAt": "2019-04-20T09:41:24Z",
+      "content": "The internet has exploded over the apparent issues Samsung has been experiencing with the displays on a handful of Galaxy Fold review units. Undoubtedly, it is an embarrassing situation for the company to be in. After all, it is a marquee product and one that… [+4944 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Youtube.com" },
+      "author": null,
+      "title": "Two of 12 abused Turpin children read statements during parents' sentencing - ABC News",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=FG9DxtjeNwg",
+      "urlToImage": null,
+      "publishedAt": "2019-04-20T09:25:43Z",
+      "content": "[[getSimpleString(data.title)]]\r\n[[getSimpleString(data.description)]]\r\n[[getSimpleString(data.videoCountText)]]"
+    },
+    {
+      "source": { "id": null, "name": "Qz.com" },
+      "author": "Tim Fernholz",
+      "title": "NASA needs a camera to spot killer asteroids - Quartz",
+      "description": "Forget aliens. We've got to find the asteroids.",
+      "url": "https://qz.com/1591021/nasa-needs-a-camera-to-spot-killer-asteroids/",
+      "urlToImage": "https://cms.qz.com/wp-content/uploads/2019/04/NEOCam-asteroid-meteor-Tunguska-NEO-NASA-JPL.jpg?quality=75&strip=all&w=1400",
+      "publishedAt": "2019-04-20T09:00:00Z",
+      "content": "Astronomers tend to be patient people. When it comes to stars, much of what they examine happened millions of years ago, and when it comes to space probes, even pre-launch prep can take a decade or more.\r\nBut they are getting impatient about launching an infr… [+5351 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Thedenverchannel.com" },
+      "author": "https://www.thedenverchannel.com/the-associated-press",
+      "title": "Undersheriff: Teen's death likely preceded Colorado manhunt - The Denver Channel",
+      "description": "A Colorado undersheriff who led the search for a Florida teenager whose actions prompted tightened security at Columbine High School ahead of the 20th anniversary of an attack there that killed 13 people said she likely killed herself before police launched a…",
+      "url": "https://www.thedenverchannel.com/news/local-news/undersheriff-teens-death-likely-preceded-colorado-manhunt",
+      "urlToImage": "https://ewscripps.brightspotcdn.com/dims4/default/143b25c/2147483647/strip/true/crop/1600x840+0+34/resize/1200x630!/quality/90/?url=https%3A%2F%2Fewscripps.brightspotcdn.com%2Fe0%2Feb%2F660fd83649db98679fd66c688361%2Fsol-pais-dead.png",
+      "publishedAt": "2019-04-20T04:00:00Z",
+      "content": "DENVER (AP) A Colorado undersheriff who led the search for a Florida teenager whose actions prompted tightened security at Columbine High School ahead of the 20th anniversary of an attack there that killed 13 people said she likely killed herself before polic… [+3070 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Phonearena.com" },
+      "author": "Alan Friedman",
+      "title": "Was that the Apple iPhone 11 in Foxconn CEO Terry Gou's hands? - Phone Arena",
+      "description": "Earlier today, some thought that Foxconn CEO Terry Gou had leaked the Apple iPhone 11 during a press conference to announce that he was running for President of Taiwan....",
+      "url": "https://www.phonearena.com/news/Foxconn-CEO-Gou-did-not-leak-the-iPhone-11_id115450",
+      "urlToImage": "https://i-cdn.phonearena.com/images/article/115450-two_lead/Was-that-the-Apple-iPhone-11-in-Foxconn-CEO-Terry-Gous-hands.jpg",
+      "publishedAt": "2019-04-20T03:40:09Z",
+      "content": "It's only April and the 2019 Apple iPhone models aren't expected to be unveiled until September. But Ben Geskin, the designer of many iPhone concepts, sent out a tweet today (via BGR) that included a photo of a phone that he thought could be the iPhone 11. An… [+2463 chars]"
+    },
+    {
+      "source": { "id": "cbs-news", "name": "CBS News" },
+      "author": "CBS/AP",
+      "title": "Child who plunged from Mall of America balcony showing \"real signs of recovery\" - CBS News",
+      "description": "\"New test results have been positive, though he remains in intensive care with a long road ahead,\" an attorney for the family said",
+      "url": "https://www.cbsnews.com/news/child-who-plunged-from-mall-of-america-balcony-showing-real-signs-of-recovery/",
+      "urlToImage": "https://cbsnews1.cbsistatic.com/hub/i/r/2019/04/12/3fe3c06c-b611-47f4-9af0-1a0d709b9155/thumbnail/1200x630/9dc3bbbd060bb2e68b167b9bc5c6d03a/mall-of-america-balcony-fall-2019-04-12.jpg",
+      "publishedAt": "2019-04-20T03:27:00Z",
+      "content": "A 5-year-old boy who authorities say was thrown from a third-floor balcony at Mall of America is showing \"real signs of recovery,\" a lawyer for boy's family told CBS Minnesota on Friday. Police said the suspect, Emmanuel Aranda, told them he went to the mall … [+2661 chars]"
+    },
+    {
+      "source": { "id": "the-hill", "name": "The Hill" },
+      "author": "Rachel Frazin",
+      "title": "US authorities arrest former Marine in raid of North Korean embassy in Spain | TheHill - The Hill",
+      "description": "U.S.",
+      "url": "https://thehill.com/policy/national-security/439825-us-authorities-arrest-former-marine-in-raid-of-north-korean-embassy",
+      "urlToImage": "https://thehill.com/sites/default/files/northkoreanembassy_041919getty.jpg",
+      "publishedAt": "2019-04-20T03:17:59Z",
+      "content": "U.S. authorities arrested a former Marine after a February raid on the North Korean embassy in Spain, The Washington Post reported Friday, citing two people familiar with the matter.\r\nChristopher Ahn, a former Marine and member of a group known as Free Joseon… [+1508 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Fox13now.com" },
+      "author": "https://fox13now.com/facebook/",
+      "title": "Recall of blood pressure drug losartan expanded - KSTU FOX 13 Salt Lake City",
+      "description": "If you take blood pressure medicine, you'll want to double-check your bottle. Torrent Pharmaceuticals Ltd. has expanded its recall of losartan potassium and losartan potassium/hydrochlorothiazide tablets.\r\n\nTests found trace amounts of a potentially cancer-ca…",
+      "url": "https://fox13now.com/2019/04/19/recall-of-blood-pressure-drug-losartan-expanded/",
+      "urlToImage": "https://localtvkstu.files.wordpress.com/2019/04/s102911049.jpg?quality=85&strip=all",
+      "publishedAt": "2019-04-20T00:56:00Z",
+      "content": "If you take blood pressure medicine, you’ll want to double-check your bottle. Torrent Pharmaceuticals Ltd. has expanded its recall of losartan potassium and losartan potassium/hydrochlorothiazide tablets.\r\nTests found trace amounts of a potentially cancer-cau… [+2063 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Thetimes.co.uk" },
+      "author": null,
+      "title": "Billion-dollar bet boosts Uber before float | Business - The Times",
+      "description": "Uber has received a boost ahead of its expected flotation next month after securing $1 billion of investment in its self-driving car unit. The world’s biggest taxi-hailing company said that it had...",
+      "url": "https://www.thetimes.co.uk/article/billion-dollar-bet-boosts-uber-before-float-blrbj9l2g",
+      "urlToImage": "http://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8b7a816a-62b1-11e9-99ae-5ebf638762d3.jpg?crop=1024%2C576%2C0%2C53",
+      "publishedAt": "2019-04-19T23:01:00Z",
+      "content": "Uber has received a boost ahead of its expected flotation next month after securing $1 billion of investment in its self-driving car unit.\r\nThe worlds biggest taxi-hailing company said that it had struck a deal with the technology fund of Softbank, the Japane… [+513 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Bgr.com" },
+      "author": "Mike Wehner",
+      "title": "Yes, there’s a full moon tonight, but it won’t be pink - BGR",
+      "description": "If you’re an aspiring skywatcher looking for a good reason to stay up past your bedtime and gaze into the cosmos, I have good news: Friday, April 19th will feature a full moon. However, if yo…",
+      "url": "https://bgr.com/2019/04/19/pink-moon-2019-full-moon-farmers-almanac/",
+      "urlToImage": "https://boygeniusreport.files.wordpress.com/2018/01/bgr-9349745a.jpg?quality=98&strip=all",
+      "publishedAt": "2019-04-19T22:04:00Z",
+      "content": "If you’re an aspiring skywatcher looking for a good reason to stay up past your bedtime and gaze into the cosmos, I have good news: Friday, April 19th will feature a full moon. However, if you’re eagerly anticipating tonight’s full moon because it carries the… [+1322 chars]"
+    },
+    {
+      "source": { "id": "reuters", "name": "Reuters" },
+      "author": "Marco Aquino",
+      "title": "Peru ex-president leaves cadaver as sign of 'contempt' for his enemies: suicide note - Reuters",
+      "description": "Peruvian ex-president Alan Garcia wrote in an alleged suicide note read by family members at a wake on Friday that he had killed himself in order to avoid humiliation at the hands of his political enemies.",
+      "url": "https://www.reuters.com/article/us-peru-corruption/peru-ex-president-leaves-cadaver-as-sign-of-contempt-for-his-enemies-suicide-note-idUSKCN1RV19V",
+      "urlToImage": "https://s4.reutersmedia.net/resources/r/?m=02&d=20190419&t=2&i=1378690210&w=1200&r=LYNXNPEF3I0Z8",
+      "publishedAt": "2019-04-19T21:23:00Z",
+      "content": "LIMA (Reuters) - Peruvian ex-president Alan Garcia wrote in an alleged suicide note read by family members at a wake on Friday that he had killed himself in order to avoid humiliation at the hands of his political enemies. \r\nGarcia shot himself in the head ea… [+2178 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Radio.com" },
+      "author": "https://facebook.com/WEEI, https://facebook.com/WEEI",
+      "title": "Patriots reportedly have 'taken a shine' to Duke QB Daniel Jones - WEEI",
+      "description": "Could the Patriots draft a quarterback high in next week's NFL draft? If Duke quarterback Daniel Jones becomes available, perhaps they will.",
+      "url": "https://weei.radio.com/blogs/ryan-hannable/new-england-patriots-draft-rumors-team-taken-shine-duke-quarterback-daniel-jones",
+      "urlToImage": "https://images.radio.com/weei/s3fs-public/daniel-jones-joshua-s-kelly.jpg",
+      "publishedAt": "2019-04-19T18:55:24Z",
+      "content": "Could the Patriots draft a quarterback high in next week's NFL draft? If Duke quarterback Daniel Jones becomes available, perhaps they will.\r\nAccording to CBS Sports' Jason La Canfora, the Patriots have taken a shine to him and he even notes there's a chance … [+395 chars]"
+    },
+    {
+      "source": { "id": "the-new-york-times", "name": "The New York Times" },
+      "author": null,
+      "title": "Americans Agree on One Thing About the Mueller Report: Disgust With the Country’s Leaders - The New York Times",
+      "description": "People of all political persuasions shared one feeling: disgust with the country’s leaders and a sense that important issues, such as health care, continued to be ignored.",
+      "url": "https://www.nytimes.com/2019/04/19/us/the-mueller-report-voters-reactions.html",
+      "urlToImage": "https://static01.nyt.com/images/2019/04/19/us/19mueller-react/19mueller-react-facebookJumbo.jpg",
+      "publishedAt": "2019-04-19T17:48:52Z",
+      "content": "Still, the exasperated relief that the two-year investigation had come to an end bumped up against another, contradictory impulse among Trump supporters. If a waste of time goes on long enough, some said, shouldnt someone be held accountable for all that wast… [+1462 chars]"
+    },
+    {
+      "source": { "id": "axios", "name": "Axios" },
+      "author": null,
+      "title": "Second flu wave pushes this year's season into record-breaking territory - Axios",
+      "description": "The 2019 flu season has spanned 21 weeks.",
+      "url": "https://www.axios.com/second-flu-wave-pushes-years-season-record-breaking-territory-118d9186-ff20-458e-ab59-22f5e88019b3.html",
+      "urlToImage": "https://images.axios.com/QhDhcFzRcKBq3CQE7RXD0DYh2V4=/1920x1080/smart/2019/04/19/1555692531537.jpg",
+      "publishedAt": "2019-04-19T16:55:00Z",
+      "content": "The 2019 flu season has spanned 21 weeks, according to reports released on Friday by the Centers for Disease Control and Prevention, making it among the longest running stretch for the illness since the government began keeping track over 20 years ago, the AP… [+689 chars]"
+    }
+  ]
+}

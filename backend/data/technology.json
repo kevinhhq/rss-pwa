@@ -1,0 +1,706 @@
+{
+  "status": "ok",
+  "totalResults": 70,
+  "technology": [
+    {
+      "source": { "id": null, "name": "Comicbook.com" },
+      "author": "Tanner Dedmon",
+      "title": "'God of War' Documentary 'Raising Kratos' Announced - Comicbook.com",
+      "description": "'God of War' Documentary 'Raising Kratos' Announced",
+      "url": "https://comicbook.com/gaming/2019/04/20/god-of-war-documentary-raising-kratos/",
+      "urlToImage": "https://media.comicbook.com/2019/03/god-of-war-1163281-640x320.jpeg",
+      "publishedAt": "2019-04-20T15:28:11Z",
+      "content": "Theres a new documentary coming soon called Raising Kratos that gives a behind-the-scenes look at the creation of the PlayStation 4 exclusive God of War. The game came out on April 20th, 2018, and a trailer for the documentary released exactly one year later … [+2284 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Pushsquare.com" },
+      "author": "Push Square",
+      "title": "Insiders Claim That Next Xbox Is More Advanced Than PS5 - Push Square",
+      "description": "It begins",
+      "url": "http://www.pushsquare.com/news/2019/04/insiders_claim_that_next_xbox_is_more_advanced_than_ps5",
+      "urlToImage": "http://images.pushsquare.com/news/2019/04/insiders_claim_that_next_xbox_is_more_advanced_than_ps5/large.jpg",
+      "publishedAt": "2019-04-20T15:00:00Z",
+      "content": "Sony officially unveiled the first details regarding the PlayStation 5 this week, catching the industry somewhat by surprise in the process. Many had expected Microsoft to move first at E3 2019 in a few weeks, but it seems the Japanese giant had other ideas. … [+1477 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Eurogamer.net" },
+      "author": "Richard Leadbetter",
+      "title": "In Theory: is PS5 powered by an AMD Gonzalo processor? - Eurogamer.net",
+      "description": "Specs have leaked for a new AMD console chip - but what is it?",
+      "url": "https://www.eurogamer.net/articles/digitalfoundry-2019-is-amd-gonzalo-the-ps5-processor-in-theory",
+      "urlToImage": "https://cdn.gamer-network.net/2019/articles/2019-04-20-15-38/digitalfoundry-2019-is-amd-gonzalo-the-ps5-processor-in-theory-1555771085464.jpg",
+      "publishedAt": "2019-04-20T14:30:00Z",
+      "content": "The first reveal - of sorts - for PlayStation 5 has been and gone, with Sony confirming specs including an octo-core Zen 2 CPU, custom Navi graphics, hardware-accelerated 3D audio, solid state storage and PS4 backwards compatibility. Specifics such as CPU/GPU… [+10855 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Gizmodo.com" },
+      "author": "Andrew Liszewski",
+      "title": "When Will We Get the Game Boy Classic Edition? - Gizmodo",
+      "description": "Tomorrow, April 21, 2019, the Game Boy turns 30 years old. The handheld console that paved the way for the Switch is still beloved by almost anyone who’s ever laid hands on it, and for all its shortcomings, it’s still one of the most memorable gaming devices …",
+      "url": "https://gizmodo.com/when-will-we-get-the-game-boy-classic-edition-1834174126",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/s--f1JgaBUc--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/twmwkzzftgfly1mqkkiy.jpg",
+      "publishedAt": "2019-04-20T14:00:00Z",
+      "content": "Tomorrow, April 21, 2019, the Game Boy turns 30 years old. The handheld console that paved the way for the Switch is still beloved by almost anyone whos ever laid hands on it, and for all its shortcomings, its still one of the most memorable gaming devices of… [+3852 chars]"
+    },
+    {
+      "source": { "id": "techradar", "name": "TechRadar" },
+      "author": "https://www.facebook.com/TechRadar",
+      "title": "Apple reportedly planning big upgrades to the cameras on the iPhone 11 - TechRadar",
+      "description": "More lenses, special coatings",
+      "url": "https://www.techradar.com/news/apple-reportedly-planning-big-upgrades-to-the-cameras-on-the-iphone-11",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/pZbAApYq4sDRi6hgHAxZ28-1200-80.jpg",
+      "publishedAt": "2019-04-20T13:30:00Z",
+      "content": "What's on your wishlist for the 2019 iPhones? Based on analyst reports, Apple is planning to give both the front-facing and rear-facing cameras on the iPhone 11 models a significant upgrade this year.\r\nWell-respected Apple watcher Ming-Chi Kuo says that the s… [+1218 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Bbc.com" },
+      "author": "BBC News",
+      "title": "Notre-Dame fire: How gamers are getting 'inside' the cathedral - BBC News",
+      "description": "Players return to a 2014 video game to visit a digital version of the cathedral, untouched by fire.",
+      "url": "https://www.bbc.com/news/av/world-europe-47998294/notre-dame-fire-how-gamers-are-getting-inside-the-cathedral",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1368F/production/_106530597_p0770y8q.jpg",
+      "publishedAt": "2019-04-20T13:27:23Z",
+      "content": null
+    },
+    {
+      "source": { "id": "crypto-coins-news", "name": "Crypto Coins News" },
+      "author": "Joseph Young",
+      "title": "Samsung Fold Disaster Extends to 60% Q1 Profit Drop for Nightmare 2019 - CCN",
+      "description": "By CCN.com: Following a shock 60 percent drop in profits by Samsung Electronics as reported by FT, woes for the South Korean technology giant continued as the Samsung Galaxy Fold, a $2,000 device released to",
+      "url": "https://www.ccn.com/samsungs-nightmare-fold-scandal-60-drop-in-profits",
+      "urlToImage": "https://www.ccn.com/wp-content/uploads/2019/04/Samsung-Fold-NTB.jpg",
+      "publishedAt": "2019-04-20T12:53:01Z",
+      "content": "Get Exclusive Analysis and Investing Ideas of Future Assets on Hacked.com. Join the community today and get up to $400 in discount by using the code: \"CCN+Hacked\". Sign up here.\r\nGet Exclusive Analysis and Investing Ideas of Future Assets on Hacked.com. Join … [+4263 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Pokemongohub.net" },
+      "author": "Zeroghan",
+      "title": "Shiny Lapras spotted by players and shiny Shuckle released - Pokemon GO Hub",
+      "description": "Trainers, in a surprising turn of events, shiny Lapras has been spotted in the wild! Although there is no official confirmation from Niantic yet, players have reported catching shiny Lapras in the following locations: Ontario, Canada Hong Kong Lapras is avail…",
+      "url": "https://pokemongohub.net/post/news/shiny-lapras-and-shiny-shuckle-released/",
+      "urlToImage": "https://pokemongohub.net/wp-content/uploads/2019/04/ALLSHUCKSGIVEN.jpg",
+      "publishedAt": "2019-04-20T11:56:00Z",
+      "content": "Trainers, in a surprising turn of events, shiny Lapras has been spotted in the wild! Although there is no official confirmation from Niantic yet, players have reported catching shiny Lapras in the following locations:\r\nLapras is available as a reward from the… [+2026 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Tomsguide.com" },
+      "author": null,
+      "title": "It’s Time for LG to Stop Making Phones - Tom's Guide",
+      "description": "LG's ThinQ flagships are ambitious but no match for Apple and Samsung.",
+      "url": "https://www.tomsguide.com/us/lg-smartphone-problem,news-29906.html",
+      "urlToImage": "https://img.purch.com/o/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9GL0UvODMzODgyL29yaWdpbmFsL0xHLUc4LmpwZWc=",
+      "publishedAt": "2019-04-20T11:03:14Z",
+      "content": "LG's G8 ThinQ went on sale April 11, and while it seems like a stellar smartphone on paper, its premium qualities are sabotaged by gimmicks like vein recognition and difficult-to-use hand-gesture controls.\r\nLG G8 ThinQ\r\nThat doesn't mean people won't buy the … [+8301 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Cnet.com" },
+      "author": "Ry Crist",
+      "title": "Weed tech heats up with a new smart vaporizer from Apple, Microsoft alums - CNET",
+      "description": "The newest app-enabled vaporizer on the market is the Firefly 2 Plus, and it shows how Silicon Valley is looking to cash in on cannabis as legalization picks up steam.",
+      "url": "https://www.cnet.com/news/weed-tech-heats-up-with-a-new-smart-vaporizer-from-firefly/",
+      "urlToImage": "https://cnet1.cbsistatic.com/img/kR2KYhf3jWKpbuj4BEhMpVRGUDE=/756x567/2019/04/18/238a9d55-3cf7-4120-90a2-fe2e30b86f1a/firefly-2-plus-hero-shot.jpg",
+      "publishedAt": "2019-04-20T11:00:16Z",
+      "content": "Warning: This story discusses mind-altering substances and technology used to consume them. These substances are legal in some places but not in others. You shouldn't do things that are illegal -- nothing here endorses illegal drug use.   \r\nThe company's co-f… [+10211 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Eurogamer.net" },
+      "author": "Wesley Yin-Poole",
+      "title": "Warner Bros. is trying to plug Mortal Kombat 11 leaks after street date is broken - Eurogamer.net",
+      "description": "Spoilers!",
+      "url": "https://www.eurogamer.net/articles/2019-04-20-warner-bros-is-trying-to-plug-mortal-kombat-11-leaks-after-street-date-is-broken",
+      "urlToImage": "https://cdn.gamer-network.net/2019/articles/2019-04-20-11-43/-1555757022662.jpg",
+      "publishedAt": "2019-04-20T10:56:00Z",
+      "content": "Mortal Kombat 11's street date was shattered this week - and now publisher Warner Bros. is desperately trying to plug leaks.\r\nMortal Kombat 11's official release date is 23rd April 2019, but UK customers are already in possession of the game after online reta… [+1372 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Eurogamer.net" },
+      "author": "Wesley Yin-Poole",
+      "title": "Nintendo is deleting what it deems inappropriate Super Smash Bros. Ultimate stages - Eurogamer.net",
+      "description": "As row over removal of a trans rights level intensifies.",
+      "url": "https://www.eurogamer.net/articles/2019-04-20-nintendo-is-deleting-what-it-deems-inappropriate-super-smash-bros-ultimate-stages",
+      "urlToImage": "https://cdn.gamer-network.net/2019/articles/2019-04-20-10-48/nintendo-is-deleting-what-it-deems-inappropriate-super-smash-bros-ultimate-stages-1555753734563.jpg",
+      "publishedAt": "2019-04-20T10:15:00Z",
+      "content": "As expected, Nintendo is moving to delete what it deems inappropriate user-generated Super Smash Bros. Ultimate levels after the stage creator feature went live earlier this week.\r\nThis article includes content not safe for work.\r\nMost of the content currentl… [+2998 chars]"
+    },
+    {
+      "source": { "id": null, "name": "9to5mac.com" },
+      "author": null,
+      "title": "Court documents show Apple purposefully bought pools of cheap patents to help make Qualcomm’s royalty demands appear overpriced - 9to5Mac",
+      "description": "The Qualcomm and Apple legal battle has now concluded thanks to a settlement of unknown financial value, but as the settlement came one day in to the start of the trial, a few tidbits from discover…",
+      "url": "https://9to5mac.com/2019/04/20/court-apple-appear-qualcomm-exorbitant/",
+      "urlToImage": "https://9to5mac.com/wp-content/uploads/sites/6/2017/10/qualcomm-apple.jpg?quality=82&strip=all&w=998",
+      "publishedAt": "2019-04-20T10:06:00Z",
+      "content": "The Qualcomm and Apple legal battle has now concluded thanks to a settlement of unknown financial value, but as the settlement came one day in to the start of the trial, a few tidbits from discovery process have still seeped out.\r\nOne particularly devious poi… [+2264 chars]"
+    },
+    {
+      "source": { "id": "techradar", "name": "TechRadar" },
+      "author": "https://www.facebook.com/TechRadar",
+      "title": "BlackBerry Messenger is closing down for consumers at the end of May - TechRadar",
+      "description": "Bites the dust after 14 years",
+      "url": "https://www.techradar.com/news/blackberry-messenger-is-closing-down-for-consumers-at-the-end-of-may",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/nZHcXyacw7RTWHLgBPik7f-1200-80.jpg",
+      "publishedAt": "2019-04-20T09:30:00Z",
+      "content": "Having once dominated instant messaging conversations across the planet, BlackBerry Messenger or BBM is closing down its consumer operations on May 31.\r\n\"The technology industry... is very fluid, and in spite of our substantial efforts, users have moved on to… [+1196 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Express.co.uk" },
+      "author": "Gary Jones",
+      "title": "PS Plus Free Game WARNING and the PS4 downloads you don’t want to miss - Express",
+      "description": "PS Plus Free Games for May 2019 will soon be announced but will come with a warning, while PS4 gamers may have missed some of these top bonuses and rewards.",
+      "url": "https://www.express.co.uk/entertainment/gaming/1116597/PS-Plus-Free-Game-PS4-downloads",
+      "urlToImage": "https://cdn.images.express.co.uk/img/dynamic/143/750x445/1116597.jpg",
+      "publishedAt": "2019-04-20T06:01:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": null, "name": "9to5google.com" },
+      "author": null,
+      "title": "Here’s some new Case-Mate ‘Made for Google’ cases for Pixel 3a and 3a XL - 9to5Google",
+      "description": "We already told you basically everything there is to know about the Google Pixel 3a and Pixel 3a XL, and Google itself has even — accidentally — confirmed their existence. Now, we have our first ha…",
+      "url": "https://9to5google.com/2019/04/19/case-mate-pixel-3a-leak/",
+      "urlToImage": "https://9to5google.com/wp-content/uploads/sites/4/2018/12/google_pixel_3_xl_lite_combo_3.jpg?quality=82&strip=all&w=1600",
+      "publishedAt": "2019-04-20T05:13:00Z",
+      "content": "We already told you basically everything there is to know about the Google Pixel 3a and Pixel 3a XL, and Google itself has even accidentally confirmed their existence. Now, we have our first hands on an image of some new third-party cases for the phones…\r\nIts… [+1458 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Express.co.uk" },
+      "author": "Gary Jones",
+      "title": "Xbox Live Free Game NEWS: Don’t forget to download this new Xbox One bonus - Express",
+      "description": "XBOX LIVE gamers have a new free game download waiting for them on Xbox One and Xbox One X.",
+      "url": "https://www.express.co.uk/entertainment/gaming/1116600/Xbox-Live-Free-Game-download-Xbox-One",
+      "urlToImage": "https://cdn.images.express.co.uk/img/dynamic/143/750x445/1116600.jpg",
+      "publishedAt": "2019-04-20T05:01:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": null, "name": "Appleinsider.com" },
+      "author": "AppleInsider",
+      "title": "Lowest prices ever: Apple's quad-core 13\" MacBook Pro (512GB) $1,499, 15\" MacBook Pro $1,899 - AppleInsider",
+      "description": "Amazon has issued a $500 instant discount on Mid 2018 MacBook Pros, delivering the lowest prices ever. Pick up a 512GB 13-inch MacBook Pro with Touch Bar for just $1,499 or a 15-inch MacBook Pro for $1,899 while supplies last.",
+      "url": "https://appleinsider.com/articles/19/04/20/apples-quad-core-13-inch-macbook-pro-with-512gb-ssd-drops-to-1499-at-amazon-the-lowest-price-ever",
+      "urlToImage": "https://photos5.appleinsider.com/gallery/28999-46138-2018MacBookPro-Lowest-Price-xl.jpg",
+      "publishedAt": "2019-04-20T04:15:00Z",
+      "content": "Amazon has issued a $500 instant discount on Mid 2018 MacBook Pros, delivering the lowest prices ever. Pick up a 512GB 13-inch MacBook Pro with Touch Bar for just $1,499 or a 15-inch MacBook Pro for $1,899 while supplies last.These Amazon MacBook Pro deals de… [+739 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Tmonews.com" },
+      "author": "Alex Wagner",
+      "title": "Moto G7 Plus may be coming to T-Mobile - TmoNews",
+      "description": "Motorola has already confirmed that the Moto G7 Power is coming to T-Mobile, but that may not be the only Moto",
+      "url": "https://www.tmonews.com/2019/04/moto-g7-plus-t-mobile-fcc/",
+      "urlToImage": "https://www.tmonews.com/wp-content/uploads/2019/04/moto-g7-plus-210x131.jpg",
+      "publishedAt": "2019-04-20T00:38:12Z",
+      "content": "Motorola has already confirmed that the Moto G7 Power is coming to T-Mobile, but that may not be the only Moto G7 variant headed for T-Mo’s shelves.\r\nThe Moto G7 Plus may also launch at T-Mobile. A Motorola device with the model number XT1965-T was recently s… [+1391 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Forbes.com" },
+      "author": "TJ McCue",
+      "title": "Alexa Is Listening All The Time: Here's How To Stop It - Forbes",
+      "description": "Recent news reports in the last week revealed that Amazon has thousands of workers listening to Amazon Echo aka Alexa voice assistant recordings. That is a bit unnerving, however, this post will share several ways, including a serious DIY project, to increase…",
+      "url": "https://www.forbes.com/sites/tjmccue/2019/04/19/alexa-is-listening-all-the-time-heres-how-to-stop-it/",
+      "urlToImage": "https://thumbor.forbes.com/thumbor/600x315/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F926379132%2F960x0.jpg%3Ffit%3Dscale",
+      "publishedAt": "2019-04-20T00:32:00Z",
+      "content": "Recent news reports in the last week revealed that Amazon has thousands of workers listening to Amazon Echo aka Alexa voice assistant recordings. That is a bit unnerving, however, this post will share several ways, including a serious DIY project, to increase… [+11399 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Mspoweruser.com" },
+      "author": null,
+      "title": "Microsoft starts notifying Windows 7 users that it’s time to buy a new PC - MSPoweruser",
+      "description": "If you’re one of the 35% of Windows users who are still using Windows 7, you may want to look into upgrading.  Microsoft have notified users that support for the OS is coming to an end early next year. The notification titled “After 10 years, support for Wind…",
+      "url": "https://mspoweruser.com/microsoft-starts-notifying-windows-7-users-that-its-time-to-buy-a-new-pc/",
+      "urlToImage": "https://mspoweruser.com/wp-content/uploads/2019/04/windows.jpg",
+      "publishedAt": "2019-04-20T00:24:00Z",
+      "content": "If you’re one of the 35% of Windows users who are still using Windows 7, you may want to look into upgrading.  Microsoft have notified users that support for the OS is coming to an end early next year.\r\nThe notification titled After 10 years, support for Wind… [+956 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Komando.com" },
+      "author": "",
+      "title": "Facebook's sloppy data protection now affecting Instagram users - Komando",
+      "description": "Another social media site has been affected by a Facebook fail. Hundreds of millions of Facebook users' passwords were stored in plain text and searchable to Facebook employees. Now, Facebook admits that users of a sister site were caught up in th…",
+      "url": "http://www.komando.com/happening-now/562602/facebooks-sloppy-data-protection-now-affecting-instagram-users",
+      "urlToImage": "https://accelerator-origin.kkomando.com/wp-content/uploads/2019/04/article-facebook-stored-instagram-passwords-plain-text_970X546.jpg",
+      "publishedAt": "2019-04-20T00:03:54Z",
+      "content": "Last month, we learned that Facebook had been storing hundreds of millions of users' passwords in plain text. It was the latest Facebook fail in a string of incidents that show how the company plays fast and loose with its customers personal data.\r\nThere were… [+4103 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Kotaku.com" },
+      "author": "Chris Kohler",
+      "title": "Konami's New Arcade Collection Could Have Been A Lot Better - Kotaku",
+      "description": "Konami’s Arcade Classics Anniversary Edition is out this week, collecting eight of its classic coin-op games like Haunted Castle, Gradius, and Twinbee. While the games and the emulation are solid, Konami has taken a strangely bare-bones, region-locked approac…",
+      "url": "https://kotaku.com/konamis-new-arcade-collection-could-have-been-a-lot-bet-1834179761",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/s--vUr4txfi--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/bprrptsls9howdqwx1ei.jpg",
+      "publishedAt": "2019-04-19T23:20:00Z",
+      "content": "Konamis Arcade Classics Anniversary Edition is out this week, collecting eight of its classic coin-op games like Haunted Castle, Gradius, and Twinbee. While the games and the emulation are solid, Konami has taken a strangely bare-bones, region-locked approach… [+3877 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Androidpolice.com" },
+      "author": "Aatif Sumar",
+      "title": "Huawei P30 Pro put through its paces in JerryRigEverything's durability test - Android Police",
+      "description": "What would you do upon getting your hands on the Huawei P30 Pro, one of the year's hottest smartphones? If you're Zack from JerryRigEverything, you'd celebrate by bending, scratching, and burning the device — all in the name of science. Zack has with him the …",
+      "url": "https://www.androidpolice.com/2019/04/19/huawei-p30-pro-put-through-the-paces-in-jerryrigeverythings-durability-test/",
+      "urlToImage": "https://www.androidpolice.com/wp-content/uploads/2019/04/JRE_Hero-728x410.png",
+      "publishedAt": "2019-04-19T22:57:00Z",
+      "content": "What would you do upon getting your hands on the Huawei P30 Pro, one of the year's hottest smartphones? If you're Zack from JerryRigEverything, you'd celebrate by bending, scratching, and burning the device — all in the name of science.\r\nZack has with him the… [+816 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Geektyrant.com" },
+      "author": null,
+      "title": "10 More Games Confirmed for SEGA Genesis Mini - GeekTyrant",
+      "description": "The SEGA Genesis Mini has revealed 10 more games letting fans know half of its roster and things continue to look up for the classic system.",
+      "url": "https://geektyrant.com/news/10-more-games-confirmed-for-sega-genesis-mini",
+      "urlToImage": "http://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/51ce6099e4b0d911b4489b79/5cb8e46bf63c6400017c3306/1555713015217/earthworm_jim.jpg?format=1500w",
+      "publishedAt": "2019-04-19T22:30:00Z",
+      "content": "A couple of weeks ago, we learned that SEGA is releasing a new classic system called the SEGA Genesis Mini. The system will feature 40 titles, sell for $79.99, and will launch on September 19. The first 10 games confirmed were a decent and very predictable se… [+851 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Androidauthority.com" },
+      "author": "https://www.facebook.com/browncscott",
+      "title": "HP announces first 15-inch Chromebook, with backlit keys and number pad - Android Authority",
+      "description": "It has pretty typical Chromebook specs and starts at $449.",
+      "url": "https://www.androidauthority.com/hp-chromebook-15-977970/",
+      "urlToImage": "https://cdn57.androidauthority.net/wp-content/uploads/2019/04/HP-Chromebook-15-920x470.jpg",
+      "publishedAt": "2019-04-19T21:50:43Z",
+      "content": "CNET\r\nThe world of Chromebooks just keeps on growing, both literally and figuratively. Case in point, HP just announced the HP Chromebook 15, the company’s first 15-inch Chrome OS laptop (via CNET).\r\nBecause of its sheer size, HP was able to cram a full numbe… [+1520 chars]"
+    },
+    {
+      "source": { "id": "newsweek", "name": "Newsweek" },
+      "author": "Just Lunning",
+      "title": "Nintendo Switch Coming to China Via Tencent, But Will It Sell in a Console-Hostile Market? - Newsweek",
+      "description": "Despite the size of China’s gaming market, consoles have rarely sold well there. Prior to a ban on gaming consoles that ran from 2000 to 2015, Nintendo previously sold devices like the Nintendo 64 and 3DS XL in China under the brand “iQue.”",
+      "url": "https://www.newsweek.com/nintendo-switch-china-tencent-console-ban-censorship-ique-1401902",
+      "urlToImage": "https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2019/04/16/nintendo-switch-8.jpg",
+      "publishedAt": "2019-04-19T21:41:29Z",
+      "content": "The administration of Guangdong province has given gaming company Tencent permission to distribute the Nintendo Switch console across China.\r\nAccording to a report by Reuters, the initial wave of Switch consoles will contain a special test version of New Supe… [+1792 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Bgr.com" },
+      "author": "Chris Smith",
+      "title": "OnePlus might launch its next flagship on every major US carrier this year - BGR",
+      "description": "The OnePlus 7 is coming on May 14th, according to a recent report, just as other rumors seemingly confirmed that OnePlus would have three different versions in stores this year, including the regul…",
+      "url": "https://bgr.com/2019/04/19/oneplus-7-release-date-gets-closer-more-us-carriers-might-be-involved/",
+      "urlToImage": "https://boygeniusreport.files.wordpress.com/2018/12/bgr-oneplus-6t-mclaren-1.jpg?quality=98&strip=all",
+      "publishedAt": "2019-04-19T21:21:00Z",
+      "content": "The OnePlus 7 is coming on May 14th, according to a recent report, just as other rumors seemingly confirmed that OnePlus would have three different versions in stores this year, including the regular, Pro, and Pro 5G models. A new discovery now suggests that … [+1395 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Barrons.com" },
+      "author": "Avi Salzman",
+      "title": "Spotify’s stock is risky because the music industry is not changing fast enough. - Barron's",
+      "description": "Could the streaming service Spotify become the Netflix of audio? Apple, Amazon, and the record labels stand in the way.",
+      "url": "https://www.barrons.com/articles/spotifys-stock-is-risky-because-the-music-industry-is-not-changing-fast-enough-51555708535",
+      "urlToImage": "https://asset.barrons.com/public/resources/images/ON-CY989_0422he_G_20190419132645.jpg",
+      "publishedAt": "2019-04-19T21:15:00Z",
+      "content": "Spotify saved the music industry. Some thanks it is getting: Artists skewer the streaming giant, a record label has sued it, and\r\n Apple\r\ncalls it a freeloader.Fans on Wall Street, however, see a more harmonious future when\r\n Spotify Technology\r\n(ticker: SPOT… [+14178 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Futurism.com" },
+      "author": "Dan Robitzski",
+      "title": "Scientists Create Material With \"Artificial Metabolism\" - Futurism",
+      "description": "It isn't quite alive, but it isn't quite not-alive either.",
+      "url": "https://futurism.com/the-byte/scientists-create-material-artificial-metabolism",
+      "urlToImage": "https://wp-assets.futurism.com/2019/04/scientists-create-material-artificial-metabolism-1200x630.png",
+      "publishedAt": "2019-04-19T21:08:23Z",
+      "content": "Slime Mold\r\nScientists just got one step closer to creating living machines or at least machines that mimic biological life as we know it.\r\nA new biomaterial built in a Cornell University bioengineering lab uses synthetic DNA to continuously and autonomously … [+1731 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Lifehacker.com" },
+      "author": "Brendan Hesse",
+      "title": "Listen to Amazon Music or YouTube Music For Free Through a Smart Speaker - Lifehacker",
+      "description": "Two of the biggest music streaming services—Amazon Music and Youtube Music—now offer free versions available for an array of various smart speakers and smart home devices.",
+      "url": "https://lifehacker.com/listen-to-amazon-music-or-youtube-music-for-free-throug-1834174961",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/s--fRBGVsc3--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/wyerkizh9lbwt1nukl73.jpg",
+      "publishedAt": "2019-04-19T21:00:00Z",
+      "content": "Two of the biggest music streaming servicesAmazon Music and Youtube Musicnow offer free versions available for an array of various smart speakers and smart home devices.\r\nWhile the premium versions of Amazon Music and YouTube Music let users stream from massi… [+2229 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Bgr.com" },
+      "author": "Jacob Siegal",
+      "title": "People are saying Foxconn’s CEO just leaked the iPhone 11 - BGR",
+      "description": "If you visit BGR with any frequency, you know that we love a good iPhone leak as much as any other website. Not every leak, render, and report pans out, but they typically help us form a rough outl…",
+      "url": "https://bgr.com/2019/04/19/iphone-11-video-leak-debunked-foxconn-ceo/",
+      "urlToImage": "https://boygeniusreport.files.wordpress.com/2019/04/iphone-11-leak-foxconn-ceo.jpg?quality=98&strip=all",
+      "publishedAt": "2019-04-19T20:31:00Z",
+      "content": "If you visit BGR with any frequency, you know that we love a good iPhone leak as much as any other website. Not every leak, render, and report pans out, but they typically help us form a rough outline of what to expect from Apple when it finally unveils its n… [+1828 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Destructoid.com" },
+      "author": "Jordan Devore",
+      "title": "Cuphead update brings the PC and Xbox One versions in line with Switch - Destructoid",
+      "description": "Cuphead update brings the PC and Xbox One versions in line with Switch",
+      "url": "https://www.destructoid.com/cuphead-update-brings-the-pc-and-xbox-one-versions-in-line-with-switch-550816.phtml",
+      "urlToImage": "https://destructoid.com//ul/550816-Cuphead-update-brings-the-PC-and-Xbox-One-versions-in-line-with-Switch.jpg",
+      "publishedAt": "2019-04-19T20:30:00Z",
+      "content": "Mugman in single-player and new art\r\nIf you're digging into Cupheadnow that it's newly available on Nintendo Switch, I hope you're loving the run-and-gun game as much as many of us did back in 2017. I'm long overdue a replay. Even though I haven't double-dipp… [+2043 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Gamespot.com" },
+      "author": "Steve Watts",
+      "title": "Ahead Of Fortnite Season 9, Mysterious Runes Have Begun Appearing Around The Island - GameSpot",
+      "description": "It appears that Epic is beginning to tease the next season of Fortnite, with another unique world mystery that the community is trying to solve.",
+      "url": "https://www.gamespot.com/articles/ahead-of-fortnite-season-9-mysterious-runes-have-b/1100-6466376/",
+      "urlToImage": "https://static.gamespot.com/uploads/screen_kubrick/1585/15855271/3524845-2588711-fortnitescreens_008.jpg",
+      "publishedAt": "2019-04-19T19:32:00Z",
+      "content": "Fortnite appears to be beginning to tease its upcoming season, with strange happenings in the world. This time it's a series of runes near Loot Lake, and the community is already scrambling to unlock their mysteries.\r\nFans on the Fortnite subreddit have been … [+1171 chars]"
+    },
+    {
+      "source": { "id": "techradar", "name": "TechRadar" },
+      "author": "https://www.facebook.com/TechRadar",
+      "title": "Amazon Music playlists are now playable on Echo speakers for free - TechRadar",
+      "description": "Not as good as on-demand music, but not a bad start",
+      "url": "https://www.techradar.com/news/amazon-music-playlists-are-now-playable-on-echo-speakers-for-free",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/AsdrrC47Co9vYMdwXE4dCj-1200-80.jpg",
+      "publishedAt": "2019-04-19T19:26:00Z",
+      "content": "Amazon has announced that Echo owners will be able to use part of Amazon Music for free. The new, free service doesn’t require an Amazon Prime subscription and can be used to access playlists or start new stations by saying \"Hey, Alexa,\" and then a music genr… [+1221 chars]"
+    },
+    {
+      "source": { "id": null, "name": "9to5mac.com" },
+      "author": null,
+      "title": "LG UltraFine 4K Display currently not sold on Apple․com, stock still available elsewhere - 9to5Mac",
+      "description": "Apple has today removed its online store listing for the 21.5-inch LG UltraFine 4K Display. This is the smaller and more affordable USB-C display option at $700 compared to the 27-inch 5K version o…",
+      "url": "https://9to5mac.com/2019/04/19/lg-ultrafine-4k-display-apple/",
+      "urlToImage": "https://9to5mac.com/wp-content/uploads/sites/6/2018/09/lg-2222-hd-4k-ultrafine-led-monitor.jpg?quality=82&strip=all&w=1223",
+      "publishedAt": "2019-04-19T19:07:00Z",
+      "content": "We heard earlier in the week that the 21.5-inch UltraFine Display wasn’t showing up on Apple’s online store in the UK, and now the product has been removed from the US store. For now, the product has been completely removed from the site, not just removed fro… [+1294 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Sciencemag.org" },
+      "author": null,
+      "title": "Sodium batteries are one step closer to saving you from a mobile phone fire - Science Magazine",
+      "description": "New flexible electrodes help solid-state batteries last longer",
+      "url": "https://www.sciencemag.org/news/2019/04/sodium-batteries-are-one-step-closer-saving-you-mobile-phone-fire",
+      "urlToImage": "https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/sodium_16x9.jpg?itok=7GWMEE9D",
+      "publishedAt": "2019-04-19T19:05:07Z",
+      "content": "By Robert F. ServiceApr. 19, 2019 , 3:05 PM\r\nSolid-state batteries, which use solids instead of liquids to ferry ions through their core, are attracting billions in investment, thanks to their potential for reducing battery fires. Now, researchers have create… [+4127 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Thurrott.com" },
+      "author": null,
+      "title": "Apple Bringing Major iPhone Features to the Mac With macOS 10.15 - Thurrott.com",
+      "description": "Apple looks to bring Shortcuts, Screen Time, iMessage effects to the Mac with macOS 10.15, according to a new report.",
+      "url": "https://www.thurrott.com/apple/205333/apple-bringing-major-iphone-features-to-the-mac-with-macos-10-15",
+      "urlToImage": "https://www.thurrott.com/wp-content/uploads/sites/2/2019/04/IOS-12.jpg",
+      "publishedAt": "2019-04-19T18:57:13Z",
+      "content": "Apple is expected to unveil the next major versions of its operating systems at WWDC this June. Details of what’s to expect in iOS 13 have already been talked about before, but there are some more details about what Apple has planned for macOS 10.15.\r\nAccordi… [+1905 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Androidcentral.com" },
+      "author": "Joe Maring",
+      "title": "OnePlus teases announcement for OnePlus 7 announcement - Android Central",
+      "description": "According to OnePlus CEO Pete Lau, the company will make an announcement on April 23 regarding the OnePlus 7 announcement.",
+      "url": "https://www.androidcentral.com/oneplus-teases-announcement-oneplus-7-announcement",
+      "urlToImage": "https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2019/04/oneplus-7-standard-5k-render_1.jpg?itok=S-OJa5OC",
+      "publishedAt": "2019-04-19T18:32:06Z",
+      "content": "The OnePlus 7 is shaping up to be one of 2019's most exciting smartphones, and thanks to OnePlus CEO Pete Lau, we now have a date to look forward to for when we'll learn more about it.\r\nOn April 19, Lau tweeted the following:\r\nWhile the whole \"announcement fo… [+642 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Bgr.com" },
+      "author": "Zach Epstein",
+      "title": "7 paid iPhone apps on sale for free on April 19th - BGR",
+      "description": "All the talk in the tech world right now revolves around the upcoming release of Samsung’s first foldable smartphone. Even though it’s for all the wrong reasons, there hasn’t been…",
+      "url": "https://bgr.com/2019/04/19/best-free-iphone-apps-apr-19-ipad-ios/",
+      "urlToImage": "https://boygeniusreport.files.wordpress.com/2019/04/free-apps-apr-19.jpg?quality=98&strip=all",
+      "publishedAt": "2019-04-19T17:11:00Z",
+      "content": "All the talk in the tech world right now revolves around the upcoming release of Samsung’s first foldable smartphone. Even though it’s for all the wrong reasons, there hasn’t been much for Apple fans to enjoy in the past few days. There might not be any excit… [+7865 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Motorauthority.com" },
+      "author": "Sean Szymkowski",
+      "title": "Ford Mustang is the best-selling sport coupe globally, again - Motor Authority",
+      "description": "Buyers have plenty of options to choose from, but when it comes to sport coupes, the Ford Mustang is king. In a Wednesday release, Ford said the Mustang claimed the crown for best-selling sport coupe globally once again. It's the fourth year running the Ford …",
+      "url": "https://www.motorauthority.com/news/1122694_ford-mustang-is-the-best-selling-sport-coupe-globally-again",
+      "urlToImage": "https://images.hgmsites.net/hug/2018-ford-mustang-gt-matt-dayka-for-motor-authority_100679418_h.jpg",
+      "publishedAt": "2019-04-19T17:00:00Z",
+      "content": "Buyers have plenty of options to choose from, but when it comes to sport coupes, the Ford Mustang is king. In a Wednesday release, Ford said the Mustang claimed the crown for best-selling sport coupe globally once again.\r\nIt's the fourth year running the Ford… [+1977 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Petapixel.com" },
+      "author": null,
+      "title": "Instagram Tests Hiding Like Counts - PetaPixel",
+      "description": "Instagram has internally floated the idea of a small design change that would have a huge impact on the service. Leaked screenshots show mockups of",
+      "url": "https://petapixel.com/2019/04/19/instagram-tests-hiding-like-counts/",
+      "urlToImage": "https://petapixel.com/assets/uploads/2019/04/instagramlikefeattt.jpg",
+      "publishedAt": "2019-04-19T16:50:00Z",
+      "content": "Instagram has internally floated the idea of a small design change that would have a huge impact on the service. Leaked screenshots show mockups of Instagram in which the Like counts on photos and videos are hidden from public view.\r\nTechCrunch reports that t… [+1861 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Androidpolice.com" },
+      "author": "Ryan Whitwam",
+      "title": "The red BlackBerry Key2 with 128GB of storage is now available in the US for $700 - Android Police",
+      "description": "The BlackBerry Key2 came out last year, giving hardware keyboard stalwarts something to get excited about. The phone is getting a bit long in the tooth, but now there's a very slightly upgraded version. That's not really the important part, though. What's imp…",
+      "url": "https://www.androidpolice.com/2019/04/19/the-red-blackberry-key2-with-128gb-of-storage-is-now-available-in-the-us-for-700/",
+      "urlToImage": "https://www.androidpolice.com/wp-content/uploads/2019/04/key2-728x437.jpg",
+      "publishedAt": "2019-04-19T16:22:00Z",
+      "content": "The BlackBerry Key2 came out last year, giving hardware keyboard stalwarts something to get excited about. The phone is getting a bit long in the tooth, but now there's a very slightly upgraded version. That's not really the important part, though. What's imp… [+903 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Dualshockers.com" },
+      "author": "Tomas Franzese",
+      "title": "Mortal Kombat 11 Alternate Costumes for Raiden, Erron Black, Cetrion, and Shao Kahn Revealed - DualShockers",
+      "description": "NeatherRealm has unveiled alternate costumes for four Mortal Kombat 11 characters just a few days before launch.",
+      "url": "https://www.dualshockers.com/mortal-kombat-11-alternate-costumes-raiden-shao-kahn/",
+      "urlToImage": "https://cdn3.dualshockers.com/wp-content/uploads/2019/04/Mortal-Kombat-11-Alternate-Costume.jpg",
+      "publishedAt": "2019-04-19T16:18:00Z",
+      "content": "As we approach the launch of Mortal Kombat 11, player are starting to think about how they will individually customize their characters. The Custom Character Variation system gives a lot of leeway in terms of gameplay, even in the competitive scene, but what’… [+1723 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Gamespot.com" },
+      "author": "Kevin Knezevic",
+      "title": "Microsoft's Xbox E3 2019 Briefing Date And Time Announced - GameSpot",
+      "description": "This year's Xbox E3 presentation is set for June 9.",
+      "url": "https://www.gamespot.com/articles/xbox-one-e3-2019-briefing-date-and-time-announced/1100-6466283/",
+      "urlToImage": "https://static.gamespot.com/uploads/screen_kubrick/1578/15787979/3523359-8567816912-D4PfmgkUwAAhkLU.jpg%3Alarge",
+      "publishedAt": "2019-04-19T16:09:00Z",
+      "content": "We're less than two months away from E3 2019, and Microsoft has been teasing that this year's event will be a big one for Xbox. With the show quickly approaching, the company has announced the date and time of its annual E3 briefing, and like past years, it's… [+1877 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Thisisinsider.com" },
+      "author": "Graham Rapier, Business Insider",
+      "title": "A Russian Instagram model covered her Lamborghini in 2 million Swarovski crystals — take a look - INSIDER",
+      "description": "The car runs at least $500,000 before the addition of expensive jewels.",
+      "url": "https://www.thisisinsider.com/instagram-model-covers-lamborghini-swarovski-crystals-2019-4",
+      "urlToImage": "https://amp.thisisinsider.com/images/5cb9f22c2730ca07007d7359-750-375.jpg",
+      "publishedAt": "2019-04-19T16:01:45Z",
+      "content": null
+    },
+    {
+      "source": { "id": "ars-technica", "name": "Ars Technica" },
+      "author": "Kyle Orland",
+      "title": "Gearbox's Pitchford: Steam may be “a dying store” in 5 to 10 years - Ars Technica",
+      "description": "Borderlands 3 lead says Epic Games Store is a needed monopoly killer.",
+      "url": "https://arstechnica.com/gaming/2019/04/gearboxs-pitchford-steam-may-be-a-dying-store-in-5-to-10-years/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2019/04/bl3classed-760x380.jpg",
+      "publishedAt": "2019-04-19T15:28:00Z",
+      "content": "Enlarge/ \"You can't get us on Steam, and that's a good thing.\"\r\n258 with 145 posters participating\r\nEarlier this month, Gearbox drew some ire from Steam-loving Borderlands fans by announcing the next game in the series, due in September, would be exclusive to… [+3241 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Bloody-disgusting.com" },
+      "author": "Mike Wilson",
+      "title": "2003 Shooter 'XIII' Getting Remake, Set For November 13 Release - Bloody Disgusting",
+      "description": "Alongside Suda51’s Killer7, Southend Interactive’s 2003 shooter XIII is probably one of the more unorthodox yet stylistic shooters to grace that generation’s console market. And like Killer7, it’s now getting a remake, courtesy of publisher Microids and devel…",
+      "url": "https://bloody-disgusting.com/news/3556824/2003-shooter-xiii-getting-remake-set-for-november-release/",
+      "urlToImage": "https://i2.wp.com/bloody-disgusting.com/wp-content/uploads/2019/04/xiii.jpg?resize=830%2C535&ssl=1",
+      "publishedAt": "2019-04-19T15:09:23Z",
+      "content": "Alongside Suda51’s Killer7, Southend Interactive’s 2003 shooter XIII is probably one of the more unorthodox yet stylistic shooters to grace that generation’s console market. And like Killer7, it’s now getting a remake, courtesy of publisher Microids and devel… [+1061 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Dexerto.com" },
+      "author": "David Purcell",
+      "title": "A 'Blitz mode' is exactly what Apex Legends needs - Dexerto",
+      "description": "Demand seems to be increasing for new Apex Legends playlists.",
+      "url": "https://www.dexerto.com/apex-legends/apex-legends-blitz-mode-fix-boring-mid-game-559247",
+      "urlToImage": "https://s3.dexerto.com/thumbnails/_thumbnailLarge/559404/Apex-Legends-Blitz-mode-concept-would-prevent-the-boring-mid-game.jpg",
+      "publishedAt": "2019-04-19T15:00:00Z",
+      "content": "Respawn Entertainment hasn't yet added a fresh set of playlists to Apex Legends, but there certainly seems to be a growing demand for them from fans. \r\nAs is the case with many battle royale games, such as Fortnite Battle Royale, PUBG and others, the mid-game… [+1365 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Venturebeat.com" },
+      "author": "Mike Minotti",
+      "title": "Hearthstone loses viewers on Twitch as Magic: The Gathering Arena closes the gap - VentureBeat",
+      "description": "Hearthstone is facing real competition for the first time in its history.",
+      "url": "https://venturebeat.com/2019/04/19/hearthstone-loses-viewers-on-twitch-as-magic-the-gathering-arena-closes-the-gap/",
+      "urlToImage": "https://venturebeat.com/wp-content/uploads/2019/03/Hearthstone-Rise-of-Shadows-Togwaggle.jpg?w=1200&strip=all",
+      "publishedAt": "2019-04-19T15:00:00Z",
+      "content": "Blizzard Entertainment’s Hearthstone has been the king of the digital card game market since it launched in 2014. However, it’s position as the most-watched DCCG isn’t as steady as it used to be, according to influencer analytics and marketing firm Gamesight’… [+2032 chars]"
+    },
+    {
+      "source": { "id": "ars-technica", "name": "Ars Technica" },
+      "author": "Ron Amadeo",
+      "title": "Get a look at Android’s browser and search ballots for the EU - Ars Technica",
+      "description": "The EU's unbundling of Android continues with pop-up browser and search pickers.",
+      "url": "https://arstechnica.com/gadgets/2019/04/get-a-look-at-androids-browser-and-search-ballots-for-the-eu/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2018/12/google-web-760x380.jpg",
+      "publishedAt": "2019-04-19T14:58:00Z",
+      "content": "76 with 42 posters participating\r\nThese screens will pop up when users open the Play Store. \r\nChrome will also give users the option to pick an alternate search engine. \r\nLast year the European Commission ruled that Google had illegally used Android to domina… [+2384 chars]"
+    },
+    {
+      "source": { "id": "cnn", "name": "CNN" },
+      "author": "Zahra Jamshed, CNN Business",
+      "title": "Owning a Warhol: How bitcoin could change the art world - CNN",
+      "description": "Singapore-based Maecenas hopes to change million dollar record-breaking art sales forever.",
+      "url": "https://www.cnn.com/2019/04/19/tech/bitcoin-art-maecenas-singapore/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/190419113201-andy-warhol-fourteen-small-electric-chairs-file-super-tease.jpg",
+      "publishedAt": "2019-04-19T14:48:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": null, "name": "Yahoo.com" },
+      "author": null,
+      "title": "Everyone on Amazon is buying this brilliant $17 phone accessory for their car - Yahoo Lifestyle",
+      "description": "This multi-functional charger goes above and beyond its two Android and iOS-compatible USB ports.",
+      "url": "https://www.yahoo.com/lifestyle/lihan-handsfree-call-car-charger-144456329.html",
+      "urlToImage": "https://s.yimg.com/uu/api/res/1.2/U9Ml5XFh09mL9qsCes9CSg--~B/aD0zNDE2O3c9NTExNztzbT0xO2FwcGlkPXl0YWNoeW9u/https://img.huffingtonpost.com/asset/5cb8bcd52300007d006db5d7.jpeg",
+      "publishedAt": "2019-04-19T14:44:00Z",
+      "content": "Were all for a multi-tasking product, especially when it comes to the electronics department. Case in point: Lihan Handsfree Call Car Charger ($17), which has had a spike in sales by 200 percent, according to Amazons Movers and Shakers list.\r\nThe multi-functi… [+2103 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Npr.org" },
+      "author": null,
+      "title": "Silicon Valley Already Draws Tourists, But It's Considering A Landmark : The Picture Show - NPR",
+      "description": "Tourists are flocking to California to see the origins of their favorite tech companies. Now there might be a monument about Silicon Valley's glory.",
+      "url": "https://www.npr.org/sections/pictureshow/2019/04/19/683643144/silicon-valley-has-its-tech-campuses-now-it-wants-a-monument",
+      "urlToImage": "https://media.npr.org/assets/img/2019/01/09/sv_tourism_jt_001-edit_wide-3ed21caace314eb4c0a509ff30a534644fb027a0.jpg?s=1400",
+      "publishedAt": "2019-04-19T14:00:00Z",
+      "content": "A tourist takes a selfie at Google's sculpture garden in Mountain View, Calif.\r\nJames Tensuan for NPR\r\nAs much as Silicon Valley is an actual place, it has no official borders or capital. It's a nickname, not a name on a map. But now there might be a monument… [+4811 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Destructoid.com" },
+      "author": "Chris Moyse",
+      "title": "WayForward and Arc System Works announce female-led fighter River City Girls - Destructoid",
+      "description": "WayForward and Arc System Works announce female-led fighter River City Girls",
+      "url": "https://www.destructoid.com/wayforward-and-arc-system-works-announce-female-led-fighter-river-city-girls-550757.phtml",
+      "urlToImage": "https://destructoid.com//ul/550757-river city girls.jpg",
+      "publishedAt": "2019-04-19T13:00:00Z",
+      "content": "Let's get ready, ready, let's get ready, ready...\r\nFollowing on from the mysterious rating we reported last week, Shantae developer WayForward and anime game gods Arc System Works have officially confirmed they are working together on a new entry in the face-… [+1308 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Techspot.com" },
+      "author": "Rob Thubron",
+      "title": "Former student destroys $58,000 worth of computers at college using USB Killer device - TechSpot",
+      "description": "On February 14, 27-year-old Vishwanath Akuthota, an Indian national living in the US on a student visa, annihilated 59 Windows PCs, seven Apple computers, and several digital monitors and podiums that feature USB ports.",
+      "url": "https://www.techspot.com/news/79727-former-student-destroys-58000-worth-computers-college-using.html",
+      "urlToImage": "https://static.techspot.com/images2/news/ts3_thumbs/2019/04/2019-04-19-ts3_thumbs-104.jpg",
+      "publishedAt": "2019-04-19T12:57:00Z",
+      "content": "In brief: A former student has pleaded guilty to destroying 66 computers owned by the College of Saint Rose in Albany, New York, using a USB Killer device. \r\nOn February 14, 27-year-old Vishwanath Akuthota, an Indian national living in the US on a student vis… [+1557 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Wccftech.com" },
+      "author": "Ramish Zafar",
+      "title": "Fresh Rumor Breathes Life Into The iPhone SE 2 Unicorn - Wccftech",
+      "description": "A potential successor to Apple’s iPhone SE is a unicorn that refuses to die on the rumor mill. The primary source of these rumors is Forbes, who continues to believe that Apple is interested in launching a smartphone with a smaller form factor yet all the req…",
+      "url": "https://wccftech.com/iphone-se-iphone-xe-report/",
+      "urlToImage": "https://cdn.wccftech.com/wp-content/uploads/2018/09/iPhone_XR_Memoji_09122018-e1555678247775.jpg",
+      "publishedAt": "2019-04-19T12:49:05Z",
+      "content": "A potential successor to Apples iPhone SE is a unicorn that refuses to die on the rumor mill. The primary source of these rumors is Forbes, who continues to believe that Apple is interested in launching a smartphone with a smaller form factor yet all the requ… [+2356 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Beincrypto.com" },
+      "author": "Jon Buck",
+      "title": "Facebook Security Problems Continue As 1.5M Users Inadvertently Upload Email Contacts - BeInCrypto",
+      "description": "The email contacts of 1.5M users have been uploaded to Facebook without their permission or knowledge yet again raising security concerns.",
+      "url": "http://beincrypto.com/facebook-security-problems-continue-as-1-5m-users-inadvertently-upload-email-contacts/",
+      "urlToImage": "https://beincrypto.com/wp-content/uploads/2019/03/facebook_crypto.jpeg.jpg",
+      "publishedAt": "2019-04-19T12:03:10Z",
+      "content": "Privacy concerns for Facebook, the social networking megalith, have been raised once again. Reports indicate that the email contacts of 1.5M users have been uploaded to the site without their permission or knowledge.\r\nThe glitch occurred at the new account pa… [+2223 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Wccftech.com" },
+      "author": "Francesco De Meo",
+      "title": "Grand Theft Auto 6 Is In Development, According To Former Rockstar Employee’s Resume - Wccftech",
+      "description": "Grand Theft Auto V has been released a long time ago now, and nothing has been said about a new entry in the series. Despite the lack of an official announcement, it seems like Grand Theft Auto 6 is indeed in development. As discovered by GTA Forums Member Ap…",
+      "url": "https://wccftech.com/grand-theft-auto-6-development/",
+      "urlToImage": "https://cdn.wccftech.com/wp-content/uploads/2015/04/GTA-V-6.jpg",
+      "publishedAt": "2019-04-19T10:41:15Z",
+      "content": "Grand Theft Auto V has been released a long time ago now, and nothing has been said about a new entry in the series. Despite the lack of an official announcement, it seems like Grand Theft Auto 6 is indeed in development.\r\nAs discovered by GTA Forums Member A… [+1427 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Neowin.net" },
+      "author": "https://www.facebook.com/jay.bonggolto.1",
+      "title": "Google will block sign-ins from embedded browser frameworks starting from June - Neowin",
+      "description": "Google has announced that it will begin blocking any sign-in attempt from embedded browser frameworks from June as part of an effort to protect users from man-in-the-middle attacks.",
+      "url": "https://www.neowin.net/news/google-will-block-sign-ins-from-embedded-browser-frameworks-starting-from-june/",
+      "urlToImage": "https://cdn.neow.in/news/images/uploaded/2019/04/1555659632_google_security_story.jpg",
+      "publishedAt": "2019-04-19T08:52:00Z",
+      "content": "Google made it mandatory late last year for users to sign in to their account with JavaScript enabled on their web browser so that it would be able to assess risks in real time. The ultimate goal was to protect users from phishing attacks, in particular, by b… [+1416 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Macrumors.com" },
+      "author": "Juli Clover",
+      "title": "Will, Jaden and Jada Smith Visit Apple Park for Environmental Discussion - MacRumors",
+      "description": "Will Smith, his wife Jada Smith, and his son Jaden Smith today visited Apple Park to discuss the environment and Jaden's Just Water company,...",
+      "url": "https://www.macrumors.com/2019/04/18/will-jaden-smith-apple-park-environment-event/",
+      "urlToImage": "https://cdn.macrumors.com/article-new/2019/04/willjadensmithapplepark.jpg?retina",
+      "publishedAt": "2019-04-19T03:21:00Z",
+      "content": "Will Smith, his wife Jada Smith, and his son Jaden Smith today visited Apple Park to discuss the environment and Jaden's Just Water company, according to a tweet Apple CEO Tim Cook shared on Twitter this evening.\r\nJust Water is a water company that sells ethi… [+997 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Cnet.com" },
+      "author": "Jessica Dolcourt",
+      "title": "Galaxy Fold fragile screens and more: The good and bad of Samsung's new foldable phone - CNET",
+      "description": "Our Galaxy Fold screen is in good shape, and the ongoing review continues.",
+      "url": "https://www.cnet.com/news/galaxy-fold-fragile-screens-and-more-the-good-and-bad-of-samsungs-new-foldable-phone/",
+      "urlToImage": "https://cnet4.cbsistatic.com/img/uOPg_0E0B147qsrUZPqX6qqGznA=/756x567/2019/04/15/5b70f1ab-efbe-4484-b6cc-9bb7b3c7c8e9/306-galaxy-fold.jpg",
+      "publishedAt": "2019-04-19T01:00:00Z",
+      "content": "Life with the Galaxy Fold took a turn on Wednesday as four of my fellow reviewers experienced bulging, flickering and malfunctioning screens. Although my particular review unit seems to be unaffected, the incident has cast doubt on the Fold's daring new benda… [+24832 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Youtube.com" },
+      "author": null,
+      "title": "What is Huawei? | CNBC Explains - CNBC International",
+      "description": null,
+      "url": "https://www.youtube.com/watch?v=LdmGu2DLuQA",
+      "urlToImage": null,
+      "publishedAt": "2019-04-18T21:00:01Z",
+      "content": null
+    },
+    {
+      "source": { "id": "ars-technica", "name": "Ars Technica" },
+      "author": "Samuel Axon",
+      "title": "Facebook is working on an AI voice assistant similar to Alexa, Google Assistant - Ars Technica",
+      "description": "There's no indication that it will extend outside Facebook's own hardware—yet.",
+      "url": "https://arstechnica.com/gadgets/2019/04/facebook-is-working-on-an-ai-voice-assistant-similar-to-alexa-google-assistant/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2018/10/Portal_Dark_A-1-760x380.jpg",
+      "publishedAt": "2019-04-18T20:50:00Z",
+      "content": "Enlarge/ Along with video chatting through Facebook Messenger, both Portal devices have built-in Amazon Alexa.\r\n82 with 75 posters participating\r\nFacebook is working on developing an AI voice assistant similar in functionality to Amazon Alexa, Google Assistan… [+2074 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Gamespot.com" },
+      "author": "Steve Watts",
+      "title": "PS5 Will Use Solid-State Drives: Here’s Why That's Important - GameSpot",
+      "description": "Sony has started to detail its plan for the next generation of PlayStation, and one major change is how it stores and accesses data. Here's what you need to know.",
+      "url": "https://www.gamespot.com/articles/playstation-5-will-have-an-ssd-heres-what-that-mea/1100-6466294/",
+      "urlToImage": "https://static.gamespot.com/uploads/screen_kubrick/1585/15855271/3523357-3453105-spidermanphotomode-23.jpg",
+      "publishedAt": "2019-04-18T20:19:00Z",
+      "content": "Sony has started to detail its plans for the next generation of PlayStation, which isn't technically named yet but will likely be the PlayStation 5. One of the biggest changes the company is making is to the system's storage solution, which is going from a st… [+1587 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Digitaltrends.com" },
+      "author": "Cody Perez",
+      "title": "Fortnite week 8 challenge guide: Dial the Durr Burger number on the big telephone - Digital Trends",
+      "description": "The Fortnite week 8 challenges are now available in season 8. One of the big challenges this week has players dial the Durr Burger number on the big telephone. We've got the tips you need as well as the location of the telephone and the phone number you need …",
+      "url": "https://www.digitaltrends.com/gaming/fortnite-season-8-week-8-challenge-guide-dial-the-durr-burger-number-on-the-big-telephone/",
+      "urlToImage": "https://icdn3.digitaltrends.com/image/durr-burger-6-1200x630-c-ar1.91.jpg",
+      "publishedAt": "2019-04-18T19:51:05Z",
+      "content": "It’s almost time for the season eight to come to a close and there are only a couple of weeks left in this volcano-erupting season as we head into the week eight challenges. After last week’s disaster of a show for challenges, Epic Games has thankfully given … [+7196 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Anandtech.com" },
+      "author": "Anton Shilov",
+      "title": "Microsoft Announces Surface Hub 2S: 50-Inch for $9000 - AnandTech",
+      "description": "Microsoft has introduced its new family of Surface Hub collaboration devices designed for conference rooms. The new lineup includes an all-new 85-inch model for...",
+      "url": "https://www.anandtech.com/show/14236/microsoft-announces-surface-hub-2s-family-with-50inch-and-85inch-models",
+      "urlToImage": "https://images.anandtech.com/doci/14236/surface-hub-2s-678_678x452.jpg",
+      "publishedAt": "2019-04-18T19:00:00Z",
+      "content": "Microsoft has introduced its new family of Surface Hub collaboration devices designed for conference rooms. The new lineup includes an all-new 85-inch model for those who need larger screens as well as an all-new 50-inch model that can be powered by a battery… [+1558 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Youtube.com" },
+      "author": null,
+      "title": "All 16 puzzle piece locations - Fortnite week 8 challenge - GamesRadar",
+      "description": "Here's a guide for where to find all 16 puzzle pieces in Fortnite season 8. Remember you only need to collect 7 to complete it. Subscribe to GR+ here: http:/...",
+      "url": "https://www.youtube.com/watch?v=S4NiZ9gF5ek",
+      "urlToImage": "https://i.ytimg.com/vi/S4NiZ9gF5ek/maxresdefault.jpg",
+      "publishedAt": "2019-04-18T17:16:28Z",
+      "content": "Here's a guide for where to find all 16 puzzle pieces in Fortnite season 8. Remember you only need to collect 7 to complete it.Subscribe to GR+ here: http://goo.gl/cnjsn1"
+    },
+    {
+      "source": { "id": "techcrunch", "name": "TechCrunch" },
+      "author": "Sarah Perez",
+      "title": "YouTube Music is now free with ads on Google Home devices - TechCrunch",
+      "description": "Following reports that Amazon is preparing to launch a free, streaming music service for Echo owners, Google today announced YouTube Music will be free on its Google Home smart speakers and other Google Assistant-powered speakers — like those from JBL, Panaso…",
+      "url": "https://techcrunch.com/2019/04/18/youtube-music-is-now-free-with-ads-on-google-home-devices/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2019/04/google-home-mini-2.jpg?w=534",
+      "publishedAt": "2019-04-18T17:00:00Z",
+      "content": "Following reports that Amazon is preparing to launch a free, streaming music service for Echo owners, Google today announcedYouTube Music will be free on its Google Home smart speakers and other Google Assistant-powered speakers — like those from JBL, Panason… [+1531 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Youtube.com" },
+      "author": null,
+      "title": "iPad mini 5 VS iPad mini 4: What's The Difference?! - AppleInsider",
+      "description": "Apple has released the 2019 iPad mini 5 to much fanfare. But what is changed from the old iPad mini 4? AppleInsider fills you in on everything that is new! R...",
+      "url": "https://www.youtube.com/watch?v=GKAGE6WRjIM",
+      "urlToImage": "https://i.ytimg.com/vi/GKAGE6WRjIM/maxresdefault.jpg",
+      "publishedAt": "2019-04-18T16:09:50Z",
+      "content": "Apple has released the 2019 iPad mini 5 to much fanfare. But what is changed from the old iPad mini 4? AppleInsider fills you in on everything that is new! Read more about iPad mini 5 differences AppleInsider.com Learn more about MalwareBytes and sign up for … [+1217 chars]"
+    }
+  ]
+}
