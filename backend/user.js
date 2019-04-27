@@ -1,29 +1,20 @@
 const express = require("express");
 const router = express.Router();
 const db = require("./firebase");
-const admin = require('firebase-admin');
+var admin = require('firebase-admin');
 
 router.post("/register", function(req, res) {
     admin.auth().createUser({
         email: req.body.email,
-        emailVerified: req.body.emailVerified,
-        phoneNumber: req.body.phoneNumber,
         password: req.body.password,
-        displayName: req.body.displayName,
-        photoURL: req.body.photoURL || null,
-        channel: [],
+        channel: req.body.channel,
     }).then(function (userRecord) {
         // See the UserRecord reference doc for the contents of userRecord.
         let user = {
             uid: userRecord.uid,
             email: req.body.email,
-            emailVerified: req.body.emailVerified,
-            phoneNumber: req.body.phoneNumber,
-            password: req.body.password,
-            displayName: req.body.displayName,
-            photoURL: req.body.photoURL,
-            channel: [],
-        };
+            channel: req.body.channel
+        }
         let userRef = db.ref('user/');
         userRef.push().set(user);
         res.redirect('/user/login');
@@ -32,14 +23,25 @@ router.post("/register", function(req, res) {
         .catch(function (error) {
             console.log("Error creating new user:", error);
         });
-});
+})
 router.get("/:id", function(req, res) {
     var uid=req.params.id;
     var userReference = db.ref("/user");
     userReference.orderByChild("uid").equalTo(uid).on(
-        "value",
+        "child_added",
         function(snapshot) {
-            res.json(snapshot.val());
+            var key_id=snapshot.key
+            var Email_val=null
+            var Channel_val=null
+            Email=db.ref("/user/"+key_id).child("email")
+            Email.on('value', snapshot => {
+                Email_val=snapshot
+            })
+            Channel=db.ref("/user/"+key_id).child("channel")
+            Channel.on('value', snapshot => {
+                Channel_val=snapshot
+            })
+            res.json({"email":Email_val,"channel":Channel_val});
             userReference.off("value");
         },
         function(errorObject) {
@@ -53,38 +55,41 @@ router.get("/:id", function(req, res) {
 
 
 router.put("/:id", function(req, res) {
-    var channel=JSON.stringify(req.body.channel).replace(/\"/g, "");
+    var name=JSON.stringify(req.body.name).replace(/\"/g, "");
+    var type=JSON.stringify(req.body.type).replace(/\"/g, "");
+    console.log(name,type)
     var uid=req.params.id;
     var userReference = db.ref("/user");
     userReference.orderByChild("uid").equalTo(uid).on(
         "child_added",
         function(snapshot) {
-            var key_id=snapshot.key;
+            var key_id=snapshot.key
             var currentdata=snapshot.val().channel;
-            var list=currentdata.split(',');
             var flag=0;
-            if(list===null||list[0]===currentdata){
-                if (list[0] === channel) {
-                    list.splice(0, 1);
+            function getJsonLength(jsonData){
+                var jsonLength = 0;
+                for(var item in jsonData){
+                    jsonLength++;
                 }
-                else
-                    list.splice(0,0,channel);
+                return jsonLength;
             }
-            else {
-                const n=list.length;
-                for (var i = 0; i < n; i++)
-                    if (list[i] === channel) {
-                        list.splice(i, 1);
-                        flag = 1;
-                        break;
-                    }
-                if(flag===0){
-                    list.splice(0,0,channel);
+            var length=getJsonLength(currentdata)
+            currentdata=JSON.stringify(currentdata)
+            for(let i in currentdata){
+                console.log(currentdata)
+                if(currentdata[i].name===name&&currentdata[i].type===type){
+                    delete (currentdata[i])
+                    flag=1;
+                    break;
                 }
             }
+            if(flag===0){
+                currentdata[name]=JSON.stringify({"name":name,"type":type});
+            }
+
             db.ref("/user/"+key_id).update({
-                channel: list.toString(),
-            });
+                channel: currentdata,
+            })
             res.send("Update Done");
             userReference.off("child_added");
         },
