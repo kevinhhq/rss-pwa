@@ -66,15 +66,7 @@ router.put("/:id", function(req, res) {
             var key_id=snapshot.key
             var currentdata=snapshot.val().channel;
             var flag=0;
-            function getJsonLength(jsonData){
-                var jsonLength = 0;
-                for(var item in jsonData){
-                    jsonLength++;
-                }
-                return jsonLength;
-            }
-            var length=getJsonLength(currentdata)
-            currentdata=JSON.stringify(currentdata)
+            console.log(currentdata)
             for(let i in currentdata){
                 console.log(currentdata)
                 if(currentdata[i].name===name&&currentdata[i].type===type){
@@ -84,7 +76,7 @@ router.put("/:id", function(req, res) {
                 }
             }
             if(flag===0){
-                currentdata[name]=JSON.stringify({"name":name,"type":type});
+                currentdata[name]=({"name":name,"type":type});
             }
 
             db.ref("/user/"+key_id).update({
