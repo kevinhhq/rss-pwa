@@ -31,7 +31,7 @@ class NewsList extends Component {
       axios.get("http://localhost:3000/api/offline/").then(
         res => {
           this.setState({
-            news: res.data,
+            news: res.data || [],
             display: res.data.slice(0, 10),
             loading: false
           })
@@ -45,7 +45,7 @@ class NewsList extends Component {
         axios.get(`http://localhost:3000/api/offline/category/${params.get('category')}`).then(
           res => {
             this.setState({
-              news: res.data,
+              news: res.data || [],
               display: res.data.slice(0, 10),
               category: params.get('category').toUpperCase(),
               loading: false
@@ -58,7 +58,7 @@ class NewsList extends Component {
         axios.get(`http://localhost:3000/api/offline/${params.get('news')}`).then(
             res => {
               this.setState({
-                news: res.data,
+                news: res.data || [],
                 category: "SEARCH RESULT",
                 loading: false
               })
@@ -70,7 +70,7 @@ class NewsList extends Component {
         axios.get(`http://localhost:5000/offline/${params.get('site')}`).then(
             res => {
               this.setState({
-                news: res.data,
+                news: res.data || [],
                 category: params.get('site').toUpperCase(),
                 loading: false
               })
@@ -129,7 +129,7 @@ class NewsList extends Component {
                 <Skeleton/>
                 <Skeleton/>
               </div>
-              : (displayNews || <Empty/>)}
+              : (displayNews.length === 0 ? <Empty description=" "/> : displayNews)}
         </div>
         <Divider>
           {this.state.news.length === this.state.display.length ?

@@ -50,10 +50,10 @@ class NewsList extends Component {
            {this.state.news.map((news,index) =>
                 <Link key={index} to={{pathname: `/news/${news.newsId}`, state: {news: news}}}>
                     <Card
+                        className="news-card"
                         key={index}
                         hoverable
                         bordered={false}
-                        style={{width: 300}}
                         cover={news.img ? <img src={news.img} alt={"N/A"}/> : <Empty description=" "/>}
                     >
 
