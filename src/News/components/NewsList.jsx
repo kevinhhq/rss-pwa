@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import '../styles/NewsList.scss';
-import {Button, Divider, Icon, Empty} from 'antd';
+import {Button, Divider, Icon, Empty, Skeleton, message} from 'antd';
 import axios from "axios";
 import NewsItem from './NewsItem'
+import {decorate} from "mobx";
+import {observer} from "mobx-react";
+import UserStore from "../../Appshell/stores/UserStore";
 
 
 class NewsList extends Component {
@@ -14,6 +17,7 @@ class NewsList extends Component {
       count: 1,
       following: false,
       category: "HEADLINE",
+      loading: false,
     }
   }
 
@@ -22,12 +26,14 @@ class NewsList extends Component {
   }
 
   parseSearch = (props) => {
+    this.setState({loading: true});
     if (!props.location.search) {
-      axios.get("http://localhost:5000/offline/").then(
+      axios.get("http://localhost:3000/api/offline/").then(
         res => {
           this.setState({
             news: res.data,
-            display: res.data.slice(0, 10)
+            display: res.data.slice(0, 10),
+            loading: false
           })
         }
       );
@@ -36,23 +42,25 @@ class NewsList extends Component {
       const search = props.location.search;
       const params = new URLSearchParams(search);
       if (params.get('category')) {
-        axios.get(`http://localhost:5000/offline/category/${params.get('category')}`).then(
+        axios.get(`http://localhost:3000/api/offline/category/${params.get('category')}`).then(
           res => {
             this.setState({
               news: res.data,
               display: res.data.slice(0, 10),
-              category: params.get('category').toUpperCase()
+              category: params.get('category').toUpperCase(),
+              loading: false
             })
           }
         );
       }
 
       else if (params.get('news')) {
-        axios.get(`http://localhost:5000/offline/${params.get('news')}`).then(
+        axios.get(`http://localhost:3000/api/offline/${params.get('news')}`).then(
             res => {
               this.setState({
                 news: res.data,
-                category: "SEARCH RESULT"
+                category: "SEARCH RESULT",
+                loading: false
               })
             }
         );
@@ -63,7 +71,8 @@ class NewsList extends Component {
             res => {
               this.setState({
                 news: res.data,
-                category: params.get('site').toUpperCase()
+                category: params.get('site').toUpperCase(),
+                loading: false
               })
             }
         );
@@ -71,8 +80,14 @@ class NewsList extends Component {
     }
   };
 
+
   handleFollow = () => {
-    this.setState({following: !this.state.following});
+    axios.put(`http://localhost:3000/api/user/${UserStore.user.uid}`,
+        {channel: this.state.category.toLowerCase()}).then(res => {
+      this.setState({following: !this.state.following});
+    }).catch(err =>
+        message.error(err)
+    );
   };
 
   handleMore = () => {
@@ -97,19 +112,24 @@ class NewsList extends Component {
         </div>
       );
     }
-    // let title = params.get('category') ? "HEADLINE" : params.get('category').toUpperCase();
     return (
       <div className="container">
         <br/>
         <div className="list-headline">
             <h1 className="list-title">{this.state.category}</h1>
-            <Button shape="round" onClick={this.handleFollow}>
+            <Button shape="round" onClick={this.handleFollow} disabled={UserStore.user.isAnonymous}>
               <Icon type="star" theme={theme}/>
               {value}
             </Button>
         </div>
         <div className="list-container">
-          {displayNews || <Empty/>}
+          {this.state.loading ?
+              <div>
+                <Skeleton/>
+                <Skeleton/>
+                <Skeleton/>
+              </div>
+              : (displayNews || <Empty/>)}
         </div>
         <Divider>
           {this.state.news.length === this.state.display.length ?
@@ -126,7 +146,10 @@ class NewsList extends Component {
 
     );
   }
-
 }
+
+decorate(NewsList, {
+  NewsList: observer,
+});
 
 export default NewsList

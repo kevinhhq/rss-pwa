@@ -10,9 +10,8 @@ router.post("/register", function(req, res) {
         phoneNumber: req.body.phoneNumber,
         password: req.body.password,
         displayName: req.body.displayName,
-        photoURL: req.body.photoURL,
-        disabled: req.body.disabled,
-        channel: req.body.channel,
+        photoURL: req.body.photoURL || null,
+        channel: [],
     }).then(function (userRecord) {
         // See the UserRecord reference doc for the contents of userRecord.
         let user = {
@@ -23,9 +22,8 @@ router.post("/register", function(req, res) {
             password: req.body.password,
             displayName: req.body.displayName,
             photoURL: req.body.photoURL,
-            disabled: req.body.disabled,
-            channel: req.body.channel
-        }
+            channel: [],
+        };
         let userRef = db.ref('user/');
         userRef.push().set(user);
         res.redirect('/user/login');

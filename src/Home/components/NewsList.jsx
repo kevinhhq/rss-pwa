@@ -16,7 +16,7 @@ class NewsList extends Component {
 
     componentDidMount() {
         this.setState({loading: true, news:[]});
-        axios.get(`http://localhost:5000/offline/category/business`).then(
+        axios.get(`http://localhost:3000/api/offline/category/business`).then(
             res => {
                 this.setState({news: res.data.slice(0,3), loading: false})
             }
@@ -28,7 +28,7 @@ class NewsList extends Component {
 
     onTabChange = (key) => {
         this.setState({loading: true, news:[]});
-        axios.get(`http://localhost:5000/offline/category/${key}`).then(
+        axios.get(`http://localhost:3000/api/offline/category/${key}`).then(
             res => {
                 this.setState({news: res.data.slice(0,3), loading: false})
             }
@@ -38,7 +38,7 @@ class NewsList extends Component {
         });
     };
 
-    renderCard = (category) => {
+    renderCard = () => {
         if (this.state.loading ) {
             return <Skeleton/>
         }
@@ -54,7 +54,7 @@ class NewsList extends Component {
                         hoverable
                         bordered={false}
                         style={{width: 300}}
-                        cover={<img src={news.img} alt={"N/A"}/>}
+                        cover={news.img ? <img src={news.img} alt={"N/A"}/> : <Empty description=" "/>}
                     >
 
                         <Meta

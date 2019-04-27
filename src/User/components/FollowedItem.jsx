@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Avatar, Card, Button, Spin} from "antd";
+import {Avatar, Card, Button} from "antd";
 import "../styles/FollowedItem.scss";
 
 class FollowedItem extends Component {

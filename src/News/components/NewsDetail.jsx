@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import '../styles/NewsDetail.scss';
-import { Button, Empty, Tag, Breadcrumb, Icon, Divider, Avatar} from 'antd';
+import { Button, Empty, Tag, Breadcrumb, Icon, Divider, Avatar, message} from 'antd';
 import news_list from "../../mock/news_list"
 import { Link } from 'react-router-dom'
 import moment from 'moment';
+import {decorate} from "mobx";
+import {observer} from "mobx-react";
+import UserStore from "../../Appshell/stores/UserStore";
+import axios from 'axios';
 
 
 class NewsDetail extends Component {
@@ -24,7 +28,12 @@ class NewsDetail extends Component {
   }
 
   handleFollow = () => {
-    this.setState({following: !this.state.following});
+    axios.put(`http://localhost:3000/api/user/${UserStore.user.uid}`,
+        {channel: this.state.currentNews.source.toLowerCase()}).then(res => {
+      this.setState({following: !this.state.following});
+    }).catch(err =>
+        message.error(err)
+    );
   };
 
   renderBody = (body) => {
@@ -66,7 +75,7 @@ class NewsDetail extends Component {
             <div className="post-time">Post Time: {moment().fromNow()}</div>
           </div>
           <div className="article-follow">
-            <Button shape="round" onClick={this.handleFollow}>
+            <Button shape="round" onClick={this.handleFollow} disabled={UserStore.user.isAnonymous}>
               <Icon type="star" theme={theme}/>
               {value}
             </Button>
@@ -88,5 +97,9 @@ class NewsDetail extends Component {
     )
   }
 }
+
+decorate(NewsDetail, {
+  NewsDetail: observer,
+});
 
 export default NewsDetail

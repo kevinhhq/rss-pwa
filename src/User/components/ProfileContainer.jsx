@@ -21,7 +21,7 @@ class ProfileContainer extends Component {
 
   componentDidMount() {
     this.setState({loading: true, news:[]});
-    axios.get(`http://localhost:5000/offline/`).then(
+    axios.get(`http://localhost:3000/api/offline/`).then(
         res => {
           this.setState({news: res.data.slice(0,3), loading: false})
         }
@@ -31,7 +31,7 @@ class ProfileContainer extends Component {
     });
   }
 
-  renderCard = (category) => {
+  renderCard = () => {
     if (this.state.loading) {
       return <Skeleton/>
     }
