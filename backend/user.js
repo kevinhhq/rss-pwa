@@ -5,13 +5,25 @@ var admin = require('firebase-admin');
 
 router.post("/register", function(req, res) {
     admin.auth().createUser({
-        name: req.body.name,
+        email: req.body.email,
+        emailVerified: req.body.emailVerified,
+        phoneNumber: req.body.phoneNumber,
+        password: req.body.password,
+        displayName: req.body.displayName,
+        photoURL: req.body.photoURL,
+        disabled: req.body.disabled,
         channel: req.body.channel,
     }).then(function (userRecord) {
         // See the UserRecord reference doc for the contents of userRecord.
         let user = {
             uid: userRecord.uid,
-            name: req.body.name,
+            email: req.body.email,
+            emailVerified: req.body.emailVerified,
+            phoneNumber: req.body.phoneNumber,
+            password: req.body.password,
+            displayName: req.body.displayName,
+            photoURL: req.body.photoURL,
+            disabled: req.body.disabled,
             channel: req.body.channel
         }
         let userRef = db.ref('user/');
