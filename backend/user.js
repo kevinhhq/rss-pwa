@@ -1,26 +1,32 @@
 const express = require("express");
 const router = express.Router();
 const db = require("./firebase");
+var admin = require('firebase-admin');
 
-router.get("/", function(req, res) {
-    var userReference = db.ref("/user");
-    userReference.on(
-        "value",
-        function(snapshot) {
-            res.json(snapshot.val());
-            userReference.off("value");
-        },
-        function(errorObject) {
-            console.log("The read failed: " + errorObject.code);
-            res.send("The read failed: " + errorObject.code);
+router.post("/register", function(req, res) {
+    admin.auth().createUser({
+        name: req.body.name,
+        channel: req.body.channel,
+    }).then(function (userRecord) {
+        // See the UserRecord reference doc for the contents of userRecord.
+        let user = {
+            uid: userRecord.uid,
+            name: req.body.name,
+            channel: req.body.channel
         }
-    );
-});
-
+        let userRef = db.ref('user/');
+        userRef.push().set(user);
+        res.redirect('/user/login');
+        console.log("Successfully created new user:", userRecord.uid);
+    })
+        .catch(function (error) {
+            console.log("Error creating new user:", error);
+        });
+})
 router.get("/:id", function(req, res) {
-    var id = req.params.id;
-    var userReference = db.ref("/user"+id);
-    userReference.on(
+    var uid=req.params.id;
+    var userReference = db.ref("/user");
+    userReference.orderByChild("uid").equalTo(uid).on(
         "value",
         function(snapshot) {
             res.json(snapshot.val());
@@ -30,33 +36,21 @@ router.get("/:id", function(req, res) {
             console.log("The read failed: " + errorObject.code);
             res.send("The read failed: " + errorObject.code);
         }
-    );
+    )
+
 });
 
-router.get("/:id/channel", function(req, res) {
-    var id = req.params.id;
-    var userReference = db.ref("/user/"+id + "/channel");
-    userReference.on(
-        "value",
-        function(snapshot) {
-            res.json(snapshot.val());
-            userReference.off("value");
-        },
-        function(errorObject) {
-            console.log("The read failed: " + errorObject.code);
-            res.send("The read failed: " + errorObject.code);
-        }
-    );
-});
+
 
 router.put("/:id", function(req, res) {
     var channel=JSON.stringify(req.body.channel).replace(/\"/g, "");
-    var id=req.params.id;
-    var CurrentData=db.ref("/user/"+id + "/channel");
-    CurrentData.once(
-        "value",
+    var uid=req.params.id;
+    var userReference = db.ref("/user");
+    userReference.orderByChild("uid").equalTo(uid).on(
+        "child_added",
         function(snapshot) {
-            var currentdata=snapshot.val();
+            var key_id=snapshot.key
+            var currentdata=snapshot.val().channel
             var list=currentdata.split(',');
             var flag=0;
             if(list===null||list[0]===currentdata){
@@ -78,12 +72,11 @@ router.put("/:id", function(req, res) {
                     list.splice(0,0,channel);
                 }
             }
-            console.log(list[0],list[1],list[2])
-            db.ref("/user/"+id).update({
+            db.ref("/user/"+key_id).update({
                 channel: list.toString(),
             })
             res.send("Update Done");
-            CurrentData.off("value");
+            userReference.off("child_added");
         },
         function(errorObject) {
             console.log("The read failed: " + errorObject.code);
