@@ -33,11 +33,11 @@ router.get("/:id", function(req, res) {
             var key_id=snapshot.key
             var Email_val=null
             var Channel_val=null
-            Email=db.ref("/user/"+key_id).child("email")
+            var Email=db.ref("/user/"+key_id).child("email")
             Email.on('value', snapshot => {
                 Email_val=snapshot
             })
-            Channel=db.ref("/user/"+key_id).child("channel")
+            var Channel=db.ref("/user/"+key_id).child("channel")
             Channel.on('value', snapshot => {
                 Channel_val=snapshot
             })
@@ -64,23 +64,23 @@ router.put("/:id", function(req, res) {
     userReference.orderByChild("uid").equalTo(uid).on(
         "child_added",
         function(snapshot) {
-            var key_id=snapshot.key;
-            var currentdata=snapshot.val().channel;
-            if (!snapshot.hasChild("channel")) {
-              currentdata = {};
-              currentdata[name]= {"type": type};
-            } else {
-              var flag = 0;
-              for (const i in currentdata) {
-                if (i === name && currentdata[i].type === type) {
-                  delete (currentdata[i]);
-                  flag = 1;
-                  break;
+
+            var key_id=snapshot.key
+            if(snapshot.hasChild("channel")){
+                var currentdata=snapshot.val().channel;
+                var flag=0;
+                console.log(currentdata)
+                for(let i in currentdata){
+                    console.log(currentdata)
+                    if(currentdata[i].name===name&&currentdata[i].type===type){
+                        delete (currentdata[i])
+                        flag=1;
+                        break;
+                    }
                 }
-              }
-              if (flag === 0) {
-                currentdata[name] = {"type": type};
-              }
+                if(flag===0){
+                    currentdata[name]=({"name":name,"type":type});
+                }
             }
             db.ref("/user/"+key_id).update({
                 channel: currentdata,

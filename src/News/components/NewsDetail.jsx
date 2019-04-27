@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import '../styles/NewsDetail.scss';
 import { Button, Empty, Tag, Breadcrumb, Icon, Divider, Avatar, message} from 'antd';
-import news_list from "../../mock/news_list"
 import { Link } from 'react-router-dom'
-import moment from 'moment';
 import {decorate} from "mobx";
 import {observer} from "mobx-react";
 import UserStore from "../../Appshell/stores/UserStore";
 import axios from 'axios';
+import Image from "./Image";
 
 
 class NewsDetail extends Component {
@@ -22,9 +21,14 @@ class NewsDetail extends Component {
 
   componentDidMount() {
     // need to get news by id
-
-    this.setState({currentNews: news_list[1]});
-    // set subscribed
+    let id = this.props.match.params.id;
+    axios.get(`http://localhost:3000/api/offline/${id}`).then(
+      res => {
+        this.setState({
+          currentNews: res.data,
+        })
+      }
+    );
   }
 
   handleFollow = () => {
@@ -69,10 +73,14 @@ class NewsDetail extends Component {
         </div>
         <div className="title"><h1>{currentNews.title}</h1></div>
         <div className="article-info">
-          <Avatar size={64} src="https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png" />
+          <Avatar
+            size={64}
+            style={{fontSize: '30px', color: '#13c2c2', backgroundColor: '#e6fffb'}}>
+            {currentNews.source[0]}
+          </Avatar>
           <div className="article-subtitle">
             <div className="source">{currentNews.source}</div>
-            <div className="post-time">Post Time: {moment().fromNow()}</div>
+            <div className="post-time">Post Time: {currentNews.time}</div>
           </div>
           <div className="article-follow">
             <Button shape="round" onClick={this.handleFollow} disabled={UserStore.user.isAnonymous}>
@@ -84,10 +92,10 @@ class NewsDetail extends Component {
 
 
         <div className="article-img">
-          <img alt="cover" src={currentNews.url}/>
+          <Image type={"detail"} address={currentNews.img} source={currentNews.source}/>
         </div>
-        <div className="tags">Category: <Tag color="cyan">cyan</Tag></div>
-        <div className="description">Description: {currentNews.description}</div>
+        <div className="tags">Category: <Tag color="cyan">{currentNews.category}</Tag></div>
+        <div className="description">Description: {currentNews.summary}</div>
 
         <Divider/>
         <div className="content">{this.renderBody(currentNews.body)}</div>
