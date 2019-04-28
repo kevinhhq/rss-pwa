@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const db = require("./firebase");
-
 /**Read data from firebase, which could work offline */
 router.get("/", function(req, res) {
   var userReference = db.ref("/article/headlines/articles");
@@ -37,6 +36,45 @@ router.get("/category/:category", function(req, res) {
 router.get("/:newsId", function(req, res) {
   var newsId = req.params.newsId;
   var userReference = db.ref("/article/alldata/" + newsId);
+  userReference.on(
+    "value",
+    function(snapshot) {
+      res.json(snapshot.val());
+      userReference.off("value");
+    },
+    function(errorObject) {
+      console.log("The read failed: " + errorObject.code);
+      res.send("The read failed: " + errorObject.code);
+    }
+  );
+});
+
+router.get("/source/:source", function(req, res) {
+  var source = req.params.source;
+  var userReference = db
+    .ref("/article/alldata")
+    .orderByChild("source")
+    .equalTo(source);
+  userReference.on(
+    "value",
+    function(snapshot) {
+      res.json(snapshot.val());
+      userReference.off("value");
+    },
+    function(errorObject) {
+      console.log("The read failed: " + errorObject.code);
+      res.send("The read failed: " + errorObject.code);
+    }
+  );
+});
+
+router.get("/search/:keyWord", function(req, res) {
+  var keyWord = req.params.keyWord;
+  var userReference = db
+    .ref("/article/alldata")
+    .orderByChild("title")
+    .startAt(keyWord)
+    .endAt(keyWord + "\uf8ff");
   userReference.on(
     "value",
     function(snapshot) {
