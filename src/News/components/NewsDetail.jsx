@@ -33,11 +33,23 @@ class NewsDetail extends Component {
 
   handleFollow = () => {
     axios.put(`http://localhost:3000/api/user/${UserStore.user.uid}`,
-        {channel: this.state.currentNews.source.toLowerCase()}).then(res => {
+        {name: this.state.currentNews.source.toLowerCase(), type:"source"}).then(res => {
       this.setState({following: !this.state.following});
     }).catch(err =>
-        message.error(err)
+        message.error("Network error")
     );
+  };
+
+  isFollow = () => {
+    if (!UserStore.user.channels) return false;
+    let key = 'headline';
+    if (this.props.location) {
+      const search = this.props.location.search;
+      const params = new URLSearchParams(search);
+      key = params.get('news') || params.get('category') || params.get('source') || 'headline';
+    }
+
+    return (key in UserStore.user.channels) || this.state.following;
   };
 
   renderBody = (body) => {
@@ -52,8 +64,6 @@ class NewsDetail extends Component {
 
   render() {
     const {currentNews} = this.state;
-    const value = this.state.following ? "Unfollow" : "Follow";
-    const theme = this.state.following ? "filled" : "";
 
 
     if (Object.keys(currentNews).length === 0) {
@@ -84,8 +94,8 @@ class NewsDetail extends Component {
           </div>
           <div className="article-follow">
             <Button shape="round" onClick={this.handleFollow} disabled={UserStore.user.isAnonymous}>
-              <Icon type="star" theme={theme}/>
-              {value}
+              <Icon type="star" theme={this.isFollow() ? "filled" : ""}/>
+              {this.isFollow() ? "Unfollow" : "Follow"}
             </Button>
           </div>
         </div>

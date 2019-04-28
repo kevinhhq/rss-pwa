@@ -55,7 +55,6 @@ router.get("/:id", function(req, res) {
 
 
 router.put("/:id", function(req, res) {
-  console.log("req!!!!!!",req);
     var name=JSON.stringify(req.body.name).replace(/\"/g, "");
     var type=JSON.stringify(req.body.type).replace(/\"/g, "");
     console.log(name,type);

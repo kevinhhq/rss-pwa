@@ -37,7 +37,10 @@ class NewsList extends Component {
             loading: false
           })
         }
-      );
+      ).catch(err => {
+        message.error("Network error");
+        this.setState({loading: false});
+      });
     }
     else {
       const search = props.location.search;
@@ -52,7 +55,10 @@ class NewsList extends Component {
               loading: false
             })
           }
-        );
+        ).catch(err => {
+          message.error("Network error");
+          this.setState({loading: false});
+        });
       }
 
       else if (params.get('news')) {
@@ -64,7 +70,10 @@ class NewsList extends Component {
                 loading: false
               })
             }
-        );
+        ).catch(err => {
+          message.error("Network error");
+          this.setState({loading: false});
+        });
       }
 
       else if (params.get('source')) {
@@ -76,7 +85,10 @@ class NewsList extends Component {
                 loading: false
               })
             }
-        );
+        ).catch(err => {
+          message.error("Network error");
+          this.setState({loading: false});
+        });
       }
     }
   };
@@ -99,7 +111,7 @@ class NewsList extends Component {
         {name: this.state.category.toLowerCase(), type: this.getType(this.props)}).then(res => {
       this.setState({following: !this.state.following});
     }).catch(err =>
-        message.error(err)
+        message.error("Network error")
     );
   };
 
