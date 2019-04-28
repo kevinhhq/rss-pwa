@@ -69,6 +69,8 @@ router.post("/headlines", function(req, res) {
         story.hashtags = data.stories[i].hashtags.splice(0, 3);
         story.body = data.stories[i].body;
         resultList.push(story);
+        var alldataReference = db.ref("/article/alldata/" + story.newsId);
+        alldataReference.set(story);
       }
       var userReference = db.ref("/article/headlines");
       userReference.set({
