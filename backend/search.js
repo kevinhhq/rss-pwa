@@ -28,16 +28,19 @@ router.get("/:keyword", function(req, res) {
       console.log("API called successfully.");
       for (var i = 0; i < data.stories.length; i++) {
         var story = {
+          newsId: "",
           title: "",
           category: "",
           author: "",
           time: "",
           img: "",
           source: "",
+          sourceUrl: "",
           summary: "",
           hashtags: [],
           body: ""
         };
+        story.newsId = data.stories[i].id;
         story.title = data.stories[i].title;
         if (data.stories[i].categories.length < 1) story.category = "";
         else {
@@ -59,6 +62,7 @@ router.get("/:keyword", function(req, res) {
         story.img =
           data.stories[i].media.length < 1 ? "" : data.stories[i].media[0].url;
         story.source = data.stories[i].source.name;
+        story.sourceUrl = data.stories[i].source.homePageUrl;
         story.summary =
           data.stories[i].summary.sentences < 1
             ? story.title
@@ -73,6 +77,7 @@ router.get("/:keyword", function(req, res) {
   apiInstance.listStories(opts, callback);
 });
 
+/**Search news according to category through online api*/
 router.get("/category/:category", function(req, res) {
   var category = req.params.category;
   var category_id;
@@ -100,16 +105,19 @@ router.get("/category/:category", function(req, res) {
       console.log("API called successfully.");
       for (var i = 0; i < data.stories.length; i++) {
         var story = {
+          newsId: "",
           title: "",
           category: category,
           author: "",
           time: "",
           img: "",
           source: "",
+          sourceUrl: "",
           summary: "",
           hashtags: [],
           body: ""
         };
+        story.newsId = data.stories[i].id;
         story.title = data.stories[i].title;
         story.author = data.stories[i].author.name;
         story.time = data.stories[i].publishedAt;
@@ -117,6 +125,7 @@ router.get("/category/:category", function(req, res) {
         story.img =
           data.stories[i].media.length < 1 ? "" : data.stories[i].media[0].url;
         story.source = data.stories[i].source.name;
+        story.sourceUrl = data.stories[i].source.homePageUrl;
         story.summary =
           data.stories[i].summary.sentences < 1
             ? story.title

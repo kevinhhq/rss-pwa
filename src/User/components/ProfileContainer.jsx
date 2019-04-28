@@ -16,12 +16,13 @@ class ProfileContainer extends Component {
     //todo: replace them to the real news list
   state = {
     news: [],
+    channels: {},
     loading: true,
   };
 
   componentDidMount() {
-    this.setState({loading: true, news:[]});
-    axios.get(`http://localhost:5000/offline/`).then(
+    this.setState({loading: true, news:[], channels: []});
+    axios.get(`http://localhost:3000/api/offline/`).then(
         res => {
           this.setState({news: res.data.slice(0,3), loading: false})
         }
@@ -31,7 +32,7 @@ class ProfileContainer extends Component {
     });
   }
 
-  renderCard = (category) => {
+  renderCard = () => {
     if (this.state.loading) {
       return <Skeleton/>
     }
@@ -81,6 +82,7 @@ class ProfileContainer extends Component {
                 </div>
             );
         }
+
         return(
             <div className="profile-container">
                 <div className="profile-avatar">
@@ -91,11 +93,8 @@ class ProfileContainer extends Component {
                 <section className="profile-section">
                     <h1>My Subscription</h1>
                   <div className="subcriptions">
-
-                    {/*todo: replace with the true data*/}
-                    <FollowedItem name="PlaceHolder"/>
-                    <FollowedItem name="Foo"/>
-                    <FollowedItem name="Bar"/>
+                    {Object.keys(UserStore.user.channels).map((chan, index) =>
+                        <FollowedItem name={chan} type={UserStore.user.channels[chan].type} key={index}/>)}
                   </div>
                 </section>
                 <Divider/>

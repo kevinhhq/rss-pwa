@@ -7,6 +7,7 @@ import Header from './Appshell/components/Header.jsx';
 import NewsDetail from './News/components/NewsDetail';
 import NewsList from './News/components/NewsList';
 import ProfileContainer from './User/components/ProfileContainer';
+import AboutContainer from './About/components/AboutContainer';
 import 'antd/dist/antd.css';
 
 
@@ -22,6 +23,7 @@ class App extends Component {
             <Route exact path="/news/" component={NewsList}/>
             <Route path="/profile/" component={ProfileContainer}/>
             <Redirect from="/rss-pwa/" to="/"/>
+            <Route path="/about/" component={AboutContainer}/>
           </Switch>
         </Router>
         <BackTop />

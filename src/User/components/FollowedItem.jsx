@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
-import {Avatar, Card, Button, Spin} from "antd";
+import {Avatar, Card, Button} from "antd";
 import "../styles/FollowedItem.scss";
+import {Link} from "react-router-dom";
 
 class FollowedItem extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
       return (
         <Card className="item-card">
           <div className="item-container">
-            <Avatar size={50} style={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>{this.props.name[0]}</Avatar>
-            <div className="item-description">{this.props.name}</div>
+            <Link to={this.props.type==='other'? "/news/" : `/news/?${this.props.type}=${this.props.name}`}>
+              <Avatar size={50} style={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>
+                {this.props.name[0].toUpperCase()}
+              </Avatar>
+            </Link>
+            <div className="item-description">
+              <Link to={this.props.type==='other'? "/news/" : `/news/?${this.props.type}=${this.props.name}`}>
+                {this.props.name.toUpperCase()}
+              </Link>
+            </div>
             <div className="item-operation">
               <Button shape="circle" icon="delete" type="danger"/>
             </div>

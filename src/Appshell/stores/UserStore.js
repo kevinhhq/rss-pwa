@@ -1,21 +1,29 @@
 import {observable, action, decorate} from 'mobx';
 import firebase from 'firebase';
+import axios from "axios";
 
 class UserStore {
-    user = {isAnonymous: true};
-    state = {loading: false};
-
+    user = {isAnonymous: true, channels:{}};
+    state = {loading: true};
 
     fetchUserState() {
         this.state.loading = true;
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
                 this.user = user;
+                this.user.channels = {};
+                axios.get(`http://localhost:3000/api/user/${this.user.uid}`).then(
+                    res => {
+                        this.user.channels = res.data.channel;
+                        this.state.loading = false;
+                    }
+                )
             } else {
                 console.log("Not login");
                 // No user is signed in.
+                this.state.loading = false;
             }
-            this.state.loading = false;
+
         });
     }
 
@@ -38,7 +46,13 @@ class UserStore {
         };
         return firebase.auth().signInWithEmailAndPassword(email, password).then(res => {
             this.user = res.user;
-            console.log(res.user);
+            this.user.channels = {};
+        }).then(res => {
+            axios.get(`http://localhost:3000/api/user/${this.user.uid}`).then(
+                res => {
+                    this.user.channels = res.data.channel;
+                }
+            )
         });
     }
 

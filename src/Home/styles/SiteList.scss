@@ -6,13 +6,17 @@
   .ant-card {
     min-width: 32%;
     transition: all 1s ease;
+    .ant-card-cover {
+      height: initial;
+    }
 
     @media screen and (max-width: 600px){
       min-width: 100%;
     }
-    .ant-card-cover {
+    img {
       height: 164px;
     }
+
     .ant-btn{
       border: none;
     }

@@ -21,7 +21,7 @@ class HomeContainer extends Component {
     selectBefore = () =>
         <Select defaultValue={this.state.select} style={{width: 90}} onChange={this.onSelectChange}>
             <Option value="news">News</Option>
-            <Option value="site">Site</Option>
+            <Option value="source">Source</Option>
         </Select>;
 
     onSelectChange = (val) => {
@@ -62,12 +62,12 @@ class HomeContainer extends Component {
                         </div>
                     </section>
                     <section className="home-sections">
-                        <Link to="/news/"><h1> Trend News </h1></Link>
+                        <Link to="/news/"><h1> Trend News</h1></Link>
                         <NewsList/>
                     </section>
                     <Divider/>
                     <section className="home-sections">
-                        <h1> Hot Sites </h1>
+                        <h1> Hot Sources</h1>
                         <SiteList/>
                     </section>
                     <Divider/>

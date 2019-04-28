@@ -6,24 +6,13 @@ var admin = require('firebase-admin');
 router.post("/register", function(req, res) {
     admin.auth().createUser({
         email: req.body.email,
-        emailVerified: req.body.emailVerified,
-        phoneNumber: req.body.phoneNumber,
         password: req.body.password,
-        displayName: req.body.displayName,
-        photoURL: req.body.photoURL,
-        disabled: req.body.disabled,
         channel: req.body.channel,
     }).then(function (userRecord) {
         // See the UserRecord reference doc for the contents of userRecord.
         let user = {
             uid: userRecord.uid,
             email: req.body.email,
-            emailVerified: req.body.emailVerified,
-            phoneNumber: req.body.phoneNumber,
-            password: req.body.password,
-            displayName: req.body.displayName,
-            photoURL: req.body.photoURL,
-            disabled: req.body.disabled,
             channel: req.body.channel
         }
         let userRef = db.ref('user/');
@@ -39,9 +28,20 @@ router.get("/:id", function(req, res) {
     var uid=req.params.id;
     var userReference = db.ref("/user");
     userReference.orderByChild("uid").equalTo(uid).on(
-        "value",
+        "child_added",
         function(snapshot) {
-            res.json(snapshot.val());
+            var key_id=snapshot.key
+            var Email_val=null
+            var Channel_val=null
+            var Email=db.ref("/user/"+key_id).child("email")
+            Email.on('value', snapshot => {
+                Email_val=snapshot
+            })
+            var Channel=db.ref("/user/"+key_id).child("channel")
+            Channel.on('value', snapshot => {
+                Channel_val=snapshot
+            })
+            res.json({"email":Email_val,"channel":Channel_val});
             userReference.off("value");
         },
         function(errorObject) {
@@ -55,37 +55,34 @@ router.get("/:id", function(req, res) {
 
 
 router.put("/:id", function(req, res) {
-    var channel=JSON.stringify(req.body.channel).replace(/\"/g, "");
+    var name=JSON.stringify(req.body.name).replace(/\"/g, "");
+    var type=JSON.stringify(req.body.type).replace(/\"/g, "");
+    console.log(name,type);
     var uid=req.params.id;
     var userReference = db.ref("/user");
     userReference.orderByChild("uid").equalTo(uid).on(
         "child_added",
         function(snapshot) {
+
             var key_id=snapshot.key
-            var currentdata=snapshot.val().channel
-            var list=currentdata.split(',');
-            var flag=0;
-            if(list===null||list[0]===currentdata){
-                if (list[0] === channel) {
-                    list.splice(0, 1);
-                }
-                else
-                    list.splice(0,0,channel);
-            }
-            else {
-                n=list.length
-                for (var i = 0; i < n; i++)
-                    if (list[i] === channel) {
-                        list.splice(i, 1);
-                        flag = 1;
+            if(snapshot.hasChild("channel")){
+                var currentdata=snapshot.val().channel;
+                var flag=0;
+                console.log(currentdata)
+                for(let i in currentdata){
+                    console.log(currentdata)
+                    if(currentdata[i].name===name&&currentdata[i].type===type){
+                        delete (currentdata[i])
+                        flag=1;
                         break;
                     }
+                }
                 if(flag===0){
-                    list.splice(0,0,channel);
+                    currentdata[name]=({"name":name,"type":type});
                 }
             }
             db.ref("/user/"+key_id).update({
-                channel: list.toString(),
+                channel: currentdata,
             })
             res.send("Update Done");
             userReference.off("child_added");

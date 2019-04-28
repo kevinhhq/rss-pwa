@@ -11,8 +11,8 @@ class NewsItem extends Component {
   render() {
       let tags;
       if (this.props.item.hashtags) {
-        tags = this.props.item.hashtags.map(item =>
-          <Tag color="cyan">{item}</Tag>
+        tags = this.props.item.hashtags.map((item, index) =>
+          <Tag color="cyan" key={index}>{item}</Tag>
         )
       }
       return (
@@ -27,7 +27,7 @@ class NewsItem extends Component {
             </div>
             <div className="image">
               <Link to={{pathname: `/news/${this.props.item.newsId}`}}>
-                <Image address={this.props.item.img} source={this.props.item.source}/>
+                <Image type={"list"} address={this.props.item.img} source={this.props.item.source}/>
               </Link>
             </div>
           </div>
@@ -35,4 +35,4 @@ class NewsItem extends Component {
   }
 }
 
-export default NewsItem
+export default NewsItem;
