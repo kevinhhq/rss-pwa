@@ -27,7 +27,6 @@ class ProfileContainer extends Component {
           this.setState({news: res.data.slice(0,3), loading: false})
         }
     ).catch(err => {
-      console.log(err);
       this.setState({news: [], loading: false});
     });
   }
@@ -62,49 +61,53 @@ class ProfileContainer extends Component {
     </div>;
   };
 
-    render() {
-        if (UserStore.state.loading) {
-            return (
-                <div className="profile-container">
-                    <div className="profile-avatar">
-                       <Spin/>
-                    </div>
-                </div>
-            );
-        }
-
-        if (!UserStore.user.email) {
-            return (
-                <div className="profile-container">
-                    <div className="profile-avatar">
-                        <h1>You have to Sign in</h1>
-                    </div>
-                </div>
-            );
-        }
-
-        return(
-            <div className="profile-container">
-                <div className="profile-avatar">
-                    <Avatar size={100} icon="user" src={UserStore.user.photoURL ? UserStore.user.photoURL : ""}/>
-                    <h1>Welcome, {UserStore.user.displayName || UserStore.user.email}</h1>
-                    <br/>
-                </div>
-                <section className="profile-section">
-                    <h1>My Subscription</h1>
-                  <div className="subcriptions">
-                    {Object.keys(UserStore.user.channels).map((chan, index) =>
-                        <FollowedItem name={chan} type={UserStore.user.channels[chan].type} key={index}/>)}
+  render() {
+      if (UserStore.state.loading) {
+          return (
+              <div className="profile-container">
+                  <div className="profile-avatar">
+                     <Spin/>
                   </div>
-                </section>
-                <Divider/>
-                <section className="profile-section">
-                    <h1>Browsed News</h1>
-                    {this.renderCard()}
-                </section>
-                <Divider/>
-            </div>
-        );
+              </div>
+          );
+      }
+
+      if (!UserStore.user.email) {
+          return (
+              <div className="profile-container">
+                  <div className="profile-avatar">
+                      <h1>You have to Sign in</h1>
+                  </div>
+              </div>
+          );
+      }
+
+      return(
+          <div className="profile-container">
+              <div className="profile-avatar">
+                  <Avatar size={100} icon="user" src={UserStore.user.photoURL ? UserStore.user.photoURL : ""}/>
+                  <h1>Welcome, {UserStore.user.displayName || UserStore.user.email}</h1>
+                  <br/>
+              </div>
+              <section className="profile-section">
+                  <h1>My Subscription</h1>
+                <div className="subcriptions">
+                  {UserStore.user.channels ? Object.keys(UserStore.user.channels).map((chan, index) =>
+                      <FollowedItem name={chan} type={UserStore.user.channels[chan].type} key={index}/>) :
+                      <div style={{margin: "0 auto"}}>
+                        <Empty/>
+                      </div>
+                  }
+                </div>
+              </section>
+              <Divider/>
+              <section className="profile-section">
+                  <h1>Browsed News</h1>
+                  {this.renderCard()}
+              </section>
+              <Divider/>
+          </div>
+      );
     }
 }
 

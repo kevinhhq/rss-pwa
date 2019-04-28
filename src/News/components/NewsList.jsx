@@ -77,7 +77,7 @@ class NewsList extends Component {
       }
 
       else if (params.get('source')) {
-        axios.get(`http://localhost:5000/offline/${params.get('source')}`).then(
+        axios.get(`http://localhost:3000/api/offline/${params.get('source')}`).then(
             res => {
               this.setState({
                 news: res.data || [],

@@ -1,14 +1,20 @@
 [
   {
-    "title": "BBC News",
-    "url":"https://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png"
+    "title": "Daily Mail UK",
+    "url":"https://www.sleepphones.com/sites/default/files/styles/blog_image/public/Daily-Mail-Logo_0.png?itok=atnTYFWs",
+    "source": "https://www.dailymail.co.uk/home/index.html",
+    "description": "Daily Mail United Kingdom"
   },
   {
-    "title": "CNN News",
-    "url":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/1200px-CNN.svg.png"
+    "title": "Google News",
+    "url":"https://i1.wp.com/www.theideapress.com/wp-content/uploads/2017/11/how-to-get-your-website-listed-on-google-news.png",
+    "source": "https://news.google.com/",
+    "description": "One of the largest news websites"
   },
   {
-    "title": "ESPN",
-    "url": "https://a1.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fespn_logos%2Fespn_red.png"
+    "title": "Business Insider",
+    "url": "https://pbs.twimg.com/media/D5FbHdsXoAAG0z5.jpg",
+    "source": "https://www.businessinsider.com/",
+    "description": "Fast-growing business site with deep financial verticals. "
   }
 ]
