@@ -52,7 +52,7 @@ class NewsList extends Component {
             this.setState({
               news: res.data || [],
               display: res.data.slice(0, 10),
-              category: params.get('category').toUpperCase(),
+              category: params.get('category'),
               loading: false
             })
           }
