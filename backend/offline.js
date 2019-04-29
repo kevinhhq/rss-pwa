@@ -58,7 +58,11 @@ router.get("/source/:source", function(req, res) {
   userReference.on(
     "value",
     function(snapshot) {
-      res.json(snapshot.val());
+      var sourceList = [];
+      for (var each in snapshot.val()) {
+        sourceList.push(snapshot.val()[each]);
+      }
+      res.send(sourceList);
       userReference.off("value");
     },
     function(errorObject) {
@@ -78,7 +82,11 @@ router.get("/search/:keyWord", function(req, res) {
   userReference.on(
     "value",
     function(snapshot) {
-      res.json(snapshot.val());
+      var searchList = [];
+      for (var each in snapshot.val()) {
+        searchList.push(snapshot.val()[each]);
+      }
+      res.send(searchList);
       userReference.off("value");
     },
     function(errorObject) {
