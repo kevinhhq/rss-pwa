@@ -82,7 +82,7 @@ class NewsList extends Component {
               this.setState({
                 news: res.data || [],
                 display: res.data || [],
-                category: params.get('source').toUpperCase(),
+                category: params.get('source'),
                 loading: false
               })
             }
@@ -109,7 +109,7 @@ class NewsList extends Component {
 
   handleFollow = () => {
     axios.put(`http://localhost:3000/api/user/${UserStore.user.uid}`,
-        {name: this.state.category.toLowerCase(), type: this.getType(this.props)}).then(res => {
+        {name: this.state.category, type: this.getType(this.props)}).then(res => {
       this.setState({following: !this.state.following});
     }).catch(err =>
         message.error("Network error")
@@ -153,7 +153,7 @@ class NewsList extends Component {
       <div className="container">
         <br/>
         <div className="list-headline">
-            <h1 className="list-title">{this.state.category}</h1>
+            <h1 className="list-title">{this.state.category.toUpperCase()}</h1>
             <Button shape="round" onClick={this.handleFollow} disabled={UserStore.user.isAnonymous}>
               <Icon type="star" theme={this.isFollow() ? "filled" : ""}/>
               {this.isFollow() ? "Unfollow" : "Follow"}
