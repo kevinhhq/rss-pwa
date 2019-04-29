@@ -2,19 +2,20 @@ const express = require("express");
 const router = express.Router();
 const db = require("./firebase");
 var admin = require('firebase-admin');
-var firebase=require('firebase');
 
 router.post("/register", function(req, res) {
     admin.auth().createUser({
         email: req.body.email,
         password: req.body.password,
-        channel: req.body.channel,
+        channel: null,
+        news:{a:0}
     }).then(function (userRecord) {
         // See the UserRecord reference doc for the contents of userRecord.
         let user = {
             uid: userRecord.uid,
             email: req.body.email,
-            channel: req.body.channel
+            channel: null,
+            news:{a:0},
         }
         let userRef = db.ref('user/');
         userRef.push().set(user);
@@ -52,7 +53,27 @@ router.get("/:id", function(req, res) {
 
 });
 
-router.put("/:id/news", function(req, res) {
+router.get("/:id/recentread", function(req, res) {
+    var uid=req.params.id;
+    var userReference = db.ref("/user");
+    userReference.orderByChild("uid").equalTo(uid).on(
+        "child_added",
+        function(snapshot) {
+            var recentread=snapshot.val().recentread
+            delete (recentread["a"])
+            res.json(recentread);
+            userReference.off("value");
+        },
+        function(errorObject) {
+            console.log("The read failed: " + errorObject.code);
+            res.send("The read failed: " + errorObject.code);
+        }
+    )
+
+});
+
+
+router.put("/:id/recentread", function(req, res) {
     var uid=req.params.id;
     var img_url=JSON.stringify(req.body.img_url).replace(/\"/g, "");
     var summary=JSON.stringify(req.body.summary).replace(/\"/g, "");
@@ -60,18 +81,17 @@ router.put("/:id/news", function(req, res) {
     var timestamp=new Date().getTime();
     var userReference = db.ref("/user");
     userReference.orderByChild("uid").equalTo(uid).on(
-        "value",
+        "child_added",
         function(snapshot) {
             var key_id=snapshot.key;
-            var recentread=snapshot.val().news;
-
-            if(!snapshot.child("news").hasChild("recentread")){
-                recentread = {};
-                recentread[news_id]= {"img_url":img_url,"summary":summary,"timestamp":timestamp};
+            if(!snapshot.hasChild("recentread")){
+                recentread={"img_url":img_url,"summary":summary,"timestamp":timestamp};
+                db.ref("/user/"+key_id).child(recentread).child(news_id).setValue(recentread)
             }
             else{
                 var flag=0;
                 var count=0;
+                var recentread=snapshot.child("/recentread").val();
                 for(let i in recentread){
                     count=count+1;
                 }
@@ -88,20 +108,22 @@ router.put("/:id/news", function(req, res) {
                         least_timestamp=recentread[i].timestamp;
                     }
                 }
-                if(count===4){
-                    recentread[not_recent_id]=({"img_url":img_url,"summary":summary,"timestamp":timestamp});
+                if(count===7){
+                    delete(recentread[not_recent_id])
+                    recentread[news_id]=({"img_url":img_url,"summary":summary,"timestamp":timestamp});
                     flag=1;
                 }
                 if(flag===0){
                     recentread[news_id]=({"img_url":img_url,"summary":summary,"timestamp":timestamp});
                     console.log(recentread)
                 }
+                db.ref("/user/"+key_id).update({
+                    recentread: recentread,
+                })
             }
-            db.ref("/user/"+key_id+"/news").update({
-                recentread: recentread,
-            })
+
             res.send("Update Done");
-            userReference.off("value");
+            userReference.off("child_added");
         },
         function(errorObject) {
             console.log("The read failed: " + errorObject.code);
@@ -109,6 +131,7 @@ router.put("/:id/news", function(req, res) {
         }
     );
 });
+
 
 
 router.put("/:id", function(req, res) {
