@@ -18,6 +18,7 @@ class NewsList extends Component {
       following: false,
       category: "HEADLINE",
       loading: false,
+      hideFollow: false
     }
   }
 
@@ -62,12 +63,15 @@ class NewsList extends Component {
       }
 
       else if (params.get('news')) {
-        axios.get(`http://localhost:3000/api/offline/${params.get('news')}`).then(
+        axios.get(`http://localhost:3000/api/offline/search/${params.get('news')}`).then(
             res => {
+              console.log(res.data);
               this.setState({
                 news: res.data || [],
+                display: res.data || [],
                 category: "SEARCH RESULT",
-                loading: false
+                loading: false,
+                hideFollow: true,
               })
             }
         ).catch(err => {
@@ -154,10 +158,13 @@ class NewsList extends Component {
         <br/>
         <div className="list-headline">
             <h1 className="list-title">{this.state.category.toUpperCase()}</h1>
-            <Button shape="round" onClick={this.handleFollow} disabled={UserStore.user.isAnonymous}>
-              <Icon type="star" theme={this.isFollow() ? "filled" : ""}/>
-              {this.isFollow() ? "Unfollow" : "Follow"}
-            </Button>
+            {this.state.hideFollow
+              ? <div></div>
+              : <Button shape="round" onClick={this.handleFollow} disabled={UserStore.user.isAnonymous}>
+                <Icon type="star" theme={this.isFollow() ? "filled" : ""}/>
+                {this.isFollow() ? "Unfollow" : "Follow"}
+                </Button>
+            }
         </div>
         <div className="list-container">
           {(this.state.loading || UserStore.state.loading) ?
