@@ -34,6 +34,8 @@ router.get("/:id", function(req, res) {
             var key_id=snapshot.key
             var Email_val=null
             var Channel_val=null
+            var recentread=snapshot.val().recentread
+            delete (recentread["a"]);
             var Email=db.ref("/user/"+key_id).child("email")
             Email.on('value', snapshot => {
                 Email_val=snapshot
@@ -42,26 +44,7 @@ router.get("/:id", function(req, res) {
             Channel.on('value', snapshot => {
                 Channel_val=snapshot
             })
-            res.json({"email":Email_val,"channel":Channel_val});
-            userReference.off("value");
-        },
-        function(errorObject) {
-            console.log("The read failed: " + errorObject.code);
-            res.send("The read failed: " + errorObject.code);
-        }
-    )
-
-});
-
-router.get("/:id/recentread", function(req, res) {
-    var uid=req.params.id;
-    var userReference = db.ref("/user");
-    userReference.orderByChild("uid").equalTo(uid).on(
-        "child_added",
-        function(snapshot) {
-            var recentread=snapshot.val().recentread
-            delete (recentread["a"])
-            res.json(recentread);
+            res.json({"email":Email_val,"channel":Channel_val,recentread:recentread});
             userReference.off("value");
         },
         function(errorObject) {
