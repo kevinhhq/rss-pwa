@@ -32,29 +32,30 @@ class ProfileContainer extends Component {
   }
 
   renderCard = () => {
-    if (this.state.loading || UserStore.state.loading) {
+    if (UserStore.state.loading) {
       return <Skeleton/>
     }
     if (this.state.news.length === 0) {
       return <Empty/>
     }
 
+    const readNews = UserStore.user.readNews;
     return <div className="news-card-list">
-      {UserStore.user.readNews.map((news, index) =>
-          <Link key={index} to={{pathname: `/news/${news.id}`, state: {news: news}}}>
+      {Object.keys(UserStore.user.readNews).map((id, index) =>
+          <Link key={index} to={{pathname: `/news/${id}`, state: {news: readNews[id]}}}>
             <Card
                 key={index}
                 hoverable
                 bordered={false}
                 style={{width: 300}}
-                cover={<img src={news.img_url} alt={"N/A"}/>}
+                cover={<img src={readNews[id].img_url} alt={"N/A"}/>}
             >
 
               <Meta
-                  title={news.summary}
+                  title={readNews[id].summary}
               />
               <div>
-                <Icon type="clock-circle"/>{news.timestamp}
+                <Icon type="clock-circle"/>{readNews[id].timestamp}
               </div>
             </Card>
           </Link>)}
