@@ -3,7 +3,7 @@ import firebase from 'firebase';
 import axios from "axios";
 
 class UserStore {
-    user = {isAnonymous: true, channels:{}};
+    user = {isAnonymous: true, channels:{}, readNews:{}};
     state = {loading: true};
 
     fetchUserState() {
@@ -12,9 +12,12 @@ class UserStore {
             if (user) {
                 this.user = user;
                 this.user.channels = {};
+                this.user.readNews = {};
                 axios.get(`http://localhost:3000/api/user/${this.user.uid}`).then(
                     res => {
+                        console.log(res);
                         this.user.channels = res.data.channel;
+                        this.user.readNews = res.data.recentread;
                         this.state.loading = false;
                     }
                 )
@@ -47,10 +50,12 @@ class UserStore {
         return firebase.auth().signInWithEmailAndPassword(email, password).then(res => {
             this.user = res.user;
             this.user.channels = {};
+            this.user.readNews = {};
         }).then(res => {
             axios.get(`http://localhost:3000/api/user/${this.user.uid}`).then(
                 res => {
                     this.user.channels = res.data.channel;
+                    this.user.readNews = res.data.recentread;
                 }
             )
         });
