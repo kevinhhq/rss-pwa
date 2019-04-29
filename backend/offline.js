@@ -42,8 +42,61 @@ router.get("/:newsId", function(req, res) {
     function(snapshot) {
       res.json(snapshot.val());
       if (req.query.uid) {
-        console.log(req.query);
-        // todo: update here
+          var uid=req.query.uid;
+          console.log(uid)
+          var img_url=snapshot.val().img
+          var summary=snapshot.val().summary
+          var news_id=newsId
+          var timestamp=new Date().getTime();
+          console.log(img_url)
+          var UserReference = db.ref("/user");
+          UserReference.orderByChild("uid").equalTo(uid).on(
+              "child_added",
+              function(snapshot) {
+                  var key_id=snapshot.key;
+                  if(!snapshot.hasChild("recentread")){
+                      recentread={"img_url":img_url,"summary":summary,"timestamp":timestamp};
+                      db.ref("/user/"+key_id).child(recentread).child(news_id).setValue(recentread)
+                  }
+                  else{
+                      var flag=0;
+                      var count=0;
+                      var recentread=snapshot.child("/recentread").val();
+                      for(let i in recentread){
+                          count=count+1;
+                      }
+                      var least_timestamp=new Date().getTime();
+                      var not_recent_id=0
+                      for(let i in recentread){
+                          if(i===news_id){
+                              recentread[i].timestamp=timestamp;
+                              flag=1;
+                              break;
+                          }
+                          if(recentread[i].timestamp<least_timestamp){
+                              not_recent_id=i;
+                              least_timestamp=recentread[i].timestamp;
+                          }
+                      }
+                      if(count===7){
+                          delete(recentread[not_recent_id])
+                          recentread[news_id]=({"img_url":img_url,"summary":summary,"timestamp":timestamp});
+                          flag=1;
+                      }
+                      if(flag===0){
+                          recentread[news_id]=({"img_url":img_url,"summary":summary,"timestamp":timestamp});
+                          console.log(recentread)
+                      }
+                      db.ref("/user/"+key_id).update({
+                          recentread: recentread,
+                      })
+                  }
+                  UserReference.off("child_added");
+              },
+              function(errorObject) {
+                  console.log("The read failed: " + errorObject.code);
+              }
+          );
       }
       userReference.off("value");
     },

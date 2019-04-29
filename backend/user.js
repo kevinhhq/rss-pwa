@@ -55,7 +55,7 @@ router.get("/:id", function(req, res) {
 
 });
 
-
+/*
 router.put("/:id/recentread", function(req, res) {
     var uid=req.params.id;
     var img_url=JSON.stringify(req.body.img_url).replace(/\"/g, "");
@@ -114,7 +114,7 @@ router.put("/:id/recentread", function(req, res) {
         }
     );
 });
-
+*/
 
 
 router.put("/:id", function(req, res) {
