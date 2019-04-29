@@ -8,14 +8,14 @@ router.post("/register", function(req, res) {
         email: req.body.email,
         password: req.body.password,
         channel: null,
-        news:{a:0}
+        recentread:{a:0}
     }).then(function (userRecord) {
         // See the UserRecord reference doc for the contents of userRecord.
         let user = {
             uid: userRecord.uid,
             email: req.body.email,
             channel: null,
-            news:{a:0},
+            recentread:{a:0},
         }
         let userRef = db.ref('user/');
         userRef.push().set(user);
