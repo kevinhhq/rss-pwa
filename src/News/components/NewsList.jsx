@@ -77,10 +77,11 @@ class NewsList extends Component {
       }
 
       else if (params.get('source')) {
-        axios.get(`http://localhost:3000/api/offline/${params.get('source')}`).then(
+        axios.get(`http://localhost:3000/api/offline/source/${params.get('source')}`).then(
             res => {
               this.setState({
                 news: res.data || [],
+                display: res.data || [],
                 category: params.get('source').toUpperCase(),
                 loading: false
               })

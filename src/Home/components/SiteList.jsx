@@ -19,7 +19,7 @@ class SiteList extends Component {
                         hoverable
                         bordered={false}
                         style={{ width: 240 }}
-                        cover={<Link to={`news/?source=${source.title.toLowerCase()}`}>
+                        cover={<Link to={`news/?source=${source.title}`}>
                             <img alt="example" src={source.url} style={{width: "100%"}}/>
                         </Link>}
                     >
