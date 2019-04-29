@@ -14,7 +14,10 @@ class AboutContainer extends Component {
           </div>
           <div className="list-container">
             {team.map((member,index) =>
-              <MemberItem item={member} key={index}/>
+              <div>
+                <MemberItem item={member} key={index}/>
+                <br/>
+              </div>
             )}
           </div>
         </div>
