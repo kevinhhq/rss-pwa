@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const db = require("./firebase");
+const admin = require('firebase-admin');
 /**Read data from firebase, which could work offline */
 router.get("/", function(req, res) {
   var userReference = db.ref("/article/headlines/articles");
@@ -40,6 +41,10 @@ router.get("/:newsId", function(req, res) {
     "value",
     function(snapshot) {
       res.json(snapshot.val());
+      if (req.query.uid) {
+        console.log(req.query);
+        // todo: update here
+      }
       userReference.off("value");
     },
     function(errorObject) {

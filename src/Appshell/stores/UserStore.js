@@ -15,7 +15,6 @@ class UserStore {
                 this.user.readNews = {};
                 axios.get(`http://localhost:3000/api/user/${this.user.uid}`).then(
                     res => {
-                        console.log(res);
                         this.user.channels = res.data.channel;
                         this.user.readNews = res.data.recentread;
                         this.state.loading = false;

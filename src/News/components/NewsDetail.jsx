@@ -22,7 +22,11 @@ class NewsDetail extends Component {
   componentDidMount() {
     // need to get news by id
     let id = this.props.match.params.id;
-    axios.get(`http://localhost:3000/api/offline/${id}`).then(
+    const params = {};
+    if (!UserStore.user.isAnonymous && UserStore.user.uid) {
+      params.uid = UserStore.user.uid;
+    }
+    axios.get(`http://localhost:3000/api/offline/${id}`, {params: params}).then(
       res => {
         this.setState({
           currentNews: res.data,
@@ -64,8 +68,6 @@ class NewsDetail extends Component {
 
   render() {
     const {currentNews} = this.state;
-
-
     if (Object.keys(currentNews).length === 0) {
       return <div className="detail-container">
           <Empty/>
