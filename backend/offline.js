@@ -70,7 +70,7 @@ router.get("/:newsId", function(req, res) {
                       for(let i in recentread){
                           if(i===news_id){
                               recentread[i].timestamp=timestamp;
-                              flag=1;
+                              flag=2;
                               break;
                           }
                           if(recentread[i].timestamp<least_timestamp){
@@ -78,7 +78,7 @@ router.get("/:newsId", function(req, res) {
                               least_timestamp=recentread[i].timestamp;
                           }
                       }
-                      if(count===7){
+                      if(count===7&&flag!==2){
                           delete(recentread[not_recent_id])
                           recentread[news_id]=({"img_url":img_url,"summary":summary,"timestamp":timestamp});
                           flag=1;
