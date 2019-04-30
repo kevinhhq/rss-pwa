@@ -15,7 +15,8 @@ class NewsDetail extends Component {
     this.state = {
       currentNews: {},
       following: false,
-      visible: false
+      visible: false,
+      readFromCache: false,
     }
   }
 
@@ -26,13 +27,40 @@ class NewsDetail extends Component {
     if (!UserStore.user.isAnonymous && UserStore.user.uid) {
       params.uid = UserStore.user.uid;
     }
-    axios.get(`http://localhost:3000/api/offline/${id}`, {params: params}).then(
-      res => {
-        this.setState({
-          currentNews: res.data,
-        })
+    const that = this;
+
+    /* use indexDB here!!*/
+    const request = window.indexedDB.open("news", 1);
+    var db;
+    request.onupgradeneeded = function (event) {
+      db = event.target.result;
+      if (!db.objectStoreNames.contains('recent')) {
+        db.createObjectStore('recent', { keyPath: 'id' });
       }
-    );
+    };
+
+    request.onsuccess = function(event) {
+      db = event.target.result;
+      const req = db.transaction(['recent']).objectStore('recent').get(parseInt(id));
+      req.onsuccess = function(event) {
+        if (req.result) {
+          that.setState({currentNews: req.result});
+        } else {
+          axios.get(`http://localhost:3000/api/offline/${id}`, {params: params}).then(
+              res => {
+                that.setState({
+                  currentNews: res.data,
+                });
+                const news = res.data;
+                news.id = news.newsId;
+                db.transaction(['recent'], 'readwrite').objectStore('recent').put(news);
+              }
+          );
+        }
+      };
+    }
+
+
   }
 
   handleFollow = () => {

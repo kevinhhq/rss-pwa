@@ -83,7 +83,6 @@ router.get("/:newsId", function(req, res) {
                       }
                       if(flag===0){
                           recentread[news_id]=({"img_url":img_url,"summary":summary,"timestamp":timestamp});
-                          console.log(recentread)
                       }
                       db.ref("/user/"+key_id).update({
                           recentread: recentread,

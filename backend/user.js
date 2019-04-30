@@ -44,8 +44,8 @@ router.get("/:id", function(req, res) {
             Channel.on('value', snapshot => {
                 Channel_val=snapshot
             })
-            res.json({"email":Email_val,"channel":Channel_val,recentread:recentread});
             userReference.off("value");
+            return res.json({"email":Email_val,"channel":Channel_val,recentread:recentread});
         },
         function(errorObject) {
             console.log("The read failed: " + errorObject.code);

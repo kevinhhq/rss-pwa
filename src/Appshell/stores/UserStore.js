@@ -27,6 +27,7 @@ class UserStore {
             }
 
         });
+        this.state.loading = false;
     }
 
 

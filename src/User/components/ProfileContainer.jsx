@@ -22,14 +22,28 @@ class ProfileContainer extends Component {
   };
 
   componentDidMount() {
-    this.setState({loading: true, news:[], channels: []});
-    axios.get(`http://localhost:3000/api/offline/`).then(
-        res => {
-          this.setState({news: res.data.slice(0,3), loading: false})
+    const that = this;
+    const request = window.indexedDB.open("news", 1);
+    request.onupgradeneeded = function (event) {
+      const db = event.target.result;
+      if (!db.objectStoreNames.contains('recent')) {
+        db.createObjectStore('recent', { keyPath: 'id' });
+      }
+    };
+    request.onsuccess = function(event) {
+      const db = event.target.result;
+      db.transaction(['recent']).objectStore('recent').openCursor().onsuccess = function (event) {
+        const cursor = event.target.result;
+        const news = that.state.news;
+        if (cursor) {
+          news.push(cursor.value);
+          cursor.continue();
+        } else {
+          that.setState({news: news});
         }
-    ).catch(err => {
-      this.setState({news: [], loading: false});
-    });
+      }
+
+    }
   }
 
   renderCard = () => {
@@ -39,24 +53,23 @@ class ProfileContainer extends Component {
     if (this.state.news.length === 0) {
       return <Empty/>
     }
-
-    const readNews = UserStore.user.readNews;
+    const readNews = this.state.news;
     return <div className="news-card-list">
-      {Object.keys(UserStore.user.readNews).length > 0 ? Object.keys(UserStore.user.readNews).map((id, index) =>
-          <Link key={index} to={{pathname: `/news/${id}`, state: {news: readNews[id]}}}>
+      {readNews.length > 0 ? readNews.map((news, index) =>
+          <Link key={index} to={{pathname: `/news/${news.id}`, state: {news: news.id}}}>
             <Card
                 key={index}
                 hoverable
                 bordered={false}
-                style={{width: 300}}
-                cover={<img src={readNews[id].img_url} alt={"N/A"}/>}
+                style={{width: 290, margin: "5px"}}
+                cover={<img src={news.img} alt={"N/A"}/>}
             >
 
               <Meta
-                  title={readNews[id].summary}
+                  title={news.title}
               />
               <div>
-                <Icon type="clock-circle"/>{moment(readNews[id].timestamp).fromNow()}
+                <Icon type="clock-circle"/>{moment(news.time).fromNow()}
               </div>
             </Card>
           </Link>)
