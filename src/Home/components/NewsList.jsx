@@ -51,6 +51,7 @@ class NewsList extends Component {
                 <Link key={index} to={{pathname: `/news/${news.newsId}`, state: {news: news}}}>
                     <Card
                         className="news-card"
+                        style={{margin: 5, width: 290}}
                         key={index}
                         hoverable
                         bordered={false}
