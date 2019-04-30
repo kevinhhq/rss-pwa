@@ -35,9 +35,20 @@ class UserStore {
             code: 0,
             message: "",
         };
+
+        return axios.post("http://localhost:3000/api/user/register", {email:email, password: password}).then(res => {
+            this.user = res.data;
+        }).then(res => {
+            return this.signIn(email, password);
+        }).catch(err => console.log(err));
+
+        /*
         return firebase.auth().createUserWithEmailAndPassword(email, password).then(res => {
             this.user = res.data;
+            this.user.isAnonymous = false;
         });
+        */
+
     }
 
 

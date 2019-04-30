@@ -8,6 +8,7 @@ import UserStore from "../../Appshell/stores/UserStore";
 import FollowedItem from "./FollowedItem.jsx";
 import {Link} from "react-router-dom";
 import axios from "axios";
+import moment from 'moment';
 
 const { Meta } = Card;
 
@@ -41,7 +42,7 @@ class ProfileContainer extends Component {
 
     const readNews = UserStore.user.readNews;
     return <div className="news-card-list">
-      {Object.keys(UserStore.user.readNews).map((id, index) =>
+      {Object.keys(UserStore.user.readNews).length > 0 ? Object.keys(UserStore.user.readNews).map((id, index) =>
           <Link key={index} to={{pathname: `/news/${id}`, state: {news: readNews[id]}}}>
             <Card
                 key={index}
@@ -55,10 +56,15 @@ class ProfileContainer extends Component {
                   title={readNews[id].summary}
               />
               <div>
-                <Icon type="clock-circle"/>{readNews[id].timestamp}
+                <Icon type="clock-circle"/>{moment(readNews[id].timestamp).fromNow()}
               </div>
             </Card>
-          </Link>)}
+          </Link>)
+          : <div style={{margin: "0 auto"}}>
+            <Empty/>
+          </div>
+      }
+
     </div>;
   };
 

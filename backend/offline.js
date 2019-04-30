@@ -43,12 +43,10 @@ router.get("/:newsId", function(req, res) {
       res.json(snapshot.val());
       if (req.query.uid) {
           var uid=req.query.uid;
-          console.log(uid)
           var img_url=snapshot.val().img
-          var summary=snapshot.val().summary
+          var summary=snapshot.val().title
           var news_id=newsId
           var timestamp=new Date().getTime();
-          console.log(img_url)
           var UserReference = db.ref("/user");
           UserReference.orderByChild("uid").equalTo(uid).on(
               "child_added",
