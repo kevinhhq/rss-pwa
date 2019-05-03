@@ -88,7 +88,7 @@ router.post("/category/:category", function(req, res) {
   if (category === "business") category_id = "04018000";
   if (category === "entertainment") category_id = "01021000";
   if (category === "health") category_id = "07000000";
-  if (category === "science") category_id = "13009000";
+  if (category === "science") category_id = "13000000";
   if (category === "sports") category_id = "15000000";
   if (category === "technology") category_id = "13010000";
   if (category === "politics") category_id = "11000000";
@@ -97,7 +97,7 @@ router.post("/category/:category", function(req, res) {
     language: ["en"],
     categoriesId: [category_id],
     categoriesTaxonomy: "iptc-subjectcode",
-    publishedAtStart: "NOW-7DAYS",
+    publishedAtStart: "NOW-1DAYS",
     publishedAtEnd: "NOW",
     perPage: 100
   };
