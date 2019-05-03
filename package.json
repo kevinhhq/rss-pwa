@@ -2,6 +2,7 @@
   "name": "rss-pwa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://deepinsc.github.io/rss-pwa/",
   "dependencies": {
     "antd": "^3.16.1",
     "axios": "^0.18.0",
