@@ -13,7 +13,9 @@ class UserStore {
                 this.user = user;
                 this.user.channels = {};
                 this.user.readNews = {};
-                axios.get(`http://localhost:3000/api/user/${this.user.uid}`).then(
+                var baseurl=process.env.baseURL||"http://localhost:3000"
+
+                axios.get(baseurl`/api/user/${this.user.uid}`).then(
                     res => {
                         this.user.channels = res.data.channel;
                         this.user.readNews = res.data.recentread;
@@ -36,8 +38,9 @@ class UserStore {
             code: 0,
             message: "",
         };
+        var baseurl=process.env.baseURL||"http://localhost:3000"
 
-        return axios.post("http://localhost:3000/api/user/register", {email:email, password: password}).then(res => {
+        return axios.post(baseurl+"/api/user/register", {email:email, password: password}).then(res => {
             this.user = res.data;
         }).then(res => {
             return this.signIn(email, password);
@@ -63,7 +66,8 @@ class UserStore {
             this.user.channels = {};
             this.user.readNews = {};
         }).then(res => {
-            axios.get(`http://localhost:3000/api/user/${this.user.uid}`).then(
+            var baseurl=process.env.baseURL||"http://localhost:3000"
+            axios.get(baseurl+`/api/user/${this.user.uid}`).then(
                 res => {
                     this.user.channels = res.data.channel;
                     this.user.readNews = res.data.recentread;
