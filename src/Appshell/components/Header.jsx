@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../styles/Header.scss";
-import logo from '../../logo.svg';
 import UserDropDown from "./UserDropdown.jsx";
+import SideDrawer from "./SideDrawer.jsx";
 
 class Header extends Component {
 
@@ -20,13 +20,14 @@ class Header extends Component {
         return (
             <nav className="header-container">
                 <div className="header-container-title">
+                    <SideDrawer/>
                     <a href="/">
-                        <img src={logo} alt="logo"/>
+                        GOATNews
                     </a>
                 </div>
                 <div className="header-container-extra">
-                    <span className="header-container-btn">News</span>
-                    <span className="header-container-btn">About</span>
+                    <span className="header-container-btn"><a href="/news/"><div>News</div></a></span>
+                    <span className="header-container-btn"><a href="/about/"><div>About</div></a></span>
                     <span className="header-container-btn">
                         <div>
                             <UserDropDown/>

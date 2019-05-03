@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/NewsList.scss';
-import { Card, Tabs, Skeleton } from 'antd';
+import { Card, Tabs, Skeleton, Icon, Empty } from 'antd';
 import axios from 'axios';
-import Icon from "antd/es/icon";
 import { Link } from 'react-router-dom'
 
 const TabPane = Tabs.TabPane;
@@ -11,54 +10,76 @@ const { Meta } = Card;
 
 class NewsList extends Component {
     state = {
-        mockImages: [],
+        news: [],
+        loading: true,
     };
 
     componentDidMount() {
-        axios.get("http://my-json-server.typicode.com/DeepinSC/rss-pwa/news_list").then(
+        this.setState({loading: true, news:[]});
+        axios.get(`http://localhost:3000/api/offline/category/business`).then(
             res => {
-                this.setState({mockImages: res.data})
+                this.setState({news: res.data.slice(0,3), loading: false})
             }
-        )
+        ).catch(err => {
+            console.log(err);
+            this.setState({news: [], loading: false});
+        });
     }
 
-
-    callback = (key) => {
-        //console.log(key);
+    onTabChange = (key) => {
+        this.setState({loading: true, news:[]});
+        axios.get(`http://localhost:3000/api/offline/category/${key}`).then(
+            res => {
+                this.setState({news: res.data.slice(0,3), loading: false})
+            }
+        ).catch(err => {
+            console.log(err);
+            this.setState({news: [], loading: false});
+        });
     };
 
-    renderCard = (key=1) =>
-        <div className="news-card-list">
-            {this.state.mockImages.length === 0 ?
-                <Skeleton/>
-                : this.state.mockImages.map(news =>
-                <Link key={news.title} to={{pathname:'/detail', state: {news: news}}}>
+    renderCard = () => {
+        if (this.state.loading ) {
+            return <Skeleton/>
+        }
+        if (this.state.news.length === 0) {
+            return <Empty/>
+        }
+
+       return <div className="news-card-list">
+           {this.state.news.map((news,index) =>
+                <Link key={index} to={{pathname: `/news/${news.newsId}`, state: {news: news}}}>
                     <Card
-                    key={news.title}
-                    hoverable
-                    bordered={false}
-                    style={{ width: 240 }}
-                    cover={<img alt="example" src={news.url} />}
+                        className="news-card"
+                        style={{margin: 5, width: 290}}
+                        key={index}
+                        hoverable
+                        bordered={false}
+                        cover={news.img ? <img src={news.img} alt={"N/A"}/> : <Empty description=" "/>}
                     >
+
                         <Meta
-                        title={news.title}
-                        description="example description"
+                            title={news.title}
                         />
                         <div>
-                            <Icon type="message" />100
+                            <Icon type="clock-circle" />{news.time}
                         </div>
                     </Card>
-                </Link>        )}
+                </Link>)}
         </div>;
+    };
 
     render() {
         return (
             <div>
                 <div>
-                    <Tabs defaultActiveKey="1" onChange={this.callback}>
-                        <TabPane tab="Tab 1" key="1">{this.renderCard()}</TabPane>
-                        <TabPane tab="Tab 2" key="2">{this.renderCard()}</TabPane>
-                        <TabPane tab="Tab 3" key="3">{this.renderCard()}</TabPane>
+                    <Tabs defaultActiveKey="1" onChange={this.onTabChange}>
+                        <TabPane tab="Business" key="business">{this.renderCard()}</TabPane>
+                        <TabPane tab="Technology" key="technology">{this.renderCard()}</TabPane>
+                        <TabPane tab="Entertainment" key="entertainment">{this.renderCard()}</TabPane>
+                        <TabPane tab="Sports" key="sports">{this.renderCard()}</TabPane>
+                        <TabPane tab="Science" key="science">{this.renderCard()}</TabPane>
+                        <TabPane tab="Health" key="health">{this.renderCard()}</TabPane>
                     </Tabs>
                 </div>
             </div>

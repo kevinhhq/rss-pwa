@@ -7,6 +7,11 @@
   justify-content: space-between;
   line-height: 80px;
   .header-container-title {
+    a {
+      color: #61dafb;
+      font-size: 20px;
+      font-weight: 600;
+    }
     margin: 0 5vw;
     width: 50%;
     max-height: 100%;
@@ -19,6 +24,9 @@
   .header-container-extra {
     margin: 0 1vw;
     display: flex;
+    a {
+      color: inherit;
+    }
     .header-container-btn {
       cursor: pointer;
       margin: 0 2vw;

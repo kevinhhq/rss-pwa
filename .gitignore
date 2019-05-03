@@ -4,6 +4,7 @@
 .idea/RSS-PWA.iml
 .idea/modules.xml
 
+
 # dependencies
 yarn.lock
 package-lock.json
@@ -13,9 +14,6 @@ package-lock.json
 
 # testing
 /coverage
-
-# production
-/build
 
 # misc
 .DS_Store
@@ -31,3 +29,4 @@ yarn-error.log*
 
 config/secrets.js
 
+package-lock.json

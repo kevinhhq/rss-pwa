@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Avatar, Menu, Dropdown, message } from 'antd';
+import { Avatar, Menu, Dropdown, message, Icon } from 'antd';
 import "../styles/Header.scss";
 import {decorate} from "mobx";
 import {observer} from "mobx-react";
@@ -20,7 +20,7 @@ class UserDropdown extends Component {
         return () => {
             if (signIn) {
                 UserStore.signIn(email, password).then(res => {
-                    message.success(res);
+                    message.success("Sign in successfully");
                     this.setState({ modalVisible: false });
                 }).catch(err => {
                     message.error(err.message);
@@ -28,7 +28,7 @@ class UserDropdown extends Component {
                 });
             } else {
                 UserStore.signUp(email, password).then(res => {
-                    message.success(res);
+                    message.success("Sign up successfully");
                     this.setState({ modalVisible: false });
                 }).catch(err => {
                     message.error(err.message);
@@ -41,7 +41,7 @@ class UserDropdown extends Component {
 
     signOut = () => {
         return UserStore.signOut().then(res => {
-            message.success(res);
+            message.success("Sign out successfully");
         })
     };
 
@@ -50,20 +50,20 @@ class UserDropdown extends Component {
     }
 
     menu = () => {
-        return !UserStore.user ?
+        return !UserStore.user.email ?
             <Menu>
                 <Menu.Item>
-                    <div onClick={this.handleModalOpen}>Sign in/up</div>
+                    <div onClick={this.handleModalOpen}><Icon type="import" /> Sign in/up</div>
                 </Menu.Item>
             </Menu>
             :
             <Menu>
                 <Menu.Item>
-                    <a href="/profile/">Profile</a>
+                    <a href="/profile/"><Icon type="user" /> Profile</a>
                 </Menu.Item>
                 <Menu.Divider/>
                 <Menu.Item>
-                    <div onClick={this.signOut}>Sign out</div>
+                    <div onClick={this.signOut}><Icon type="export" /> Sign out</div>
                 </Menu.Item>
             </Menu>
 
