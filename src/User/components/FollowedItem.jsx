@@ -11,7 +11,8 @@ class FollowedItem extends Component {
 
   handleUnfollow = () => {
     UserStore.state.loading = true;
-    axios.put(`http://localhost:3000/api/user/${UserStore.user.uid}`, {name:this.props.name, type: this.props.type}).then( res => {
+      var baseurl=process.env.baseURL||"http://localhost:3000"
+      axios.put(baseurl+`/api/user/${UserStore.user.uid}`, {name:this.props.name, type: this.props.type}).then( res => {
           message.success(`Delete ${this.props.name} successfully!`);
           delete (UserStore.user.channels[this.props.name]);
           UserStore.state.loading = false;

@@ -64,7 +64,8 @@ class NewsDetail extends Component {
   }
 
   handleFollow = () => {
-    axios.put(`http://localhost:3000/api/user/${UserStore.user.uid}`,
+    var baseurl=process.env.baseURL||"http://localhost:3000"
+    axios.put(baseurl+`/api/user/${UserStore.user.uid}`,
         {name: this.state.currentNews.source, type:"source"}).then(res => {
       this.setState({following: !this.state.following});
     }).catch(err =>
